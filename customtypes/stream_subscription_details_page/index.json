@@ -1,0 +1,372 @@
+{
+  "id": "stream_subscription_details_page",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description"
+        }
+      },
+      "header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Join NOW"
+        }
+      },
+      "header_description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Join now to access world-famous opera and ballet, anytime, anywhere as much as you like."
+        }
+      }
+    },
+    "Subscription": {
+      "subscription_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Subscription"
+        }
+      },
+      "subscription_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "A subscription that suits you"
+        }
+      },
+      "subscription_additional_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Additional text",
+          "placeholder": "Access on your TV via: Amazon Fire TV, Apple Airplay, Chromecast or Google TV"
+        }
+      },
+      "subscription_bullets": {
+        "type": "Group",
+        "fieldset": "Bullets",
+        "config": {
+          "fields": {
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Bullet Description",
+                "placeholder": "— Description"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Price Offer": {
+      "price_offer_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Price Offer"
+        }
+      },
+      "price_offer_header": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Choose your subscription"
+        }
+      },
+      "price_offer_title_monthly": {
+        "type": "Text",
+        "config": {
+          "label": "Offer title (monthly)",
+          "placeholder": "Pay monthly"
+        }
+      },
+      "price_offer_title_annually": {
+        "type": "Text",
+        "config": {
+          "label": "Offer title (annually)",
+          "placeholder": "Pay annually"
+        }
+      },
+      "price_offer_description_anonymous": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description (Anonymous User)",
+          "placeholder": "Rich Text"
+        }
+      },
+      "price_offer_description_general": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description (General User)",
+          "placeholder": "Rich Text"
+        }
+      },
+      "price_offer_description_friend": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description (Friend User)",
+          "placeholder": "Rich Text"
+        }
+      },
+      "price_offer_cta_label_monthly": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label (monthly)",
+          "placeholder": "Subscribe now"
+        }
+      },
+      "price_offer_cta_label_annually": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label (annually)",
+          "placeholder": "Subscribe now"
+        }
+      },
+      "price_offer_sign_in_section": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": false,
+          "label": "Sign In section"
+        }
+      },
+      "price_offer_cards": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "price_offer_card": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["upsell_card"],
+                "label": "Offer card"
+              }
+            },
+            "price_offer_card_subscription_type": {
+              "type": "Select",
+              "config": {
+                "options": ["Monthly", "Annual"],
+                "default_value": "Monthly",
+                "label": "Subscription type"
+              }
+            }
+          },
+          "label": "Offer cards"
+        }
+      },
+      "price_offer_price_testing_cards": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "price_offer_card": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["upsell_card"],
+                "label": "Price testing card"
+              }
+            },
+            "price_offer_card_subscription_type": {
+              "type": "Select",
+              "config": {
+                "options": ["Monthly", "Annual"],
+                "default_value": "Monthly",
+                "label": "Subscription type"
+              }
+            },
+            "price_offer_card_promo_code": {
+              "type": "Text",
+              "config": {
+                "label": "Promo code"
+              }
+            }
+          },
+          "label": "Price testing cards"
+        }
+      }
+    },
+    "Gift Subscription": {
+      "gift_subscription_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Gift Subscription"
+        }
+      },
+      "gift_subscription_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "The gift that keeps giving"
+        }
+      },
+      "gift_subscription_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      },
+      "gift_subscription_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label",
+          "placeholder": "Gift an annual subscription"
+        }
+      },
+      "gift_subscription_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "CTA url",
+          "placeholder": "/checkout-beta/buy-gift-certificate"
+        }
+      }
+    },
+    "Ways To Watch": {
+      "ways_to_watch_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Ways to watch"
+        }
+      }
+    },
+    "More Information": {
+      "more_information_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "More information"
+        }
+      },
+      "more_information_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "More information"
+        }
+      },
+      "more_information_accordion": {
+        "type": "Group",
+        "fieldset": "Accordion",
+        "config": {
+          "fields": {
+            "section_title": {
+              "type": "Text",
+              "config": {
+                "label": "Section Title",
+                "placeholder": "What your subscription includes"
+              }
+            },
+            "section_body": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Section Body",
+                "placeholder": "Rich Text"
+              }
+            }
+          }
+        }
+      },
+      "more_information_link_title": {
+        "type": "Text",
+        "config": {
+          "label": "Link title",
+          "placeholder": "More help"
+        }
+      },
+      "more_information_link_url": {
+        "type": "Text",
+        "config": {
+          "label": "Link url",
+          "placeholder": "/contact"
+        }
+      }
+    },
+    "Find Out More": {
+      "find_out_more_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Find Out More"
+        }
+      },
+      "find_out_more_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Find out more"
+        }
+      },
+      "find_out_more_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      },
+      "find_out_more_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label",
+          "placeholder": "Explore"
+        }
+      },
+      "find_out_more_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "CTA url",
+          "placeholder": "/stream"
+        }
+      },
+      "find_out_more_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Stream Subscription Details Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

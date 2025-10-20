@@ -1,0 +1,137 @@
+{
+  "id": "returns_page",
+  "json": {
+    "Main": {
+      "header_text": {
+        "type": "Text",
+        "config": {
+          "label": "Title text",
+          "placeholder": "Cancellations: Options for ticket buyers",
+          "useAsTitle": true
+        }
+      },
+      "header_color": {
+        "type": "Color",
+        "config": {
+          "label": "Title text color"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image desktop",
+          "placeholder": "https://static.roh.org.uk/redesign/returns-image-desktop.jpg",
+          "select": null
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image mobile",
+          "placeholder": "https://static.roh.org.uk/redesign/returns-image-mobile.jpg",
+          "select": null
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "Royal Opera House auditorium."
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta title",
+          "placeholder": "Cancellations: Options for ticket buyers"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta description",
+          "placeholder": "Returns for upcoming performances"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Standfirst copy section",
+          "placeholder": "It is with regret that we have had to cancel a number of performances in our 2019/20 Season. If you have bought a ticket to a cancelled event, please review your options below."
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,embed",
+          "label": "Body copy section",
+          "placeholder": "Text, Social Media Embeds, Anchor Links",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "please_note": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Please note section",
+          "placeholder": "Messages sent from this form will be checked ...",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "gift_aid_image_path": {
+        "type": "Link",
+        "config": {
+          "label": "GiftAid logo (same for mobile and desktop)",
+          "placeholder": "https://static.roh.org.uk/logos/Gift_Aid_UK_Logo.svg",
+          "select": null
+        }
+      },
+      "gift_aid_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Gift Aid logo alt text",
+          "placeholder": "Gift Aid logo"
+        }
+      },
+      "gift_aid_standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Gift Aid standfirst",
+          "placeholder": "If you are a UK taxpayer, please add ..."
+        }
+      },
+      "gift_aid_introcopy": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Gift Aid intro copy",
+          "placeholder": "Gift Aid helps our community of artists and craftspeople, educators and technicians, create inspiring performances and projects for people all over the UK and beyond."
+        }
+      },
+      "gift_aid_infocopy": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Gift Aid info copy",
+          "placeholder": "I want to Gift Aid all qualifying donations made to the Royal Opera House Covent Garden Foundation now, in the future and in the past four years..."
+        }
+      }
+    }
+  },
+  "label": "Returns Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

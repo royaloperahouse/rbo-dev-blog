@@ -1,0 +1,35 @@
+{
+  "id": "TestSlice",
+  "type": "SharedSlice",
+  "name": "TestSlice",
+  "legacyPaths": {
+    "default_template::body::test_slice": "default"
+  },
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Default",
+      "imageUrl": "",
+      "docURL": "",
+      "version": "initial",
+      "primary": {
+        "param_name": {
+          "type": "Text",
+          "config": {
+            "label": "param name",
+            "placeholder": "name of param which must be true for this to display"
+          }
+        },
+        "title1": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+            "label": "title"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

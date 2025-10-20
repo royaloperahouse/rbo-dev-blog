@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"content": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Est ea commodo id non consectetur. Nulla aliqua id tempor aliquip id ea ea velit anim."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

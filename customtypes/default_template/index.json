@@ -1,0 +1,1004 @@
+{
+  "id": "default_template",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Page title"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Write a short description that feels relevant to the current page and its content"
+        }
+      },
+      "lead_media": {
+        "type": "Embed",
+        "config": {
+          "label": "Lead media",
+          "placeholder": "Optional lead Flickr or Youtube embed"
+        }
+      },
+      "slug": {
+        "type": "Text",
+        "config": {
+          "label": "slug",
+          "placeholder": "royal-opera-house"
+        }
+      },
+      "parent": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["dummy_page", "index_page", "default_template"],
+          "label": "parent"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Title",
+          "placeholder": "Title here",
+          "useAsTitle": true
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Standfirst",
+          "placeholder": "Optional standfirst",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "gallery_album_id": {
+        "type": "Text",
+        "config": {
+          "label": "Flickr Album ID",
+          "placeholder": "Flickr album ID"
+        }
+      },
+      "design_variant": {
+        "type": "Select",
+        "config": {
+          "options": ["Core", "Cinema", "Stream", "Impact", "Compact"],
+          "default_value": "Core",
+          "label": "Page header design variants"
+        }
+      },
+      "compact_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Compact Header"
+        }
+      },
+      "impact_background_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 720
+          },
+          "thumbnails": [],
+          "label": "Impact header background image"
+        }
+      },
+      "header_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Page Header CTA text",
+          "placeholder": "CTA text"
+        }
+      },
+      "header_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Page Header CTA link",
+          "placeholder": "CTA link"
+        }
+      },
+      "rolex_sponsorship": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide Rolex",
+          "placeholder_true": "Show Rolex",
+          "default_value": false,
+          "label": "Rolex sponsorship"
+        }
+      },
+      "anchor_tab_bar": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": false,
+          "label": "Anchor Tab Bar"
+        }
+      },
+      "anchor_tab_bar_design_variant": {
+        "type": "Select",
+        "config": {
+          "options": ["Core", "Stream", "Cinema"],
+          "default_value": "Core",
+          "label": "Anchor Tab Bar design variant"
+        }
+      },
+      "contact_email": {
+        "type": "Text",
+        "config": {
+          "label": "Contact email",
+          "placeholder": "restaurants@roh.org.uk"
+        }
+      },
+      "contact_phone_number": {
+        "type": "Text",
+        "config": {
+          "label": "Contact phone number",
+          "placeholder": "+44 (0)20 7212 9254"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "table": {
+              "type": "Slice",
+              "fieldset": "Table",
+              "description": "Rows of repeatable data",
+              "icon": "grid_on",
+              "display": "list",
+              "repeat": {
+                "column_1": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column1",
+                    "placeholder": "Column 1 content"
+                  }
+                },
+                "column_2": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column2",
+                    "placeholder": "Column 2 content"
+                  }
+                },
+                "column_3": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column3",
+                    "placeholder": "Column 3 content"
+                  }
+                },
+                "column_4": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column4",
+                    "placeholder": "Column 4 content"
+                  }
+                },
+                "column_5": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column5",
+                    "placeholder": "Column 5 content"
+                  }
+                }
+              }
+            },
+            "text": {
+              "type": "Slice",
+              "fieldset": "Body",
+              "description": "Rich text and media embeds",
+              "icon": "text_fields",
+              "non-repeat": {
+                "text_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+                    "label": "Body",
+                    "placeholder": "Rich Text, Social Media Embeds, Flickr Embeds, Youtube Embeds, Anchor Links",
+                    "labels": [
+                      "block-quote",
+                      "quote-attribution",
+                      "collapsible-box-body",
+                      "collapsible-box-title"
+                    ]
+                  }
+                }
+              }
+            },
+            "columns": {
+              "type": "Slice",
+              "fieldset": "Columns",
+              "description": "Left and right columns of rich text",
+              "icon": "view_column",
+              "non-repeat": {
+                "left_column": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Left column",
+                    "placeholder": "Rich Text, Anchor Links",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                },
+                "right_column": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Right column",
+                    "placeholder": "Rich Text, Anchor Links",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                }
+              }
+            },
+            "cta": {
+              "type": "Slice",
+              "fieldset": "CTA",
+              "description": "Call to Action",
+              "icon": "arrow_forward",
+              "repeat": {
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "Join as a friend"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "https://www.roh.org.uk/memberships/friend",
+                    "select": null
+                  }
+                },
+                "include_icon": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["yes", "no"],
+                    "label": "Include icon?"
+                  }
+                },
+                "button_style": {
+                  "type": "Select",
+                  "config": {
+                    "default_value": "primary",
+                    "options": [
+                      "primary",
+                      "secondary",
+                      "secondary-negative",
+                      "plain"
+                    ],
+                    "label": "Button style"
+                  }
+                }
+              }
+            },
+            "button": {
+              "type": "Slice",
+              "fieldset": "Button",
+              "description": "Call to Action",
+              "icon": "arrow_forward",
+              "repeat": {
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "Join as a friend"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "https://www.roh.org.uk/memberships/friend",
+                    "select": null
+                  }
+                },
+                "include_icon": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["yes", "no"],
+                    "label": "Include icon?"
+                  }
+                },
+                "button_style": {
+                  "type": "Select",
+                  "config": {
+                    "default_value": "primary",
+                    "options": ["primary", "secondary", "tertiary", "plain"],
+                    "label": "Button style"
+                  }
+                },
+                "button_theme": {
+                  "type": "Select",
+                  "config": {
+                    "default_value": "core",
+                    "options": ["core", "stream", "cinema"],
+                    "label": "Button theme"
+                  }
+                }
+              }
+            },
+            "anchor_link": {
+              "type": "Slice",
+              "fieldset": "Anchor link",
+              "description": "An anchor link to this part of the page",
+              "icon": "link",
+              "display": "list",
+              "non-repeat": {
+                "anchor_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "For example, 'about' in 'www.website.com/page#about'"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "person_contact_cards": {
+              "type": "Slice",
+              "fieldset": "Contact cards",
+              "description": "Repeatable zone with contact cards",
+              "icon": "contact_mail",
+              "non-repeat": {},
+              "repeat": {
+                "contact_card": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["person_contact_card"],
+                    "label": "Contact card"
+                  }
+                }
+              },
+              "display": "list"
+            },
+            "people": {
+              "type": "Slice",
+              "fieldset": "People",
+              "description": "A section containing Person Cards",
+              "icon": "account_box",
+              "non-repeat": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph,heading3,heading4,heading5,heading6,strong,em",
+                    "label": "Title",
+                    "placeholder": "Principle dancers"
+                  }
+                }
+              },
+              "repeat": {
+                "person_card": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["person_card"],
+                    "label": "Person Card"
+                  }
+                },
+                "use_headshot": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "no",
+                    "placeholder_true": "yes",
+                    "default_value": true,
+                    "label": "Use Headshot"
+                  }
+                }
+              },
+              "display": "list"
+            },
+            "info_component": {
+              "type": "Slice",
+              "fieldset": "Information Component",
+              "description": "Information Component",
+              "icon": "assignment_late",
+              "non-repeat": {
+                "info_component_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_component"],
+                    "label": "Info component"
+                  }
+                }
+              },
+              "repeat": {},
+              "display": "list"
+            },
+            "promo": {
+              "type": "Slice",
+              "fieldset": "Promo",
+              "description": "Promo component",
+              "icon": "chrome_reader_mode",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Promo title"
+                  }
+                },
+                "title_size": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Large", "Small"],
+                    "default_value": "Large",
+                    "label": "Title size"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": "Promo subtitle"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "Promo text"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 1024,
+                      "height": 768
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "primary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary CTA text",
+                    "placeholder": "CTA text"
+                  }
+                },
+                "primary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary CTA link",
+                    "placeholder": "CTA link"
+                  }
+                },
+                "primary_cta_style": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Core", "Stream", "Cinema"],
+                    "default_value": "Core",
+                    "label": "Primary CTA style"
+                  }
+                },
+                "secondary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA text",
+                    "placeholder": "CTA text"
+                  }
+                },
+                "secondary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA link",
+                    "placeholder": "CTA link"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "section": {
+              "type": "Slice",
+              "fieldset": "Section",
+              "description": "Section",
+              "icon": "branding_watermark",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Section title"
+                  }
+                },
+                "title_size": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Large", "Small"],
+                    "default_value": "Small",
+                    "label": "Title size"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Section description"
+                  }
+                },
+                "link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "For example, 'about' in 'www.website.com/page#about'"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "images_carousel": {
+              "type": "Slice",
+              "fieldset": "Image tray",
+              "description": "Image tray",
+              "icon": "burst_mode",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "carousel_image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 649,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "Gallery Image"
+                  }
+                },
+                "image_caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image Caption",
+                    "placeholder": "Image Caption"
+                  }
+                }
+              }
+            },
+            "promo_with_tags": {
+              "type": "Slice",
+              "fieldset": "Promo With Tags",
+              "description": "Promo With Tags",
+              "icon": "account_balance_wallet",
+              "display": "list",
+              "non-repeat": {
+                "promo_with_tags_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Title"
+                  }
+                },
+                "title_size": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large"],
+                    "default_value": "Small",
+                    "label": "Title size"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": "Subtitle"
+                  }
+                },
+                "main_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,hyperlink",
+                    "label": "Main text",
+                    "placeholder": "Main text"
+                  }
+                },
+                "middle_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,hyperlink",
+                    "label": "Middle text",
+                    "placeholder": "Text in the middle"
+                  }
+                },
+                "bottom_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,hyperlink",
+                    "label": "Bottom text",
+                    "placeholder": "Text in the bottom"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 1024,
+                      "height": 768
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "tags": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Tags",
+                    "placeholder": "tag1,tag2,tag3 (should be separated by comma)"
+                  }
+                },
+                "additional_tags": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Additional tags",
+                    "placeholder": "tag1,tag2,tag3 (should be separated by comma)"
+                  }
+                },
+                "hidden_content_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Hidden content url",
+                    "placeholder": "Url for content that is hidden by default. It appears after clicking on the primary button"
+                  }
+                },
+                "primary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary CTA text",
+                    "placeholder": "CTA text"
+                  }
+                },
+                "primary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary CTA link",
+                    "placeholder": "CTA link"
+                  }
+                },
+                "primary_cta_style": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Core", "Stream", "Cinema"],
+                    "default_value": "Core",
+                    "label": "Primary CTA style"
+                  }
+                },
+                "secondary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA text"
+                  }
+                },
+                "secondary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA link"
+                  }
+                }
+              },
+              "repeat": {
+                "extra_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Extra CTA text",
+                    "placeholder": "CTA text"
+                  }
+                },
+                "extra_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Extra CTA link",
+                    "placeholder": "/about/royal-opera-house"
+                  }
+                }
+              }
+            },
+            "event_card_slice": {
+              "type": "Slice",
+              "fieldset": "Event Card Slice",
+              "description": "NOTE: Not yet implemented",
+              "icon": "event_available",
+              "display": "list",
+              "non-repeat": {
+                "event_card": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_card"],
+                    "label": "Event Card"
+                  }
+                },
+                "cta_schedule": {
+                  "type": "Timestamp",
+                  "config": {
+                    "label": "CTA schedule (Friday Rush)"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "upsell": {
+              "type": "Slice",
+              "fieldset": "Upsell",
+              "description": "Working copy of the upsell component",
+              "icon": "monetization_on",
+              "display": "list",
+              "non-repeat": {
+                "upsell_section_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Choose a membership"
+                  }
+                },
+                "richtext": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,list-item,o-list-item",
+                    "label": "richText",
+                    "placeholder": "All friends of the Royal Opera House get:"
+                  }
+                },
+                "theme": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["core", "cinema", "stream"],
+                    "default_value": "core",
+                    "label": "theme",
+                    "placeholder": "core"
+                  }
+                }
+              },
+              "repeat": {
+                "upsell_card": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["upsell_card"],
+                    "label": "upsell card"
+                  }
+                }
+              }
+            },
+            "related_links": {
+              "type": "Slice",
+              "fieldset": "Related Links",
+              "description": "Related Links",
+              "icon": "insert_link",
+              "display": "list",
+              "non-repeat": {
+                "section_heading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Section Heading",
+                    "placeholder": "Related Links"
+                  }
+                }
+              },
+              "repeat": {
+                "related_link": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "strong,em,hyperlink",
+                    "allowTargetBlank": true,
+                    "label": "Related Link"
+                  }
+                }
+              }
+            },
+            "events_rail": {
+              "type": "Slice",
+              "fieldset": "Events Rail",
+              "description": "Events rail component",
+              "icon": "chevron_right",
+              "display": "list",
+              "non-repeat": {
+                "rail_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Highlights"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Rail type"
+                  }
+                }
+              },
+              "repeat": {
+                "event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["festival", "event_card", "event_details"],
+                    "label": "Event"
+                  }
+                }
+              }
+            },
+            "information": {
+              "type": "Slice",
+              "fieldset": "Information",
+              "description": "Information component",
+              "icon": "info_outline",
+              "display": "list",
+              "non-repeat": {
+                "information_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Title"
+                  }
+                },
+                "title_variant": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Header", "AltHeader"],
+                    "default_value": "Header",
+                    "label": "Title variant"
+                  }
+                },
+                "title_text_size": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["3", "4", "5", "6"],
+                    "default_value": "3",
+                    "label": "Title text size"
+                  }
+                },
+                "information_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink",
+                    "label": "Body",
+                    "placeholder": "Please note that the stairs are very creaky"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Find out more"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/more-information"
+                  }
+                },
+                "cta_theme": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Core", "Cinema", "Stream"],
+                    "default_value": "Core",
+                    "label": "CTA theme"
+                  }
+                },
+                "cta_variant": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Primary", "Secondary", "Tertiary", "TextLink"],
+                    "default_value": "Primary",
+                    "label": "CTA variant"
+                  }
+                },
+                "cta_target": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["new tab", "current tab"],
+                    "default_value": "new tab",
+                    "label": "CTA target"
+                  }
+                },
+                "background_color": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["white", "core", "cinema", "stream"],
+                    "default_value": "white",
+                    "label": "Background color"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            },
+            "sign_up": {
+              "type": "Slice",
+              "fieldset": "Sign Up",
+              "description": "Sign up for marketing",
+              "icon": "account_box",
+              "display": "list",
+              "non-repeat": {
+                "sign_up_component": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["sign_up_form"],
+                    "label": "Sign up component"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "video": {
+              "type": "Slice",
+              "fieldset": "Video",
+              "description": "A video that can be embedded on the page",
+              "icon": "videocam",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video"],
+                    "label": "Video document"
+                  }
+                }
+              }
+            },
+            "TestSlice": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Default template",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

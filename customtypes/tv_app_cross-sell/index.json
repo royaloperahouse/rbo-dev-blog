@@ -1,0 +1,62 @@
+{
+  "id": "tv_app_cross-sell",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Title"
+        }
+      },
+      "standfirst": {
+        "type": "Text",
+        "config": {
+          "label": "Standfirst",
+          "placeholder": "Standfirst"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Body",
+          "placeholder": "Text"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 800,
+            "height": 800
+          },
+          "thumbnails": [],
+          "label": "Image"
+        }
+      },
+      "image_link": {
+        "type": "Text",
+        "config": {
+          "label": "Image link",
+          "placeholder": "https://roh.org.uk/stream"
+        }
+      },
+      "product_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 960,
+            "height": 1080
+          },
+          "thumbnails": [],
+          "label": "Product image"
+        }
+      }
+    }
+  },
+  "label": "TV App Cross-sell",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

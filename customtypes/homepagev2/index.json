@@ -1,0 +1,736 @@
+{
+  "id": "homepagev2",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Homepage"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Feel something new at the Royal Opera House, Covent Garden. If you’re new to ballet and opera or have loved them all your life, we have something for you. Come and experience stunning performances of music and dance, backstage tours, delicious food and drink, at a historic landmark in the heart of London's Theatreland."
+        }
+      },
+      "header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header",
+          "placeholder": "Links to a valid Header component"
+        }
+      },
+      "impact_header_main_title": {
+        "type": "Text",
+        "config": {
+          "label": "DEPRECATED - Impact header main title",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "impact_header_subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "DEPRECATED - Impact header main title",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "above_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "DEPRECATED - Impact header main title"
+        }
+      },
+      "inside_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "DEPRECATED - Inside image text color"
+        }
+      },
+      "desktop_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "DEPRECATED - Desktop above image text",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "desktop_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "DEPRECATED - Desktop inside image text",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "mobile_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "DEPRECATED - Mobile above image text",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "mobile_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "DEPRECATED - Mobile inside image text",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "DEPRECATED - CTA text",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "DEPRECATED - Cta link",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "DEPRECATED - desktop image",
+          "placeholder": "NOT IN USE",
+          "select": null
+        }
+      },
+      "mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "DEPRECATED - mobile image",
+          "placeholder": "NOT IN USE",
+          "select": null
+        }
+      },
+      "image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "DPRECATED - image alt text",
+          "placeholder": "NOT IN USE"
+        }
+      },
+      "components": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "ballet": {
+              "type": "Slice",
+              "fieldset": "Ballet",
+              "description": "Ballet component",
+              "icon": "audiotrack",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Ballet"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "desktop_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Desktop image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-ballet-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "mobile_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Mobile image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-ballet-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "See all ballet and dance"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/tickets-and-events/ballet-and-dance"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "opera": {
+              "type": "Slice",
+              "fieldset": "Opera",
+              "description": "Opera component",
+              "icon": "record_voice_over",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Opera"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "desktop_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Desktop image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-opera-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "mobile_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Mobile image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-opera-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "See all opera and music"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/tickets-and-events/opera-and-music"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "visit_us": {
+              "type": "Slice",
+              "fieldset": "Visit us",
+              "description": "Visit us component",
+              "icon": "airport_shuttle",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Open"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "standfirst": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Standfirst",
+                    "placeholder": "<h4> Now open every day from 10am </h4>"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "<p> Come and experience all the Royal Opera House has to offer – stunning performances, delicious food and drink, inspiring interactive events and a perfect place to relax in the heart of Covent Garden.</p>"
+                  }
+                },
+                "desktop_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Desktop image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-open-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "mobile_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Mobile image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-open-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Visit us"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Link",
+                    "placeholder": "/visit-us"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "eat_and_drink": {
+              "type": "Slice",
+              "fieldset": "Eat and drink",
+              "description": "Eat and drink component",
+              "icon": "free_breakfast",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Eat & drink"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "desktop_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Desktop image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-eatanddrink-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "mobile_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Mobile image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-eatanddrink-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Alt text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "See café, bars and restaurants"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/eat-and-drink"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "<p>Stop for a coffee, meet friends for drinks, enjoy a delicious lunch, dinner or afternoon tea – we have a mix of places for you to try whether you’re just visiting or seeing a show. </p>"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "create_and_learn": {
+              "type": "Slice",
+              "fieldset": "Create and learn",
+              "description": "Create and learn component",
+              "icon": "color_lens",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Create & Learn"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "desktop_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Desktop image",
+                    "placeholder": "https://static.roh.org.uk/redesign/Create-and-learn-make-stage.jpg",
+                    "select": null
+                  }
+                },
+                "mobile_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Mobile image",
+                    "placeholder": "https://static.roh.org.uk/redesign/Create-and-learn-make-stage.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Alt text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Let's go!"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "https://learning-platform.roh.org.uk/create-and-learn/"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "Dip, delve and dive into the magical world of singing, dancing and theatre design from home."
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Events tray",
+              "description": "Events tray component",
+              "icon": "star_border",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Highlights"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                }
+              },
+              "repeat": {
+                "event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card", "festival"],
+                    "label": "Event"
+                  }
+                }
+              }
+            },
+            "stay_in_touch": {
+              "type": "Slice",
+              "fieldset": "Stay in touch",
+              "description": "Stay in touch component",
+              "icon": "markunread",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Stay in touch"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "Get our latest news, offers and alerts"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Link",
+                    "placeholder": "/account/contact-preferences"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "donate": {
+              "type": "Slice",
+              "fieldset": "Donate",
+              "description": "Donate component",
+              "icon": "monetization_on",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Donate"
+                  }
+                },
+                "title_color": {
+                  "type": "Color",
+                  "config": {
+                    "label": "Title color"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "We have lost £3 in every £5 of our income. Support our community of artists, craftspeople and technicians today."
+                  }
+                },
+                "desktop_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Desktop image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-donate-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "mobile_image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Mobile image",
+                    "placeholder": "https://static.roh.org.uk/redesign/homepage-donate-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Donate now"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/donate-now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "information": {
+              "type": "Slice",
+              "fieldset": "Information",
+              "description": "Information component",
+              "icon": "info_outline",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Title"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "<p>Please note that the stairs are very creaky</p>"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Find out more"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/more-information"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "promo": {
+              "type": "Slice",
+              "fieldset": "Promo",
+              "description": "Promo component",
+              "icon": "chrome_reader_mode",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Promo title"
+                  }
+                },
+                "title_size": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Large", "Small"],
+                    "default_value": "Large",
+                    "label": "Title size"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": "Promo subtitle"
+                  }
+                },
+                "body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Body",
+                    "placeholder": "Promo text"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 1024,
+                      "height": 768
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "primary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary CTA text",
+                    "placeholder": "CTA text"
+                  }
+                },
+                "primary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Primary CTA link",
+                    "placeholder": "CTA link"
+                  }
+                },
+                "primary_cta_style": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Core", "Stream"],
+                    "default_value": "Core",
+                    "label": "Primary CTA style"
+                  }
+                },
+                "secondary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA text",
+                    "placeholder": "CTA text"
+                  }
+                },
+                "secondary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA link",
+                    "placeholder": "CTA link"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "HomepageV2",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

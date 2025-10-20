@@ -1,0 +1,281 @@
+{
+  "id": "event_card",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "Title",
+          "placeholder": "Title",
+          "useAsTitle": true
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Description",
+          "placeholder": "Description"
+        }
+      },
+      "carousel_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Carousel Description",
+          "placeholder": "Description for carousel - 185 character limit"
+        }
+      },
+      "primary_cta_copy": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA Copy",
+          "placeholder": "Primary CTA Copy"
+        }
+      },
+      "primary_cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Primary CTA Link",
+          "placeholder": "Primary CTA Link",
+          "select": "web"
+        }
+      },
+      "secondary_cta_copy": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary CTA Copy",
+          "placeholder": "Secondary CTA Copy"
+        }
+      },
+      "secondary_cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Secondary CTA Link",
+          "placeholder": "Secondary CTA Link",
+          "select": "web"
+        }
+      },
+      "cta_theme": {
+        "type": "Select",
+        "config": {
+          "options": ["core", "stream", "cinema"],
+          "default_value": "core",
+          "label": "CTA Theme",
+          "placeholder": "Cta Theme"
+        }
+      },
+      "date_field_override": {
+        "type": "Text",
+        "config": {
+          "label": "Date Field Override",
+          "placeholder": "Text to display instead of the date range"
+        }
+      },
+      "help_information_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Information / Help Text",
+          "placeholder": "Information / Help Text"
+        }
+      },
+      "help_information_link": {
+        "type": "Link",
+        "config": {
+          "label": "Information / Help Link",
+          "placeholder": "https://www.roh.org.uk/vimeo",
+          "select": "web"
+        }
+      },
+      "location": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Main Stage",
+            "Linbury Theatre",
+            "Clore Studio",
+            "Crush Room",
+            "Paul Hamlyn Hall",
+            "Linbury Foyer",
+            "Thurrock",
+            "St Clement Danes",
+            "Royal Opera House",
+            "Online only",
+            "Television broadcast",
+            "Radio broadcast"
+          ],
+          "label": "Location",
+          "placeholder": "Choose a location"
+        }
+      },
+      "start_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Start Time",
+          "placeholder": "Select a start date and time"
+        }
+      },
+      "end_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "End Time",
+          "placeholder": "Select an end date and time"
+        }
+      },
+      "cinema_broadcast_expiration_date": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Cinema broadcast expiration date",
+          "placeholder": "Select an end date and time"
+        }
+      }
+    },
+    "Image": {
+      "event_card_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 960
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 460,
+              "height": 345
+            }
+          ],
+          "label": "Event Card Image"
+        }
+      },
+      "desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "Desktop Image",
+          "placeholder": "Link to desktop image",
+          "select": "web"
+        }
+      },
+      "mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "Mobile Image",
+          "placeholder": "Link to mobile image",
+          "select": "web"
+        }
+      },
+      "thumbnail_image": {
+        "type": "Link",
+        "config": {
+          "label": "Thumbnail Image",
+          "placeholder": "Link to thumbnail image",
+          "select": "web"
+        }
+      },
+      "image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Image Alt Text",
+          "placeholder": "Alt text for image"
+        }
+      },
+      "event_card_tray_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 960
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 460,
+              "height": 345
+            }
+          ],
+          "label": "Event Card Tray Image"
+        }
+      },
+      "desktop_tray_image": {
+        "type": "Link",
+        "config": {
+          "label": "Desktop Tray Image",
+          "placeholder": "Link to desktop tray image",
+          "select": "web"
+        }
+      },
+      "mobile_tray_image": {
+        "type": "Link",
+        "config": {
+          "label": "Mobile Tray Image",
+          "placeholder": "Link to mobile tray image",
+          "select": "web"
+        }
+      },
+      "thumbnail_tray_image": {
+        "type": "Link",
+        "config": {
+          "label": "Thumbnail Tray Image",
+          "placeholder": "Link to thumbnail tray image",
+          "select": "web"
+        }
+      },
+      "tray_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Tray Image Alt Text",
+          "placeholder": "Alt text for tray image"
+        }
+      }
+    },
+    "Performances": {
+      "performances": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "date_and_time": {
+              "type": "Timestamp",
+              "config": {
+                "label": "Date and time",
+                "placeholder": "Select a date and time of performance"
+              }
+            }
+          },
+          "label": "Performances"
+        }
+      }
+    },
+    "Tags": {
+      "tags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": [
+                  "Ballet and dance",
+                  "Opera and music",
+                  "Outdoor performance",
+                  "Outdoor screening",
+                  "Tours",
+                  "Workshops and activities",
+                  "Cinema broadcasts"
+                ],
+                "label": "Tag",
+                "placeholder": "Choose a tag"
+              }
+            }
+          },
+          "label": "Tags"
+        }
+      }
+    }
+  },
+  "label": "Event Card",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

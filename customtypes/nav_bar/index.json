@@ -1,0 +1,48 @@
+{
+  "id": "nav_bar",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Note - this title won't appear on the site."
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "level_1_nav_item": []
+          },
+          "choices": {
+            "level_1_nav_item": {
+              "type": "Slice",
+              "fieldset": "Level 1 Nav Item",
+              "description": "Main Item on nav bar",
+              "icon": "add_circle_outline",
+              "display": "list",
+              "non-repeat": {
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["level_1_nav_item"],
+                    "label": "Nav Item",
+                    "placeholder": "Select a top-level item for the nav bar"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Nav Bar",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

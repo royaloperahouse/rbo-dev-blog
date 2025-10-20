@@ -1,0 +1,45 @@
+{
+  "id": "whats_on_page_events_priority",
+  "json": {
+    "Main": {
+      "events": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "events_priority_list": {
+              "type": "Slice",
+              "fieldset": "What's on",
+              "description": "What's on page events priority list",
+              "icon": "star_border",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "What's on page events priority list"
+                  }
+                }
+              },
+              "repeat": {
+                "event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card", "festival"],
+                    "label": "Event"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "What's on page events priority",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

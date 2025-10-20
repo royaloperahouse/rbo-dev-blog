@@ -1,0 +1,16 @@
+{
+  "type": "SharedSlice",
+  "id": "group_similar_role_by_act",
+  "name": "GroupSimilarRoleByAct",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ],
+  "description": "GroupSimilarRoleByAct"
+}

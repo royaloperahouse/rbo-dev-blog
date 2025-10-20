@@ -1,0 +1,23 @@
+{
+  "id": "membership_portal_default_content",
+  "json": {
+    "Main": {
+      "page_heading_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Page Heading Title Default"
+        }
+      },
+      "page_heading_description_default": {
+        "type": "Text",
+        "config": {
+          "label": "Page Heading Description Default"
+        }
+      }
+    }
+  },
+  "label": "Membership Portal Default Content",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

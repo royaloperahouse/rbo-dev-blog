@@ -1,0 +1,213 @@
+{
+  "id": "checkout_page_group",
+  "json": {
+    "Vouchers": {
+      "vouchers_page_title_override": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "Page title override",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "vouchers_terms_and_conditions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label": "Title",
+                "placeholder": "Terms and conditions"
+              }
+            },
+            "content": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "list-item",
+                "label": "Content",
+                "placeholder": "List each item with bullet points"
+              }
+            }
+          },
+          "label": "Terms and conditions"
+        }
+      },
+      "vouchers_checkout_add_ons": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "add_on_name": {
+              "type": "Text",
+              "config": {
+                "label": "Add-on name"
+              }
+            },
+            "image": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "label": "image"
+              }
+            }
+          },
+          "label": "Checkout add-ons"
+        }
+      },
+      "vouchers_restaurant_add_on_name": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "Restaurant Add-on Name",
+          "placeholder": "Title of the Restaurant Add-on"
+        }
+      },
+      "vouchers_restaurant_add_on_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Restaurant Add-on Image"
+        }
+      }
+    },
+    "More Info Block": {
+      "more_info_block_tickets_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "More information title"
+        }
+      },
+      "more_info_block_tickets_body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed,rtl",
+          "label": "More information block"
+        }
+      },
+      "more_info_block_etickets": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,rtl",
+          "label": "Ticket delivery info block"
+        }
+      }
+    },
+    "Basket Addons": {
+      "basket_addons_enhance_experience_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+          "label": "Add-on Title",
+          "placeholder": "E.g. Enhance your experience"
+        }
+      },
+      "basket_addons_enhance_experience_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink",
+          "label": "Add-on description",
+          "placeholder": "Add programme, ice-cream…"
+        }
+      },
+      "basket_addons_enhance_experience_cta_text": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "CTA Text"
+        }
+      },
+      "basket_addons_enhance_experience_cta_link": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph",
+          "label": "CTA Link",
+          "placeholder": "/checkout/vouchers"
+        }
+      },
+      "basket_addons_enhance_experience_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Add-on Image"
+        }
+      }
+    },
+    "Membership Delivery Info": {
+      "membership_delivery_info_direct_debit": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Membership Delivery Info Direct Debit",
+          "placeholder": "Use %delivery_price% to display the correct price from Tessitura (Direct Debit)"
+        }
+      },
+      "membership_delivery_info_one_off": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Membership Delivery Info One Off",
+          "placeholder": "Use %delivery_price% to display the correct price from Tessitura (One Off)"
+        }
+      }
+    },
+    "Accessible performances": {
+      "accessible_performances_box_title": {
+        "type": "Text",
+        "config": {
+          "label": "accessible performances box title",
+          "placeholder": "e.g. \"notes on event accessibility\""
+        }
+      },
+      "accessible_performances_family_friendly_description": {
+        "type": "Text",
+        "config": {
+          "label": "family friendly description",
+          "placeholder": "description for the \"family friendly\" tag"
+        }
+      },
+      "accessible_performances_relaxed_performance_description": {
+        "type": "Text",
+        "config": {
+          "label": "relaxed performance description",
+          "placeholder": "description for the \"relaxed performance\" tag"
+        }
+      },
+      "accessible_performances_bsl_interpreted_description": {
+        "type": "Text",
+        "config": {
+          "label": "BSL interpreted description",
+          "placeholder": "description for the \"BSL interpreted\" tag"
+        }
+      },
+      "accessible_performances_captioned_description": {
+        "type": "Text",
+        "config": {
+          "label": "captioned description",
+          "placeholder": "description for the \"captioned\" tag"
+        }
+      },
+      "accessible_performances_audio_described_description": {
+        "type": "Text",
+        "config": {
+          "label": "audio described description",
+          "placeholder": "description for the \"audio described\" tag"
+        }
+      },
+      "accessible_performances_touch_tour_description": {
+        "type": "Text",
+        "config": {
+          "label": "touch tour description",
+          "placeholder": "description for the \"touch tour\" tag"
+        }
+      }
+    }
+  },
+  "label": "Checkout Page Group",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

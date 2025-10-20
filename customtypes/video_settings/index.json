@@ -1,0 +1,99 @@
+{
+  "id": "video_settings",
+  "json": {
+    "Main": {
+      "desktop_video": {
+        "type": "Link",
+        "config": {
+          "label": "Desktop video",
+          "select": "web"
+        }
+      },
+      "mobile_video": {
+        "type": "Link",
+        "config": {
+          "label": "Mobile video",
+          "select": "web"
+        }
+      },
+      "video_id": {
+        "type": "Text",
+        "config": {
+          "label": "video ID",
+          "placeholder": "Can be anything. Must be unique within a page."
+        }
+      },
+      "video_poster": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 720
+          },
+          "thumbnails": [],
+          "label": "Desktop video poster"
+        }
+      },
+      "mobile_video_poster": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 600,
+            "height": 600
+          },
+          "thumbnails": [],
+          "label": "Mobile video poster"
+        }
+      },
+      "auto_play": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false,
+          "label": "Auto play"
+        }
+      },
+      "muted": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false,
+          "label": "Muted"
+        }
+      },
+      "sound_control": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false,
+          "label": "Sound control"
+        }
+      },
+      "fullscreen_option": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false,
+          "label": "Fullscreen option"
+        }
+      },
+      "loop": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false,
+          "label": "Loop"
+        }
+      }
+    }
+  },
+  "label": "Video Settings",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,55 @@
+{
+  "type": "SharedSlice",
+  "id": "custom_musician",
+  "name": "CustomMusician",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          }
+        },
+        "role": {
+          "type": "Text",
+          "config": {
+            "label": "Role",
+            "placeholder": ""
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "Role Description",
+            "placeholder": ""
+          }
+        },
+        "link": {
+          "type": "Text",
+          "config": {
+            "label": "Link",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": "If no activities are specified, Custom Musician will apply to all activities"
+          }
+        }
+      }
+    }
+  ],
+  "description": "CustomMusician"
+}

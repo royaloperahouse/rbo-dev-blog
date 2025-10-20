@@ -1,0 +1,53 @@
+{
+  "id": "person_card",
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": "Bryn Terfel",
+          "useAsTitle": true
+        }
+      },
+      "job_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em,hyperlink",
+          "label": "Job Title",
+          "placeholder": "Bass-Baritone"
+        }
+      },
+      "headshot_lib_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 150,
+            "height": 150
+          },
+          "thumbnails": [],
+          "label": "Headshot (optional)"
+        }
+      },
+      "headshot": {
+        "type": "Link",
+        "config": {
+          "label": "Headshot (DEPRECATED)",
+          "placeholder": "DEPRECATED",
+          "select": "web"
+        }
+      },
+      "link": {
+        "type": "Text",
+        "config": {
+          "label": "Link to people page (optional)",
+          "placeholder": "/people/bryn-terfel"
+        }
+      }
+    }
+  },
+  "label": "Person Card",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "image_cast_sheet",
+  "type": "SharedSlice",
+  "name": "ImageCastSheet",
+  "description": "ImageCastSheet",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "image_url": {
+          "type": "Text",
+          "config": {
+            "label": "Image Url",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

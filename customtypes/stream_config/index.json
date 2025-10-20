@@ -1,0 +1,20 @@
+{
+  "id": "stream_config",
+  "json": {
+    "Main": {
+      "stream_free_access": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Access to eligible users only",
+          "placeholder_true": "Free access to ALL users",
+          "default_value": false,
+          "label": "Stream Free Access"
+        }
+      }
+    }
+  },
+  "label": "Stream Config",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "donation_information",
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": "An identifier solely used within Prismic",
+          "useAsTitle": true
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Donate"
+        }
+      },
+      "title_color": {
+        "type": "Color",
+        "config": {
+          "label": "Title color"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Standfirst",
+          "placeholder": "We have lost £3 in every £5 of our income. Support our community of artists, craftspeople and technicians today."
+        }
+      }
+    },
+    "Image": {
+      "desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "Desktop image",
+          "placeholder": "https://static.roh.org.uk/redesign/homepage-donate-desktop.jpg",
+          "select": null
+        }
+      },
+      "mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "Mobile image",
+          "placeholder": "https://static.roh.org.uk/redesign/homepage-donate-mobile.jpg",
+          "select": null
+        }
+      },
+      "alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Alt text"
+        }
+      }
+    },
+    "Cta": {
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA text",
+          "placeholder": "Donate now"
+        }
+      },
+      "cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "CTA link",
+          "placeholder": "https://www.roh.org.uk/donate-now",
+          "select": null
+        }
+      }
+    }
+  },
+  "label": "Donation information",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

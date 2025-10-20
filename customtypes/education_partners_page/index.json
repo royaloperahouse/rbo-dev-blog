@@ -1,0 +1,88 @@
+{
+  "id": "education_partners_page",
+  "json": {
+    "Main": {
+      "header_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header text",
+          "placeholder": "Education Partners"
+        }
+      },
+      "header_description": {
+        "type": "Text",
+        "config": {
+          "label": "Header description"
+        }
+      },
+      "page_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page title",
+          "placeholder": "Inputting email title"
+        }
+      },
+      "page_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading6,strong,em,hyperlink",
+          "label": "Page description"
+        }
+      },
+      "result_page_title": {
+        "type": "Text",
+        "config": {
+          "label": "Result page title",
+          "placeholder": "Thank you!"
+        }
+      },
+      "result_page_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading6,strong,em,hyperlink",
+          "label": "Result page text"
+        }
+      },
+      "links": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "link_title": {
+              "type": "Text",
+              "config": {
+                "label": "Link title",
+                "placeholder": "Welcome to Royal Opera House Stream"
+              }
+            },
+            "link_subtitle": {
+              "type": "Text",
+              "config": {
+                "label": "Link subtitle",
+                "placeholder": "Have a question regarding our streaming service? Find out more."
+              }
+            },
+            "link_button_text": {
+              "type": "Text",
+              "config": {
+                "label": "Link button text",
+                "placeholder": "Explore"
+              }
+            },
+            "link_url": {
+              "type": "Text",
+              "config": {
+                "label": "Link url",
+                "placeholder": "/stream/help"
+              }
+            }
+          },
+          "label": "Links"
+        }
+      }
+    }
+  },
+  "label": "Education Partners Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

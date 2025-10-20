@@ -1,0 +1,329 @@
+{
+  "id": "buy_gift_certificates",
+  "json": {
+    "Signed Out": {
+      "header_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": null,
+            "height": null
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_header_image",
+              "width": 700,
+              "height": null
+            }
+          ],
+          "label": "Header Image"
+        }
+      },
+      "signed_out_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Header Title",
+          "placeholder": "Gift Certificates"
+        }
+      },
+      "signed_out_header_subtitle": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Header Subtitle",
+          "placeholder": "Send personalised gift certificates to your loved ones."
+        }
+      },
+      "signed_out_main_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Main Text",
+          "placeholder": "<p>Buy a gift certificate to redeem for</p><ul><li>tickets to performances</li><li>tickets for tours</li><li>Royal Opera House Stream subscription</li><li>membership</li><li>programme vouchers</li><li>a donation to the Royal Opera House</li></ul><p>You can personalise the gift certificate with a message and an image and send it at a time of your choice.</p>"
+        }
+      },
+      "signed_out_about_title": {
+        "type": "Text",
+        "config": {
+          "label": "About Title",
+          "placeholder": "About Gift Certificates"
+        }
+      },
+      "signed_out_about_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "About Text",
+          "placeholder": "<p>Standard gift certificates can be used to purchase tickets, buy programme vouchers or to donate to the Royal Opera House. Membership gift certificates allow someone to enjoy a Royal Opera House membership.</p><p>You can redeem a gift certificate online when you check out, by telephone and via the Box Office.</p><p>Gift certificates are valid for 36 months from the date of purchase, or from the date of being gifted if specified. Membership gift certificates are valid for one year.</p>"
+        }
+      }
+    },
+    "Select Certificate": {
+      "select_certificate_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Header Title",
+          "placeholder": "Buy a Gift Certificate"
+        }
+      },
+      "select_certificate_header_subtitle": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Header Subtitle",
+          "placeholder": "Send personalised gift certificates to your loved ones."
+        }
+      },
+      "select_certificate_main_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Main Text",
+          "placeholder": "<p>Buy a gift certificate to redeem for</p><ul><li>tickets to performances</li><li>tickets for tours</li><li>Royal Opera House Stream subscription</li><li>membership</li><li>programme vouchers</li><li>a donation to the Royal Opera House</li></ul><p>You can personalise the gift certificate with a message and an image and send it at a time of your choice.</p>"
+        }
+      },
+      "select_certificate_about_title": {
+        "type": "Text",
+        "config": {
+          "label": "About Title",
+          "placeholder": "About gift certificates"
+        }
+      },
+      "select_certificate_about_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "About Text",
+          "placeholder": "<p>You can redeem a gift certificate online when you checkout, by telephone and via the Box Office.</p><p>Gift certificates are valid for 36 months from the date of purchase, or from the date of being gifted if specified. Membership gift certificates are valid for one year.</p>"
+        }
+      },
+      "select_certificate_certificates_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Certificates Section Title",
+          "placeholder": "Select a certificate"
+        }
+      },
+      "certificate_values": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "value": {
+              "type": "Number",
+              "config": {
+                "label": "Certificate Value",
+                "placeholder": "100"
+              }
+            }
+          },
+          "label": "Certificate Values"
+        }
+      },
+      "select_certificate_standard_title": {
+        "type": "Text",
+        "config": {
+          "label": "Standard Certificate Title",
+          "placeholder": "Give a gift certificate"
+        }
+      },
+      "select_certificate_standard_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Standard Certificate Description",
+          "placeholder": "You can redeem a gift certificate for tickets, programme vouchers, membership and donations to the Royal Opera House."
+        }
+      },
+      "select_certificate_standard_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 600,
+            "height": 600
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 400,
+              "height": 400
+            }
+          ],
+          "label": "Standard Image"
+        }
+      },
+      "select_certificate_stream_title": {
+        "type": "Text",
+        "config": {
+          "label": "Stream Certificate Title",
+          "placeholder": "Gift a Royal Opera House Stream subscription"
+        }
+      },
+      "select_certificate_stream_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Stream Certificate Description",
+          "placeholder": "Gift a one year subscription to Royal Opera House Stream. The subscription has a value of £99.99."
+        }
+      },
+      "select_certificate_stream_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 600,
+            "height": 600
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 400,
+              "height": 400
+            }
+          ],
+          "label": "Stream Image"
+        }
+      },
+      "select_certificate_membership_title": {
+        "type": "Text",
+        "config": {
+          "label": "Membership Certificate Title",
+          "placeholder": "Gift a membership"
+        }
+      },
+      "select_certificate_membership_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Membership Certificate Description",
+          "placeholder": "You can redeem a gift membership for one year of membership."
+        }
+      },
+      "select_certificate_membership_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 600,
+            "height": 600
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 400,
+              "height": 400
+            }
+          ],
+          "label": "Membership Image"
+        }
+      },
+      "select_certificate_balance_title": {
+        "type": "Text",
+        "config": {
+          "label": "Check Balance Section Title",
+          "placeholder": "Check the balance of an existing gift certificate"
+        }
+      },
+      "select_certificate_balance_text": {
+        "type": "Text",
+        "config": {
+          "label": "Check Balance Text",
+          "placeholder": "Enter gift certificate number"
+        }
+      },
+      "select_certificate_redemption_title": {
+        "type": "Text",
+        "config": {
+          "label": "How To Redeem Section Title",
+          "placeholder": "How to redeem gift certificates"
+        }
+      },
+      "select_certificate_redemption_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "How To Redeem Section Text",
+          "placeholder": "Certificates can be redeemed online when you check out, by telephone and via the Box Office. They can be used to purchase tickets, buy programme vouchers, make a donation and purchase a Royal Opera House membership."
+        }
+      },
+      "select_certificate_terms_title": {
+        "type": "Text",
+        "config": {
+          "label": "Terms and Conditions Title",
+          "placeholder": "Terms and conditions"
+        }
+      },
+      "select_certificate_terms_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Terms and Conditions Text",
+          "placeholder": "<ul><li>Gift certificates cannot be used at the Royal Opera House cafés, bars and restaurants, or in the shop.</li><li>Gift certificates cannot be redeemed for cash in part or whole. Gift certificates cannot be refunded.</li><li>Gift certificates cannot be replaced if lost or stolen.</li><li>The Royal Opera House cannot be responsible for delayed or lost post.</li><li>Membership prices rise annually. If a Gift Membership is purchased and there is a rise between purchase and activation of over one month, the recipient will be liable for additional costs.</li></ul>"
+        }
+      }
+    },
+    "Customise Certificate": {
+      "customise_certificate_standard_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Standard Certificate Description",
+          "placeholder": "You can redeem a gift certificate for tickets, programme vouchers, membership and donations to the Royal Opera House. Gift certificates are valid for 36 months. Gift certificates are delivered via email only."
+        }
+      },
+      "customise_certificate_stream_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Stream Certificate Description",
+          "placeholder": "A one year subscription to Royal Opera House Stream."
+        }
+      },
+      "customise_certificate_membership_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Membership Certificate Description",
+          "placeholder": "You can redeem a gift membership for one year of membership."
+        }
+      },
+      "customise_certificate_add_message_title": {
+        "type": "Text",
+        "config": {
+          "label": "Add Message Title",
+          "placeholder": "Add a message for the recipient to the gift certificate"
+        }
+      },
+      "customise_certificate_select_image_title": {
+        "type": "Text",
+        "config": {
+          "label": "Select Image Title",
+          "placeholder": "Select an image to add to the certificate"
+        }
+      }
+    },
+    "Add Recipient Details": {
+      "add_recipient_details_main_title": {
+        "type": "Text",
+        "config": {
+          "label": "Main Title",
+          "placeholder": "Recipient's details"
+        }
+      }
+    }
+  },
+  "label": "Buy Gift Certificates",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

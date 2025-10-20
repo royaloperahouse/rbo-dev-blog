@@ -1,0 +1,68 @@
+{
+  "id": "gift_certificate_option",
+  "json": {
+    "Main": {
+      "gift_certificates": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Image"
+              }
+            },
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": "Gift certificate title text"
+              }
+            },
+            "additional_content": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "strong,em,hyperlink,list-item,o-list-item",
+                "allowTargetBlank": true,
+                "label": "Additional Content",
+                "placeholder": "Rich text field for adding additional information about the gift certificate type"
+              }
+            },
+            "gift_certificate_type": {
+              "type": "Select",
+              "config": {
+                "options": ["amount", "membership", "subscription"],
+                "default_value": "amount",
+                "label": "Gift Certificate Type",
+                "placeholder": "GC type used to determine the variant options to show"
+              }
+            },
+            "variants_label": {
+              "type": "Text",
+              "config": {
+                "label": "Variants label",
+                "placeholder": "Label to show above the gift certificate variant selector, if any are added"
+              }
+            },
+            "description": {
+              "type": "StructuredText",
+              "config": {
+                "single": "strong,em",
+                "allowTargetBlank": true,
+                "label": "Description",
+                "placeholder": "Main description of the gift certificate type"
+              }
+            }
+          },
+          "label": "Gift Certificates"
+        }
+      }
+    }
+  },
+  "label": "Gift Certificate Types",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,300 @@
+{
+  "id": "seat_info",
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "seat_info_production": {
+              "type": "Slice",
+              "fieldset": "Seat Info Production",
+              "description": "Used to edit seat information across a production",
+              "icon": "event_seat",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "production_name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                    "label": "Production Name",
+                    "placeholder": "Production Name (e.g. Rigoletto)"
+                  }
+                },
+                "production_id": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Production ID",
+                    "placeholder": "Production ID (e.g. 10000)"
+                  }
+                },
+                "performance_ids": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Performance IDs",
+                    "placeholder": "Performance IDs - Comma separated (e.g. 44023,44024,44025)"
+                  }
+                },
+                "should_update_entire_production": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Update Based on Performance IDs",
+                    "placeholder_true": "Update Based on Production ID",
+                    "default_value": false,
+                    "label": "Should update entire production"
+                  }
+                },
+                "seats": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Seats",
+                    "placeholder": "Seats - Comma separated (e.g. seat-1-A-1,seat-28-B-9,seat-3-C-5)"
+                  }
+                },
+                "special_info": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Special Info",
+                    "placeholder": "Special Info (e.g. RESTRICTED VIEW: Tier overhang may obstruct the view.)"
+                  }
+                },
+                "access_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["none", "aisle", "end_of_the_room"],
+                    "default_value": "none",
+                    "label": "Access Type",
+                    "placeholder": "Access Type"
+                  }
+                },
+                "number_of_steps": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Number of steps",
+                    "placeholder": "Number of steps"
+                  }
+                },
+                "restricted_view": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Restricted view"
+                  }
+                },
+                "standing_place": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Standing place"
+                  }
+                },
+                "wheelchair": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Wheelchair"
+                  }
+                },
+                "companion": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Companion"
+                  }
+                },
+                "loose_seat": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Loose seat"
+                  }
+                },
+                "no_arm_rests": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "No arm rests"
+                  }
+                },
+                "padded_bench_seat": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Padded bench seat"
+                  }
+                },
+                "loud": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Loud"
+                  }
+                },
+                "no_surtitles": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "No surtitles"
+                  }
+                },
+                "restricted_legroom": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Restricted legroom"
+                  }
+                },
+                "no_footrest": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "No footrest"
+                  }
+                }
+              }
+            },
+            "seat_info_facility": {
+              "type": "Slice",
+              "fieldset": "Seat Info Facility",
+              "description": "Used to edit seat information across a facility",
+              "icon": "event_seat",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "facility_name": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                    "label": "Facility Name",
+                    "placeholder": "Facility Name (e.g. Main Stage)"
+                  }
+                },
+                "facility_id": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Facility ID",
+                    "placeholder": "Facility ID (e.g. 910)"
+                  }
+                },
+                "seats": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Seats",
+                    "placeholder": "Seats - Comma separated (e.g. seat-1-A-1,seat-28-B-9,seat-3-C-5)"
+                  }
+                },
+                "special_info": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Special Info",
+                    "placeholder": "Special Info (e.g. RESTRICTED VIEW: Tier overhang may obstruct the view.)"
+                  }
+                },
+                "access_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["none", "aisle", "end_of_the_room"],
+                    "default_value": "none",
+                    "label": "Access Type",
+                    "placeholder": "Access Type"
+                  }
+                },
+                "number_of_steps": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Number of steps",
+                    "placeholder": "Number of steps"
+                  }
+                },
+                "restricted_view": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Restricted view"
+                  }
+                },
+                "standing_place": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Standing place"
+                  }
+                },
+                "wheelchair": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Wheelchair"
+                  }
+                },
+                "companion": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Companion"
+                  }
+                },
+                "loose_seat": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Loose seat"
+                  }
+                },
+                "no_arm_rests": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "No arm rests"
+                  }
+                },
+                "padded_bench_seat": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Padded bench seat"
+                  }
+                },
+                "loud": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "loud"
+                  }
+                },
+                "no_surtitles": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "No surtitles"
+                  }
+                },
+                "restricted_legroom": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Restricted legroom"
+                  }
+                },
+                "no_footrest": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "No footrest"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Seat Info",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

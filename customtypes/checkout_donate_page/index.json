@@ -1,0 +1,44 @@
+{
+  "id": "checkout_donate_page",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Page title"
+        }
+      },
+      "text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Text",
+          "placeholder": "Rich text introduction to the donation options"
+        }
+      },
+      "donation_suggestions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "donation_suggestion": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["donation_suggestion"],
+                "label": "Donation Suggestion",
+                "placeholder": "Prismic document of type Donation Suggestion"
+              }
+            }
+          },
+          "label": "Donation suggestions"
+        }
+      }
+    }
+  },
+  "label": "Checkout Donate Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

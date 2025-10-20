@@ -1,0 +1,83 @@
+{
+  "id": "membership_types",
+  "json": {
+    "Member": {
+      "membership_types": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "membership_id": {
+              "type": "Text",
+              "config": {
+                "label": "Membership ID"
+              }
+            },
+            "membership_title": {
+              "type": "Text",
+              "config": {
+                "label": "Membership Title"
+              }
+            },
+            "membership_description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Membership Description"
+              }
+            },
+            "expired_membership_description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Expired Membership Description"
+              }
+            }
+          },
+          "label": "Membership Types"
+        }
+      }
+    },
+    "Non-member": {
+      "non_member_title": {
+        "type": "Text",
+        "config": {
+          "label": "Non-Member Title"
+        }
+      },
+      "non_member_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Non-Member Image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-table-promo-desktop.jpg",
+          "select": null
+        }
+      },
+      "non_member_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Non-Member Image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-table-promo-mobile.jpg",
+          "select": null
+        }
+      },
+      "non_member_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Non-Member Image alt text",
+          "placeholder": "A sample of the delicious food on offer in the Royal Opera House restaurants."
+        }
+      },
+      "non_member_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item,o-list-item",
+          "label": "Non-Member Description"
+        }
+      }
+    }
+  },
+  "label": "Membership Types",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

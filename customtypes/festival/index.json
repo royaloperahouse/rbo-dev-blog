@@ -1,0 +1,165 @@
+{
+  "id": "festival",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Festival"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Find out about festival at the Royal Opera House."
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "Title",
+          "placeholder": "Title",
+          "useAsTitle": true
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug"
+        }
+      },
+      "about": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "About",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "short_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Short Event Details Description"
+        }
+      },
+      "carousel_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Carousel Description",
+          "placeholder": "Description for carousel - 185 character limit"
+        }
+      },
+      "desktop_image_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Tickets and Events header - desktop image",
+          "select": null
+        }
+      },
+      "mobile_image_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Tickets and Events header - mobile image",
+          "select": null
+        }
+      },
+      "thumb_image_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Tickets and Events header - thumb image",
+          "select": null
+        }
+      },
+      "image_alt_text_tickets_and_events": {
+        "type": "Text",
+        "config": {
+          "label": "Tickets and Events header - image alt text"
+        }
+      },
+      "desktop_image_dates_and_prices": {
+        "type": "Link",
+        "config": {
+          "label": "Dates and Prices header - desktop image",
+          "select": null
+        }
+      },
+      "mobile_image_dates_and_prices": {
+        "type": "Link",
+        "config": {
+          "label": "Dates and Prices header - mobile image",
+          "select": null
+        }
+      },
+      "thumb_image_dates_and_prices": {
+        "type": "Link",
+        "config": {
+          "label": "Dates and Prices header - thumb image",
+          "select": null
+        }
+      },
+      "image_alt_text_dates_and_prices": {
+        "type": "Text",
+        "config": {
+          "label": "Dates and Prices header - image alt text"
+        }
+      },
+      "flickr_album_id": {
+        "type": "Text",
+        "config": {
+          "label": "Flickr album id"
+        }
+      },
+      "youtube_trailer_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Trailer CTA text",
+          "placeholder": "Watch trailer"
+        }
+      },
+      "youtube_trailer_link": {
+        "type": "Link",
+        "config": {
+          "label": "Trailer CTA YouTube link",
+          "placeholder": "https://youtube.com/embed/CoUgIVtqCGI",
+          "select": null
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA text for back button"
+        }
+      },
+      "events": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "event": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["event_details", "event_card"],
+                "label": "Event"
+              }
+            }
+          },
+          "label": "Events"
+        }
+      }
+    }
+  },
+  "label": "Festival",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

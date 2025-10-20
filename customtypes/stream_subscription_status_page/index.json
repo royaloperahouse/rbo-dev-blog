@@ -1,0 +1,150 @@
+{
+  "id": "stream_subscription_status_page",
+  "json": {
+    "Message": {
+      "message_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "You already subscribe to Stream"
+        }
+      },
+      "message_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      }
+    },
+    "Subscription": {
+      "subscription_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Your subscription"
+        }
+      },
+      "subscription_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      },
+      "subscription_link_title": {
+        "type": "Text",
+        "config": {
+          "label": "Link title",
+          "placeholder": "View account"
+        }
+      },
+      "subscription_link_url": {
+        "type": "Text",
+        "config": {
+          "label": "Link url",
+          "placeholder": "/account/roh-stream"
+        }
+      },
+      "subscription_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label",
+          "placeholder": "Start watching"
+        }
+      },
+      "subscription_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "CTA url",
+          "placeholder": "/stream"
+        }
+      }
+    },
+    "More Information": {
+      "more_information_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "More information"
+        }
+      },
+      "more_information_accordion": {
+        "type": "Group",
+        "fieldset": "Accordion",
+        "config": {
+          "fields": {
+            "section_title": {
+              "type": "Text",
+              "config": {
+                "label": "Section Title",
+                "placeholder": "Payment plans"
+              }
+            },
+            "section_body": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Section Body",
+                "placeholder": "Rich Text"
+              }
+            }
+          }
+        }
+      },
+      "more_information_link_title": {
+        "type": "Text",
+        "config": {
+          "label": "Link title",
+          "placeholder": "Royal Opera House Stream Help"
+        }
+      },
+      "more_information_link_url": {
+        "type": "Text",
+        "config": {
+          "label": "Link url",
+          "placeholder": "/stream/help"
+        }
+      }
+    },
+    "Need More Information": {
+      "need_more_information_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Need more information?"
+        }
+      },
+      "need_more_information_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      }
+    },
+    "Meta": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Stream Subscription"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Royal Ballet and Opera Stream subscription details"
+        }
+      }
+    }
+  },
+  "label": "Stream Subscription Status Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

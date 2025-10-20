@@ -1,0 +1,135 @@
+{
+  "id": "default_cast_sheet_content",
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "document_name": {
+        "type": "Text",
+        "config": {
+          "label": "document_name",
+          "placeholder": "cast sheet..."
+        }
+      }
+    },
+    "Section Titles": {
+      "support_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Support title",
+          "placeholder": "generous support from"
+        }
+      },
+      "cast_section_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Cast Section Title",
+          "placeholder": "Cast"
+        }
+      },
+      "credits_section_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Credits Section Title",
+          "placeholder": "credits"
+        }
+      },
+      "music_credits_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Music Credits Title",
+          "placeholder": "music credits"
+        }
+      },
+      "production_credits_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Production Credits Title",
+          "placeholder": "production credits"
+        }
+      },
+      "synopsis_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Synopsis Title",
+          "placeholder": "synopsis"
+        }
+      },
+      "campaigns_title_default": {
+        "type": "Text",
+        "config": {
+          "label": "Default Further Info Title",
+          "placeholder": "further information"
+        }
+      }
+    },
+    "Casting Disclaimer": {
+      "casting_disclaimer": {
+        "type": "Text",
+        "config": {
+          "label": "Casting Disclaimer",
+          "placeholder": "Please note that casting is subject to change…"
+        }
+      }
+    },
+    "CTAs": {
+      "cta_theme": {
+        "type": "Select",
+        "config": {
+          "label": "Primary CTA theme",
+          "placeholder": "cta theme",
+          "options": ["core", "stream", "cinema"],
+          "default_value": "core"
+        }
+      },
+      "cta_primary_copy": {
+        "type": "Text",
+        "config": {
+          "label": "Primary Print CTA copy",
+          "placeholder": "Print"
+        }
+      },
+      "full_synopsis_button_default": {
+        "type": "Text",
+        "config": {
+          "label": "Read Full Synopsis copy",
+          "placeholder": "Read full synopsis"
+        }
+      },
+      "hide_synopsis_button_default": {
+        "type": "Text",
+        "config": {
+          "label": "Hide Synopsis copy",
+          "placeholder": "Hide synopsis"
+        }
+      }
+    },
+    "Further Information": {
+      "campaigns": {
+        "type": "Group",
+        "config": {
+          "label": "campaigns",
+          "fields": {
+            "campaign": {
+              "type": "Link",
+              "config": {
+                "label": "campaign",
+                "select": "document",
+                "customtypes": ["campaign"]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Default Cast Sheet Content",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,56 @@
+{
+  "type": "SharedSlice",
+  "id": "group_creatives_by_role",
+  "name": "GroupCreativesByRole",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "role_to_group": {
+          "type": "Text",
+          "config": {
+            "label": "Role To Group",
+            "placeholder": "E.g. Assistant"
+          }
+        },
+        "new_group_label": {
+          "type": "Text",
+          "config": {
+            "label": "New group label",
+            "placeholder": "Collective name for the group e.g. Assistants"
+          }
+        },
+        "role_description": {
+          "type": "Text",
+          "config": {
+            "label": "Role Description",
+            "placeholder": "Extra descriptive text about the role"
+          }
+        },
+        "hide_role_label": {
+          "type": "Boolean",
+          "config": {
+            "label": "Hide role label",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "group_members_override": {
+          "type": "Text",
+          "config": {
+            "label": "Group members override",
+            "placeholder": "Allows creatives to be entered as plain text - these names will not link"
+          }
+        }
+      },
+      "items": {}
+    }
+  ],
+  "description": "GroupCreativesByRole"
+}

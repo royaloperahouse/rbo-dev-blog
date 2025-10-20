@@ -1,0 +1,10 @@
+{
+  "id": "news_index_page",
+  "json": {
+    "Main": {}
+  },
+  "label": "News Index Page",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

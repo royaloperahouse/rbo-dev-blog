@@ -1,0 +1,92 @@
+{
+  "id": "news_landing",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": "News"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": "News from the Royal Opera House"
+        }
+      },
+      "above_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Above image text color"
+        }
+      },
+      "inside_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Inside image text color"
+        }
+      },
+      "desktop_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop above image text",
+          "placeholder": "Desktop text above image"
+        }
+      },
+      "desktop_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop inside image text",
+          "placeholder": "Desktop text inside image"
+        }
+      },
+      "mobile_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile above image text",
+          "placeholder": "Mobile text above image"
+        }
+      },
+      "mobile_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile inside image text",
+          "placeholder": "Mobile text inside image"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/tickets-events-events-header-desktop.png",
+          "select": null
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/tickets-events-events-header-mobile.png",
+          "select": null
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "Performances at the Royal Opera House, including a scene from Swan Lake by The Royal Ballet, and Die Zauberflöte (The Magic Flute) by The Royal Opera."
+        }
+      }
+    }
+  },
+  "label": "News Landing",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

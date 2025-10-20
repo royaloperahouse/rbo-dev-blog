@@ -1,0 +1,37 @@
+{
+  "id": "gift_certificate_images",
+  "json": {
+    "Main": {
+      "images": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": 354,
+                  "height": 266
+                },
+                "thumbnails": [],
+                "label": "image"
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "description",
+                "placeholder": "Image description to use as both a visible label and alt text"
+              }
+            }
+          },
+          "label": "images"
+        }
+      }
+    }
+  },
+  "label": "Gift Certificate Images",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

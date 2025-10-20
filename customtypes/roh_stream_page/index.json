@@ -1,0 +1,44 @@
+{
+  "id": "roh_stream_page",
+  "json": {
+    "Main": {
+      "opera_and_music": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "video": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["digital_event_video"],
+                "label": "Video",
+                "placeholder": "Pick a video of Digital Event Video document type"
+              }
+            }
+          },
+          "label": "Opera and music"
+        }
+      },
+      "ballet_and_dance": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "video": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "royal-opera-house--vcms_videos_integration",
+                "label": "video",
+                "placeholder": "Pick a video from VCMS"
+              }
+            }
+          },
+          "label": "Ballet and dance"
+        }
+      }
+    }
+  },
+  "label": "ROH Stream page",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

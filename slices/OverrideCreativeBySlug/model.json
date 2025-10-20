@@ -1,0 +1,55 @@
+{
+  "type": "SharedSlice",
+  "id": "override_creative_by_slug",
+  "name": "OverrideCreativeBySlug",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "slug": {
+          "type": "Text",
+          "config": {
+            "label": "slug",
+            "placeholder": ""
+          }
+        },
+        "name_override": {
+          "type": "Text",
+          "config": {
+            "label": "Name Override",
+            "placeholder": ""
+          }
+        },
+        "role_override": {
+          "type": "Text",
+          "config": {
+            "label": "Role Override",
+            "placeholder": ""
+          }
+        },
+        "role_description": {
+          "type": "Text",
+          "config": {
+            "label": "Role Description",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ],
+  "description": "OverrideCreativeBySlug"
+}

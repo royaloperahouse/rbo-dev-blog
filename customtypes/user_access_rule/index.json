@@ -1,0 +1,35 @@
+{
+  "id": "user_access_rule",
+  "json": {
+    "Main": {
+      "membership_elements_visibility": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": false,
+          "label": "Show/Hide for the group"
+        }
+      },
+      "membership_levels": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "membership_level": {
+              "type": "Select",
+              "config": {
+                "options": ["YROH", "FR", "FY", "FRJ", "FS", "FP1", "FP2"],
+                "label": "Membership level"
+              }
+            }
+          },
+          "label": "Membership levels"
+        }
+      }
+    }
+  },
+  "label": "User Access Rule",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

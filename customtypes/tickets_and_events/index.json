@@ -1,0 +1,183 @@
+{
+  "id": "tickets_and_events",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": "Tickets & Events"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": "Whether you're new to ballet and opera or you've loved them all your life, we have something for you."
+        }
+      },
+      "header_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header text",
+          "placeholder": "Tickets & Events",
+          "useAsTitle": true
+        }
+      },
+      "header_color": {
+        "type": "Color",
+        "config": {
+          "label": "Header color"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/tickets-events-events-header-desktop.png",
+          "select": null
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/tickets-events-events-header-mobile.png",
+          "select": null
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "Performances at the Royal Opera House, including a scene from Swan Lake by The Royal Ballet, and Die Zauberflöte (The Magic Flute) by The Royal Opera."
+        }
+      },
+      "checkout_toggle": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Old Checkout",
+          "placeholder_true": "New Checkout",
+          "default_value": false,
+          "label": "Checkout Toggle"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Standfirst",
+          "placeholder": "Whether you're new to ballet and opera or you've loved them all your life, we have something for you.",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "above_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Above image text color"
+        }
+      },
+      "inside_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Inside image text color"
+        }
+      },
+      "desktop_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop above image text",
+          "placeholder": "Desktop text above image"
+        }
+      },
+      "desktop_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop inside image text",
+          "placeholder": "Desktop text inside image"
+        }
+      },
+      "mobile_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile above image text",
+          "placeholder": "Mobile text above image"
+        }
+      },
+      "mobile_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile inside image text",
+          "placeholder": "Mobile text inside image"
+        }
+      },
+      "bodyTop": {
+        "type": "Slices",
+        "fieldset": "Top Slices",
+        "config": {
+          "labels": {},
+          "choices": {
+            "sign_up": {
+              "type": "Slice",
+              "fieldset": "Sign Up",
+              "description": "Sign up for marketing",
+              "icon": "account_box",
+              "display": "list",
+              "non-repeat": {
+                "sign_up_component": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["sign_up_form"],
+                    "label": "Sign up component"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Tickets and Events",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "membership_account_info",
+  "json": {
+    "Main": {
+      "header": {
+        "type": "Text",
+        "config": {
+          "label": "Header",
+          "useAsTitle": true
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed,list-item,o-list-item",
+          "label": "Body",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      }
+    }
+  },
+  "label": "Membership account info",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

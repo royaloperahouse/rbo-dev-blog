@@ -1,0 +1,120 @@
+{
+  "id": "season_info",
+  "json": {
+    "Main page": {
+      "season_title": {
+        "type": "Text",
+        "config": {
+          "label": "Season Title",
+          "placeholder": "Spring 2020"
+        }
+      },
+      "end_date": {
+        "type": "Date",
+        "config": {
+          "label": "Season End Date"
+        }
+      },
+      "unpublish_date": {
+        "type": "Date",
+        "config": {
+          "label": "Season Unpublish Date"
+        }
+      },
+      "image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Magazine Image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-table-promo-desktop.jpg",
+          "select": null
+        }
+      },
+      "image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Magazine Image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-table-promo-mobile.jpg",
+          "select": null
+        }
+      },
+      "image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Magazine Image alt text",
+          "placeholder": "A sample of the delicious food on offer in the Royal Opera House restaurants."
+        }
+      },
+      "magazine_url": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Magazine URL"
+        }
+      },
+      "casting_url": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Castings URL"
+        }
+      },
+      "events": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "event": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["event_details", "festival"],
+                "label": "event",
+                "placeholder": "Event ID"
+              }
+            }
+          },
+          "label": "Events"
+        }
+      },
+      "membership_types": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "membership_type": {
+              "type": "Text",
+              "config": {
+                "label": "Membership Type",
+                "placeholder": "FP2"
+              }
+            },
+            "booking_dates": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Booking Dates"
+              }
+            },
+            "booking_information": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Booking Information"
+              }
+            },
+            "rehearsals_information": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Rehearsals Information"
+              }
+            }
+          },
+          "label": "Membership Types"
+        }
+      }
+    }
+  },
+  "label": "Season Info",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

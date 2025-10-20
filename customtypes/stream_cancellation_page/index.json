@@ -1,0 +1,528 @@
+{
+  "id": "stream_cancellation_page",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Royal Opera House Stream"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description"
+        }
+      },
+      "blocking_modal_title": {
+        "type": "Text",
+        "config": {
+          "label": "Blocking modal title"
+        }
+      },
+      "blocking_modal_text": {
+        "type": "Text",
+        "config": {
+          "label": "Blocking modal text"
+        }
+      },
+      "blocking_modal_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Blocking modal primary cta text"
+        }
+      },
+      "blocking_modal_primary_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Blocking modal primary cta link"
+        }
+      },
+      "blocking_modal_secondary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Blocking modal secondary cta text"
+        }
+      },
+      "blocking_modal_secondary_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Blocking modal secondary cta link"
+        }
+      }
+    },
+    "Information": {
+      "information_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header"
+        }
+      },
+      "information_body_section_upper": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body"
+        }
+      },
+      "information_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text",
+          "placeholder": "I do not wish to cancel"
+        }
+      },
+      "information_primary_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA link",
+          "placeholder": "/stream"
+        }
+      },
+      "information_secondary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary CTA text",
+          "placeholder": "Cancel subscription"
+        }
+      },
+      "information_body_section_lower": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body",
+          "placeholder": "RichText to appear below CTAs"
+        }
+      }
+    },
+    "Here's What You'll Miss": {
+      "hwym_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header"
+        }
+      },
+      "hwym_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed beneath the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "hwym_body_section": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body"
+        }
+      },
+      "hwym_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text",
+          "placeholder": "I do not wish to cancel"
+        }
+      },
+      "hwym_primary_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA link",
+          "placeholder": "/stream"
+        }
+      },
+      "hwym_secondary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary CTA text",
+          "placeholder": "Cancel subscription"
+        }
+      }
+    },
+    "Your Support": {
+      "ys_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header"
+        }
+      },
+      "ys_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed beneath the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ys_body_section": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body"
+        }
+      },
+      "ys_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text",
+          "placeholder": "I do not wish to cancel"
+        }
+      },
+      "ys_primary_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA link",
+          "placeholder": "/stream"
+        }
+      },
+      "ys_secondary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary CTA Text",
+          "placeholder": "Cancel subscription"
+        }
+      }
+    },
+    "Exit Survey": {
+      "es_show_survey": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "hide",
+          "placeholder_true": "show",
+          "default_value": false,
+          "label": "Show Survey?"
+        }
+      },
+      "es_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header"
+        }
+      },
+      "es_body_section": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body"
+        }
+      },
+      "es_survey_options": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "option_id": {
+              "type": "Text",
+              "config": {
+                "label": "Option ID"
+              }
+            },
+            "option_text": {
+              "type": "Text",
+              "config": {
+                "label": "Option Text",
+                "placeholder": "There was not enough of what I wanted to watch"
+              }
+            },
+            "reason": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "royal-opera-house--cancellation_journey_integration",
+                "label": "Reason",
+                "placeholder": "Select the reason"
+              }
+            },
+            "reason_text_override": {
+              "type": "Text",
+              "config": {
+                "label": "Reason text override"
+              }
+            },
+            "show_dialogue_box": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "hide dialogue box",
+                "placeholder_true": "show dialogue box on selection",
+                "default_value": false,
+                "label": "Dialogue box"
+              }
+            }
+          },
+          "label": "Survey Options"
+        }
+      },
+      "es_error_character_limit": {
+        "type": "Text",
+        "config": {
+          "label": "Character Limit Error Message",
+          "placeholder": "You have reached your character limit"
+        }
+      },
+      "es_error_empty_field": {
+        "type": "Text",
+        "config": {
+          "label": "Empty Field Error Message",
+          "placeholder": "Please complete this field"
+        }
+      },
+      "es_error_no_option_selected": {
+        "type": "Text",
+        "config": {
+          "label": "No Option Selected Error Message",
+          "placeholder": "Please select an option"
+        }
+      },
+      "es_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text",
+          "placeholder": "Continue"
+        }
+      }
+    },
+    "Sorry You're Leaving": {
+      "syl_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Header Title",
+          "placeholder": "Your subscription has now been cancelled"
+        }
+      },
+      "syl_body_section": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body"
+        }
+      },
+      "syl_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text",
+          "placeholder": "Re-subscribe"
+        }
+      },
+      "syl_primary_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA link",
+          "placeholder": "/stream"
+        }
+      }
+    },
+    "Special Offers": {
+      "so_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header",
+          "placeholder": "Select compact header"
+        }
+      },
+      "so_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description"
+        }
+      },
+      "so_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text",
+          "placeholder": "Cancel subscription"
+        }
+      },
+      "so_offers": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "so_upsell_card": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["upsell_card"],
+                "label": "Upsell card"
+              }
+            },
+            "so_upsell_card_subscription_type": {
+              "type": "Select",
+              "config": {
+                "options": [
+                  "Monthly",
+                  "Annual",
+                  "Monthly - Friends",
+                  "Annual - Friends"
+                ],
+                "default_value": "Monthly",
+                "label": "Subscription type"
+              }
+            },
+            "so_upsell_card_promo_code": {
+              "type": "Text",
+              "config": {
+                "label": "Promo code",
+                "placeholder": "Enter promo code"
+              }
+            }
+          },
+          "label": "Offers"
+        }
+      }
+    },
+    "Welcome back": {
+      "wb_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Header title",
+          "placeholder": "Welcome back"
+        }
+      },
+      "wb_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Thanks for accepting the offer"
+        }
+      },
+      "wb_body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Body",
+          "placeholder": "We are so glad that you have decided to continue"
+        }
+      },
+      "wb_modal_title": {
+        "type": "Text",
+        "config": {
+          "label": "Modal title",
+          "placeholder": "It may take up to an hour for your subscription to re-activate."
+        }
+      },
+      "wb_modal_text": {
+        "type": "Text",
+        "config": {
+          "label": "Modal text",
+          "placeholder": "Please try again later if you wish to cancel."
+        }
+      },
+      "wb_modal_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Modal CTA text",
+          "placeholder": "Clear this message"
+        }
+      }
+    }
+  },
+  "label": "Stream Cancellation Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

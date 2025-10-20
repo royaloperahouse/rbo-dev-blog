@@ -1,0 +1,58 @@
+{
+  "id": "video",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Video title",
+          "placeholder": "Enter the video's title here..."
+        }
+      },
+      "video": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--vcms_videos_integration",
+          "label": "VCMS Video",
+          "placeholder": "Video from VCMS"
+        }
+      },
+      "guidance": {
+        "type": "Text",
+        "config": {
+          "label": "Guidance",
+          "placeholder": "Enter guidance information here..."
+        }
+      },
+      "additional_guidance": {
+        "type": "Text",
+        "config": {
+          "label": "Additional guidance",
+          "placeholder": "Enter additional guidance information here..."
+        }
+      },
+      "short_description": {
+        "type": "Text",
+        "config": {
+          "label": "Short description",
+          "placeholder": "Enter a short description of the video here..."
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1440,
+            "height": 810
+          },
+          "thumbnails": [],
+          "label": "Thumbnail"
+        }
+      }
+    }
+  },
+  "label": "Video",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

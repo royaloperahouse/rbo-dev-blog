@@ -1,0 +1,60 @@
+{
+  "id": "level_1_nav_item",
+  "json": {
+    "Main": {
+      "item_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Item Title"
+        }
+      },
+      "item_path": {
+        "type": "Text",
+        "config": {
+          "label": "Item Path",
+          "placeholder": "e.g. /about"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "level_2_nav_item": []
+          },
+          "choices": {
+            "level_2_nav_item": {
+              "type": "Slice",
+              "fieldset": "Level 2 Nav Item",
+              "description": "Enter a secondary level item to this nav item",
+              "icon": "filter_2",
+              "display": "list",
+              "non-repeat": {
+                "item_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "strong,em",
+                    "label": "Item Title"
+                  }
+                },
+                "item_path": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Item Path",
+                    "placeholder": "/about/history - please inlcude the parent path e.g /about"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Level 1 Nav Item",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

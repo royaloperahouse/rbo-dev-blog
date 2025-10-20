@@ -1,0 +1,75 @@
+{
+  "id": "buy_gift_certificate",
+  "json": {
+    "Main": {
+      "header_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": null,
+            "height": null
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_header_image",
+              "width": 700,
+              "height": null
+            }
+          ],
+          "label": "Header Image"
+        }
+      },
+      "main_title": {
+        "type": "Text",
+        "config": {
+          "label": "Main Title",
+          "placeholder": "Main title (signed-out view)"
+        }
+      },
+      "header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Header Title",
+          "placeholder": "The title to be overlaid on the header image (signed-in view)"
+        }
+      },
+      "subtitle": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Subtitle",
+          "placeholder": "Subtitle which introduces the description section"
+        }
+      },
+      "description_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Description Text",
+          "placeholder": "Main copy describing gift certificates"
+        }
+      },
+      "about_title": {
+        "type": "Text",
+        "config": {
+          "label": "About Title",
+          "placeholder": "Title for the About section"
+        }
+      },
+      "about_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "About Text",
+          "placeholder": "Text for the About section"
+        }
+      }
+    }
+  },
+  "label": "Buy Gift Certificate",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "dev_blog_code_slice",
+  "type": "SharedSlice",
+  "name": "DevBlogCodeSlice",
+  "description": "DevBlogCodeSlice",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "code": {
+          "type": "StructuredText",
+          "config": {
+            "label": "code",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "single": "preformatted"
+          }
+        },
+        "language": {
+          "type": "Select",
+          "config": {
+            "label": "language",
+            "placeholder": "",
+            "options": [
+              "bash",
+              "c",
+              "cpp",
+              "css",
+              "go",
+              "html",
+              "javascript",
+              "python",
+              "ruby",
+              "rust",
+              "typescript"
+            ]
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

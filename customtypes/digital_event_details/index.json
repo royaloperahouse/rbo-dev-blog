@@ -1,0 +1,644 @@
+{
+  "id": "digital_event_details",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Digital Event name"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Digital Event details"
+        }
+      },
+      "vs_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "Title",
+          "placeholder": "Title",
+          "useAsTitle": true
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug"
+        }
+      },
+      "vs_videos": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "video": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["digital_event_video"],
+                "label": "Video",
+                "placeholder": "Digital event video to be linked"
+              }
+            }
+          },
+          "label": "Videos"
+        }
+      },
+      "vs_event_details": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--event_details_integration",
+          "label": "Event details",
+          "placeholder": "Event details to be linked"
+        }
+      },
+      "diese_activity": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--diese_activities",
+          "label": "DIESE activity",
+          "placeholder": "DIESE activity to be linked"
+        }
+      },
+      "vs_is_cancelled": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Is cancelled (for live streams)"
+        }
+      },
+      "vs_start_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Start Time",
+          "placeholder": "Select a start date and time"
+        }
+      },
+      "vs_end_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "End Time",
+          "placeholder": "Select an end date and time"
+        }
+      },
+      "vs_availability_date": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Availability date",
+          "placeholder": "Select availability date and time"
+        }
+      },
+      "vs_availability_date_hide_timestamp": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Date and time",
+          "placeholder_true": "Date only",
+          "default_value": false,
+          "label": "Availability date format"
+        }
+      },
+      "vs_primary_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA label on Digital Event Details page (Unsubscribed view)",
+          "placeholder": "Subscribe to watch"
+        }
+      },
+      "vs_primary_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA url on Digital Event Details page (Unsubscribed view)",
+          "placeholder": "/stream/offer"
+        }
+      },
+      "vs_carousel_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Carousel Description",
+          "placeholder": "Description for carousel - 185 character limit"
+        }
+      },
+      "vs_short_description": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em",
+          "label": "Short Event Details Description",
+          "placeholder": "Short description"
+        }
+      },
+      "vs_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Summary (Description)",
+          "placeholder": "Description",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "synopsis_title": {
+        "type": "Text",
+        "config": {
+          "label": "Story Section Title",
+          "placeholder": "(Optional - defaults to \"Story\")"
+        }
+      },
+      "vs_price_details": {
+        "type": "Text",
+        "config": {
+          "label": "Stream Price Details",
+          "placeholder": "£6-£260"
+        }
+      },
+      "vs_guidance": {
+        "type": "Text",
+        "config": {
+          "label": "Guidance",
+          "placeholder": "Guidance for event"
+        }
+      },
+      "vs_guidance_details": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Guidance Details",
+          "placeholder": "Further guidance details for event",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      },
+      "vs_hashtag": {
+        "type": "Text",
+        "config": {
+          "label": "Hashtag",
+          "placeholder": "Hashtag of event"
+        }
+      },
+      "vs_running_time_summary": {
+        "type": "Text",
+        "config": {
+          "label": "Running Time Summary",
+          "placeholder": "Running time summary"
+        }
+      },
+      "vs_segmented_running_time": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "name": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Name",
+                "placeholder": "Name of segment",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "duration": {
+              "type": "Number",
+              "config": {
+                "label": "Duration",
+                "placeholder": "Duration in minutes"
+              }
+            }
+          },
+          "label": "Segmented Running Time"
+        }
+      },
+      "vs_recorded_date": {
+        "type": "Date",
+        "config": {
+          "label": "Recorded on (date)",
+          "placeholder": "Date when the main video was recorded"
+        }
+      },
+      "vs_support_text": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em,hyperlink",
+          "label": "Support text (philanthropic support)",
+          "placeholder": "Lindsay and Sarah Tomlinson and the Fonteyn Circle."
+        }
+      },
+      "vs_short_creatives_summary": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Short creatives summary",
+          "placeholder": "Conducted by Jullia Jones",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "vs_synopsis": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em",
+          "label": "Synopsis",
+          "placeholder": "Synopsis"
+        }
+      },
+      "vs_synopsis_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 800,
+            "height": 800
+          },
+          "thumbnails": [],
+          "label": "Synopsis image"
+        }
+      },
+      "vs_event_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 962
+          },
+          "thumbnails": [
+            {
+              "name": "wide_event_image",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "name": "high_event_image",
+              "width": 640,
+              "height": 720
+            },
+            {
+              "name": "tv_app_preview_image",
+              "width": 975,
+              "height": 1080
+            },
+            {
+              "name": "tv_app_preview_image_selected",
+              "width": 1200,
+              "height": 600
+            },
+            {
+              "name": "tv_app_rail_thumbnail",
+              "width": 357,
+              "height": 200
+            }
+          ],
+          "label": "Event image"
+        }
+      },
+      "vs_tray_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 456,
+            "height": 350
+          },
+          "thumbnails": [
+            {
+              "name": "large_tray_image",
+              "width": 867,
+              "height": 565
+            }
+          ],
+          "label": "Tray image (for carousels on the ROH stream page)"
+        }
+      },
+      "vs_background": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "vs_background_text": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "label": "Text",
+                "placeholder": "Rich text",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "vs_background_image": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": 456,
+                  "height": 456
+                },
+                "thumbnails": [],
+                "label": "Image for background section"
+              }
+            }
+          },
+          "label": "Background"
+        }
+      },
+      "vs_background_bottom_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1140,
+            "height": 475
+          },
+          "thumbnails": [],
+          "label": "Background bottom image"
+        }
+      }
+    },
+    "Genres, Labels, Subtags": {
+      "vs_event_card_label": {
+        "type": "Select",
+        "config": {
+          "options": ["Coming soon", "Live stream", "Watch party"],
+          "label": "Event card label",
+          "placeholder": "A label for event card"
+        }
+      },
+      "vs_subtags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": [
+                  "Modern",
+                  "Traditional",
+                  "Contemporary",
+                  "Period setting",
+                  "Modern setting",
+                  "Narrative ballet",
+                  "Non-narrative ballet",
+                  "For families",
+                  "Performance",
+                  "Insight event",
+                  "Classic"
+                ],
+                "label": "Subtag",
+                "placeholder": "Choose a subtag"
+              }
+            }
+          },
+          "label": "Subtags"
+        }
+      },
+      "vs_labels": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": [
+                  "New in",
+                  "Available soon",
+                  "Last chance",
+                  "Popular",
+                  "Watch next",
+                  "More to watch"
+                ],
+                "label": "Labels",
+                "placeholder": "Choose a label"
+              }
+            }
+          },
+          "label": "Labels"
+        }
+      },
+      "vs_genres": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": ["Ballet", "Dance", "Joyful", "Romance"],
+                "label": "Genres",
+                "placeholder": "Choose a genre"
+              }
+            }
+          },
+          "label": "Genres"
+        }
+      }
+    },
+    "Behind the scenes": {
+      "vs_behind_the_scenes": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "image": {
+              "type": "Slice",
+              "fieldset": "Behind the scenes image",
+              "description": "Behind the scenes image",
+              "icon": "add_a_photo",
+              "display": "list",
+              "non-repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 1200,
+                      "height": 800
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "image_caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image Caption",
+                    "placeholder": "Image Caption text"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "video": {
+              "type": "Slice",
+              "fieldset": "Behind the scenes video",
+              "description": "Behind the scenes digital event video",
+              "icon": "videocam",
+              "display": "list",
+              "non-repeat": {
+                "digital_event_video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_video"],
+                    "label": "Digital event video",
+                    "placeholder": "Digital event video"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "Sponsors": {
+      "vs_sponsors": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "sponsor_title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph,strong,em,hyperlink",
+                "label": "Sponsor Title",
+                "placeholder": "Sponsor Title"
+              }
+            },
+            "sponsor_intro": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Sponsor Intro",
+                "placeholder": "Sponsor Intro",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "sponsor_logo": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": null
+                },
+                "thumbnails": [],
+                "label": "Sponsor Logo (image from library)"
+              }
+            },
+            "sponsor_logo_link": {
+              "type": "Link",
+              "config": {
+                "label": "Sponsor Logo Link",
+                "placeholder": "Link to sponsor",
+                "select": "web"
+              }
+            },
+            "sponsor_description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Sponsor Description",
+                "placeholder": "Sponsor Description",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            }
+          },
+          "label": "Sponsors"
+        }
+      }
+    },
+    "Reviews": {
+      "vs_reviews_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1140,
+            "height": 720
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 320,
+              "height": 240
+            }
+          ],
+          "label": "Reviews Image (from library)"
+        }
+      },
+      "vs_reviews": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "publication": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Publication",
+                "placeholder": "Review publication",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "review_authors": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Review Authors",
+                "placeholder": "Review Authors",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "review_link": {
+              "type": "Link",
+              "config": {
+                "label": "Review Link",
+                "placeholder": "Link to review",
+                "select": "web"
+              }
+            },
+            "stars": {
+              "type": "Number",
+              "config": {
+                "label": "Stars",
+                "placeholder": "Star rating"
+              }
+            }
+          },
+          "label": "Reviews"
+        }
+      }
+    },
+    "Tags": {
+      "tags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": ["Ballet and dance", "Opera and music"],
+                "label": "Tag",
+                "placeholder": "Choose a tag"
+              }
+            }
+          },
+          "label": "Tags"
+        }
+      }
+    },
+    "TV App Cross-sell": {
+      "tv_app_cross_sell_document": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["tv_app_cross-sell"],
+          "label": "TV App Cross-sell document"
+        }
+      }
+    }
+  },
+  "label": "Digital Event Details",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,152 @@
+{
+  "id": "book_food_and_drink",
+  "json": {
+    "Main": {
+      "header_text": {
+        "type": "Text",
+        "config": {
+          "label": "Title text",
+          "placeholder": "Book your food and drink",
+          "useAsTitle": true
+        }
+      },
+      "header_color": {
+        "type": "Color",
+        "config": {
+          "label": "Title text color"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image desktop",
+          "placeholder": "https://s3-eu-west-1.amazonaws.com/static.roh.org.uk/redesign/...-desktop.jpg",
+          "select": null
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image mobile",
+          "placeholder": "https://s3-eu-west-1.amazonaws.com/static.roh.org.uk/redesign/...-mobile.jpg",
+          "select": null
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "Principal dancer Marianela Nuñez and artists of The Royal Ballet in Giselle © ROH 2016. Photographer Tristram Kenton"
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta title",
+          "placeholder": "Book your food and drink"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta description"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Standfirst"
+        }
+      },
+      "above_form_body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,embed,list-item,o-list-item",
+          "label": "Above Form",
+          "placeholder": "Text, Social Media Embeds, Anchor Links",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "below_form_body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,embed,list-item,o-list-item",
+          "label": "Below Form",
+          "placeholder": "Text, Social Media Embeds, Anchor Links",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      }
+    },
+    "Teaser Arrows": {
+      "teaser_arrows": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "teaser_arrow": {
+              "type": "Slice",
+              "fieldset": "Teaser Arrow",
+              "description": "Provide an onward journey",
+              "icon": "arrow_forward",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "My Account"
+                  }
+                },
+                "link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Slug",
+                    "placeholder": "/account/details"
+                  }
+                },
+                "teaser_arrow_image_desktop_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Teaser arrow image desktop",
+                    "placeholder": "https://s3-eu-west-1.amazonaws.com/static.roh.org.uk/redesign/...-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "teaser_arrow_image_mobile_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Teaser arrow image mobile",
+                    "placeholder": "https://s3-eu-west-1.amazonaws.com/static.roh.org.uk/redesign/...-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "teaser_arrow_image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Teaser arrow image alt text",
+                    "placeholder": "Principal dancer Marianela Nuñez and artists of The Royal Ballet in Giselle © ROH 2016. Photographer Tristram Kenton"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Book Food and Drink",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

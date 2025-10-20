@@ -1,0 +1,33 @@
+{
+  "type": "SharedSlice",
+  "id": "group_by_performer",
+  "name": "GroupByPerformer",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "performer_slug": {
+          "type": "Text",
+          "config": {
+            "label": "Performer Slug",
+            "placeholder": ""
+          }
+        },
+        "group_name": {
+          "type": "Text",
+          "config": {
+            "label": "Group Name",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ],
+  "description": "GroupByPerformer"
+}

@@ -1,0 +1,257 @@
+{
+  "id": "single_page_production",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "slug"
+        }
+      },
+      "production_title": {
+        "type": "Text",
+        "config": {
+          "label": "Production Title"
+        }
+      },
+      "header_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 960
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 460,
+              "height": 345
+            }
+          ],
+          "label": "Header Image"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Description"
+        }
+      },
+      "synopsis_title": {
+        "type": "Text",
+        "config": {
+          "label": "Synopsis Title",
+          "placeholder": "Synopsis"
+        }
+      },
+      "synopsis": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Synopsis"
+        }
+      },
+      "discover_title": {
+        "type": "Text",
+        "config": {
+          "label": "Discover Title",
+          "placeholder": "Discover"
+        }
+      },
+      "discover": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading2,heading3,heading4,strong,em,hyperlink",
+          "label": "Discover"
+        }
+      },
+      "main_slices": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed beneath the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Stage": {
+      "linked_event_details": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "event_detail": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["event_details"],
+                "label": "Event Detail"
+              }
+            }
+          },
+          "label": "Linked Event Details"
+        }
+      },
+      "cast_role_priority": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "role": {
+              "type": "Text",
+              "config": {
+                "label": "role"
+              }
+            }
+          },
+          "label": "cast role priority"
+        }
+      }
+    },
+    "Stream": {
+      "linked_digital_event_details": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "digital_event_detail": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["digital_event_details"],
+                "label": "Digital Event Detail"
+              }
+            }
+          },
+          "label": "Linked Digital Event Details"
+        }
+      }
+    },
+    "Cinema": {
+      "cinema_standfirst": {
+        "type": "Text",
+        "config": {
+          "label": "Cinema Standfirst",
+          "placeholder": "Screening live at a cinema near you"
+        }
+      },
+      "cinema_dates": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "cinema_showing_date": {
+              "type": "Timestamp",
+              "config": {
+                "label": "Cinema Showing Date"
+              }
+            },
+            "cinema_showing_type": {
+              "type": "Select",
+              "config": {
+                "options": ["encore", "special screening", "live event"],
+                "default_value": "encore",
+                "label": "Cinema Showing Type"
+              }
+            }
+          },
+          "label": "Cinema Dates"
+        }
+      },
+      "cinema_information_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "allowTargetBlank": true,
+          "label": "Cinema Information Text"
+        }
+      },
+      "cinema_activity_id": {
+        "type": "Text",
+        "config": {
+          "label": "Cinema Activity ID (for casting)"
+        }
+      },
+      "cinema_linked_event_details": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "event_detail": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["event_details"],
+                "label": "Event Detail"
+              }
+            }
+          },
+          "label": "Linked Cinema Event Details"
+        }
+      },
+      "cinema_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "Cinema CTA Label",
+          "placeholder": "Find a screening"
+        }
+      },
+      "cinema_cta_url": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Cinema CTA URL",
+          "select": null
+        }
+      }
+    }
+  },
+  "label": "Single Page Production",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

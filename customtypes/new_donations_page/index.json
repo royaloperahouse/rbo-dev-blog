@@ -1,0 +1,217 @@
+{
+  "id": "new_donations_page",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": "Visit us"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": "Our doors are open to everyone from 10am every day. Spend time at the Royal Opera House: grab a coffee in the foyer; have lunch or dinner in our restaurant with Covent Garden views; enjoy performances of ballet and opera, family activities and workshops, and backstage tours of this historic central London landmark."
+        }
+      },
+      "above_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Above image text color"
+        }
+      },
+      "inside_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Inside image text color"
+        }
+      },
+      "desktop_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop above image text",
+          "placeholder": "Desktop text above image"
+        }
+      },
+      "desktop_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop inside image text",
+          "placeholder": "Desktop text inside image"
+        }
+      },
+      "mobile_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile above image text",
+          "placeholder": "Mobile text above image"
+        }
+      },
+      "mobile_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile inside image text",
+          "placeholder": "Mobile text inside image"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "select": "web",
+          "label": "Header image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/visitus_header_desktop.png"
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "select": "web",
+          "label": "Header image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/visitus_header_mobile.png"
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "A view of the restaurant in the light and beautiful Paul Hamlyn Hall. The historic porticoed entrance to the Royal Opera House, on Bow Street."
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Standfirst",
+          "placeholder": "Our doors are open every day from 10am. Grab a coffee, enjoy a meal, join a workshop, glimpse backstage or catch a performance.",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "standfirst_logo": {
+        "type": "Link",
+        "config": {
+          "select": "web",
+          "label": "Standfirst logo",
+          "placeholder": "https://static.roh.org.uk/visit/Good_To_Go_England_Green.jpg"
+        }
+      }
+    },
+    "Teaser arrows": {
+      "teaser_arrows": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "teaser_arrow": []
+          },
+          "choices": {
+            "teaser_arrow": {
+              "type": "Slice",
+              "fieldset": "Teaser arrow",
+              "description": "Teaser arrow",
+              "icon": "arrow_forward",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "useAsTitle": true,
+                    "placeholder": "Already got your ticket? Book a table"
+                  }
+                },
+                "link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "/"
+                  }
+                },
+                "anchor": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Anchor",
+                    "placeholder": "table-promo"
+                  }
+                },
+                "image_desktop_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image desktop path",
+                    "placeholder": "https://static.roh.org.uk/redesign/visitus_seeanevent_desktop.jpg",
+                    "select": null
+                  }
+                },
+                "image_mobile_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image mobile path",
+                    "placeholder": "https://static.roh.org.uk/redesign/visitus_seeanevent_mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text",
+                    "placeholder": "An audience watching a discussion in the Crush Room with tenor Joseph Calleja, talking about costumes used in The Royal Opera's production of Tosca"
+                  }
+                }
+              }
+            },
+            "info_component": {
+              "type": "Slice",
+              "fieldset": "Information Component",
+              "description": "Information Component",
+              "icon": "assignment_late",
+              "non-repeat": {
+                "info_component_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_component"],
+                    "label": "Info component"
+                  }
+                }
+              },
+              "repeat": {},
+              "display": "list"
+            },
+            "person_contact_cards": {
+              "type": "Slice",
+              "fieldset": "Contact cards",
+              "description": "Repeatable zone with contact cards",
+              "icon": "contact_mail",
+              "non-repeat": {},
+              "repeat": {
+                "contact_card": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["person_contact_card"],
+                    "label": "Contact card"
+                  }
+                }
+              },
+              "display": "list"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "New Donations Page",
+  "repeatable": true,
+  "status": false,
+  "format": "custom"
+}

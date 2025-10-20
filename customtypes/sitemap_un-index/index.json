@@ -1,0 +1,52 @@
+{
+  "id": "sitemap_un-index",
+  "json": {
+    "Main": {
+      "explanation": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Explanation",
+          "placeholder": "Don't delete! Only works on LIVE. Add URL to hide it from XML site map (made on demand). Alphabetise by title!"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "sitemap_un-index_url": {
+              "type": "Slice",
+              "fieldset": "Page to un-index",
+              "description": "",
+              "icon": "visibility_off",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "value": {
+                  "type": "Text",
+                  "config": {
+                    "label": "URL",
+                    "placeholder": "https://www.rbo.org.uk/page/"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Sitemap Un-index",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

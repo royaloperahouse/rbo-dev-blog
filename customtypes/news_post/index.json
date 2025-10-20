@@ -1,0 +1,113 @@
+{
+  "id": "news_post",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "News post title"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "Summarize the main point of the news"
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug",
+          "placeholder": "swan-lake"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em",
+          "label": "Title",
+          "placeholder": "Swan Lake"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Standfirst",
+          "placeholder": "The Royal Ballet is delighted to share that Principal dancer Vadim Muntagirov and designer John Macfarlane.",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "newsalbumid": {
+        "type": "Text",
+        "config": {
+          "label": "Flickr Album ID",
+          "placeholder": "Flickr album ID"
+        }
+      },
+      "publishdateandtime": {
+        "type": "Timestamp",
+        "config": {
+          "label": "PublishDateAndTime",
+          "default": "now"
+        }
+      },
+      "leadmedia": {
+        "type": "Embed",
+        "config": {
+          "label": "LeadMedia",
+          "placeholder": "Flickr Image URL or S3 Image"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "label": "Body",
+          "placeholder": "Text, Social Media Embeds, Anchor Links",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "author": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph",
+          "label": "Author",
+          "placeholder": "Becky Black (Social Media Editor)",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "allowComments": {
+        "type": "Select",
+        "fieldset": "Allow Comments?",
+        "config": {
+          "label": "Comments",
+          "options": ["yes", "no"],
+          "default_value": "no",
+          "placeholder": "Select..."
+        }
+      }
+    }
+  },
+  "label": "News Post",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

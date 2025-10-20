@@ -1,0 +1,213 @@
+{
+  "id": "shim_default_template",
+  "json": {
+    "Main": {
+      "lead_media": {
+        "type": "Embed",
+        "config": {
+          "label": "Lead media",
+          "placeholder": "Optional lead Flickr or Youtube embed"
+        }
+      },
+      "slug": {
+        "type": "Text",
+        "config": {
+          "label": "slug",
+          "placeholder": "royal-opera-house"
+        }
+      },
+      "parent": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["dummy_page", "index_page", "default_template"],
+          "label": "parent"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Title",
+          "placeholder": "Title here",
+          "useAsTitle": true
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Standfirst",
+          "placeholder": "Optional standfirst",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      },
+      "gallery_album_id": {
+        "type": "Text",
+        "config": {
+          "label": "Flickr Album ID",
+          "placeholder": "Flickr album ID"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "table": {
+              "type": "Slice",
+              "fieldset": "Table",
+              "description": "Rows of repeatable data",
+              "icon": "grid_on",
+              "display": "list",
+              "repeat": {
+                "column_1": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column1",
+                    "placeholder": "Column 1 content"
+                  }
+                },
+                "column_2": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column2",
+                    "placeholder": "Column 2 content"
+                  }
+                },
+                "column_3": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column3",
+                    "placeholder": "Column 3 content"
+                  }
+                },
+                "column_4": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column4",
+                    "placeholder": "Column 4 content"
+                  }
+                },
+                "column_5": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "column5",
+                    "placeholder": "Column 5 content"
+                  }
+                }
+              }
+            },
+            "text": {
+              "type": "Slice",
+              "fieldset": "Body",
+              "description": "Rich text and media embeds",
+              "icon": "text_fields",
+              "non-repeat": {
+                "text_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+                    "label": "Body",
+                    "placeholder": "Rich Text, Social Media Embeds, Flickr Embeds, Youtube Embeds, Anchor Links",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                }
+              }
+            },
+            "columns": {
+              "type": "Slice",
+              "fieldset": "Columns",
+              "description": "Left and right columns of rich text",
+              "icon": "view_column",
+              "non-repeat": {
+                "left_column": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Left column",
+                    "placeholder": "Rich Text, Anchor Links",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                },
+                "right_column": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Right column",
+                    "placeholder": "Rich Text, Anchor Links",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                }
+              }
+            },
+            "cta": {
+              "type": "Slice",
+              "fieldset": "CTA",
+              "description": "Call to Action",
+              "icon": "arrow_forward",
+              "repeat": {
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "Join as a friend"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "https://www.roh.org.uk/memberships/friend",
+                    "select": null
+                  }
+                },
+                "include_icon": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["yes", "no"],
+                    "label": "Include icon?"
+                  }
+                },
+                "button_style": {
+                  "type": "Select",
+                  "config": {
+                    "default_value": "primary",
+                    "options": ["primary", "secondary", "secondary-negative"],
+                    "label": "Button style"
+                  }
+                }
+              }
+            },
+            "anchor_link": {
+              "type": "Slice",
+              "fieldset": "Anchor link",
+              "description": "An anchor link to this part of the page",
+              "icon": "link",
+              "display": "list",
+              "non-repeat": {
+                "anchor_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "For example, 'about' in 'www.website.com/page#about'"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Shim Default Template",
+  "repeatable": true,
+  "status": false,
+  "format": "custom"
+}

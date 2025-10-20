@@ -1,0 +1,149 @@
+{
+  "id": "checkout_recurring_donation_page",
+  "json": {
+    "Membership - Monthly Subscription": {
+      "membership_monthly_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Page title"
+        }
+      },
+      "membership_monthly_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Text",
+          "placeholder": "Rich text introduction to the donation options"
+        }
+      },
+      "membership_monthly_donation_suggestions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "donation_suggestion": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["donation_suggestion"],
+                "label": "Donation Suggestion",
+                "placeholder": "Prismic document of type Donation Suggestion"
+              }
+            }
+          },
+          "label": "Donation suggestions"
+        }
+      }
+    },
+    "Membership - Annual Subscription": {
+      "membership_annual_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Page title"
+        }
+      },
+      "membership_annual_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Text",
+          "placeholder": "Rich text introduction to the donation options"
+        }
+      },
+      "membership_annual_donation_suggestions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "donation_suggestion": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["donation_suggestion"],
+                "label": "Donation Suggestion",
+                "placeholder": "Prismic document of type Donation Suggestion"
+              }
+            }
+          },
+          "label": "Donation suggestions"
+        }
+      }
+    },
+    "Stream - Monthly Subscription": {
+      "stream_monthly_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Page title"
+        }
+      },
+      "stream_monthly_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Text",
+          "placeholder": "Rich text introduction to the donation options"
+        }
+      },
+      "stream_monthly_donation_suggestions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "donation_suggestion": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["donation_suggestion"],
+                "label": "Donation Suggestion",
+                "placeholder": "Prismic document of type Donation Suggestion"
+              }
+            }
+          },
+          "label": "Donation suggestions"
+        }
+      }
+    },
+    "Stream - Annual Subscription": {
+      "stream_annual_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Page title"
+        }
+      },
+      "stream_annual_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Text",
+          "placeholder": "Rich text introduction to the donation options"
+        }
+      },
+      "stream_annual_donation_suggestions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "donation_suggestion": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["donation_suggestion"],
+                "label": "Donation Suggestion",
+                "placeholder": "Prismic document of type Donation Suggestion"
+              }
+            }
+          },
+          "label": "Donation suggestions"
+        }
+      }
+    }
+  },
+  "label": "Checkout Recurring Donation Page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

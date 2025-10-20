@@ -1,0 +1,118 @@
+{
+  "id": "footer",
+  "json": {
+    "Main": {
+      "newsletter_link": {
+        "type": "Text",
+        "config": {
+          "label": "Newsletter Link",
+          "placeholder": "Link to the newsletter"
+        }
+      },
+      "newsletter_text": {
+        "type": "Text",
+        "config": {
+          "label": "Newsletter Text"
+        }
+      },
+      "newsletter__link_title": {
+        "type": "Text",
+        "config": {
+          "label": "Newsletter Link Title"
+        }
+      },
+      "contact_title": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Title"
+        }
+      },
+      "contact_link": {
+        "type": "Text",
+        "config": {
+          "label": "Contact Link"
+        }
+      },
+      "arts_logo_text": {
+        "type": "Text",
+        "config": {
+          "label": "Arts Logo Text"
+        }
+      },
+      "arts_logo_link": {
+        "type": "Text",
+        "config": {
+          "label": "Arts Logo Link"
+        }
+      },
+      "additional_info": {
+        "type": "Text",
+        "config": {
+          "label": "Additional Info"
+        }
+      },
+      "policy_links": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title"
+              }
+            },
+            "link": {
+              "type": "Text",
+              "config": {
+                "label": "Link"
+              }
+            },
+            "analytics_tag": {
+              "type": "Text",
+              "config": {
+                "label": "Analytics Tag"
+              }
+            }
+          },
+          "label": "Policy Links"
+        }
+      }
+    },
+    "Social Links": {
+      "facebook": {
+        "type": "Text",
+        "config": {
+          "label": "Facebook"
+        }
+      },
+      "twitter": {
+        "type": "Text",
+        "config": {
+          "label": "Twitter"
+        }
+      },
+      "instagram": {
+        "type": "Text",
+        "config": {
+          "label": "Instagram"
+        }
+      },
+      "tiktok": {
+        "type": "Text",
+        "config": {
+          "label": "TikTok"
+        }
+      },
+      "youtube": {
+        "type": "Text",
+        "config": {
+          "label": "YouTube"
+        }
+      }
+    }
+  },
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

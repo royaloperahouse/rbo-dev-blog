@@ -1,0 +1,287 @@
+{
+  "id": "donations_landing_page",
+  "json": {
+    "Main": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": "Donations"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": "Since having to close the Royal Opera House in March 2020, we have lost £3 in every £5 of our income. Our audiences are at the heart of what we do, but we urgently need your help. Please support the Royal Opera House community today and help secure the future of ballet and opera."
+        }
+      },
+      "above_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Above image text color"
+        }
+      },
+      "inside_image_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Inside image text color"
+        }
+      },
+      "desktop_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop above image text",
+          "placeholder": "Desktop text above image"
+        }
+      },
+      "desktop_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Desktop inside image text",
+          "placeholder": "Desktop text inside image"
+        }
+      },
+      "mobile_above_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile above image text",
+          "placeholder": "Mobile text above image"
+        }
+      },
+      "mobile_inside_image_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Mobile inside image text",
+          "placeholder": "Mobile text inside image"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "select": "web",
+          "label": "Header image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/charity-checkout-desktop.jpg"
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "select": "web",
+          "label": "Header image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/charity-checkout-mobile.jpg"
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": ""
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA text",
+          "placeholder": "Donate now"
+        }
+      },
+      "cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Cta link",
+          "placeholder": "/donate"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Standfirst",
+          "placeholder": "Since having to close the Royal Opera House in March 2020, we have lost £3 in every £5 of our income...",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "content_image": {
+        "type": "Link",
+        "config": {
+          "label": "Content image (desktop and mobile)",
+          "placeholder": "https://static.roh.org.uk/redesign/returns-image-desktop.jpg",
+          "select": "web"
+        }
+      },
+      "content_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Content image alt text",
+          "placeholder": ""
+        }
+      },
+      "content_info_section": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Content information text (text right to the image)",
+          "placeholder": "Thank you for all you have helped us to do in the 2020/21 Season..."
+        }
+      }
+    },
+    "Body": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "promo_heading": [],
+            "teaser_arrows": [],
+            "promos": []
+          },
+          "choices": {
+            "teaser_arrows": {
+              "type": "Slice",
+              "fieldset": "Teaser arrows",
+              "description": "Repeatable zone with teaser arrows",
+              "icon": "arrow_forward",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "useAsTitle": true,
+                    "placeholder": "Already got your ticket? Book a table"
+                  }
+                },
+                "link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "/"
+                  }
+                },
+                "anchor": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Anchor",
+                    "placeholder": "table-promo"
+                  }
+                },
+                "image_desktop_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image desktop path",
+                    "placeholder": "https://static.roh.org.uk/redesign/visitus_seeanevent_desktop.jpg",
+                    "select": "web"
+                  }
+                },
+                "image_mobile_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image mobile path",
+                    "placeholder": "https://static.roh.org.uk/redesign/visitus_seeanevent_mobile.jpg",
+                    "select": "web"
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text",
+                    "placeholder": "An audience watching a discussion in the Crush Room with tenor Joseph Calleja, talking about costumes used in The Royal Opera's production of Tosca"
+                  }
+                }
+              }
+            },
+            "promo_heading": {
+              "type": "Slice",
+              "fieldset": "Promo heading",
+              "description": "Promo heading",
+              "non-repeat": {
+                "promo_heading": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "strong,em",
+                    "label": "Promos heading"
+                  }
+                }
+              },
+              "icon": "title",
+              "display": "list"
+            },
+            "person_contact_cards": {
+              "type": "Slice",
+              "fieldset": "Contact cards",
+              "description": "Repeatable zone with contact cards",
+              "icon": "contact_mail",
+              "non-repeat": {},
+              "repeat": {
+                "contact_card": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["person_contact_card"],
+                    "label": "Contact card"
+                  }
+                }
+              },
+              "display": "list"
+            },
+            "promos": {
+              "type": "Slice",
+              "fieldset": "Promos section",
+              "description": "Repeatable zone with promos (e.g. on index pages)",
+              "non-repeat": {},
+              "repeat": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "strong,em",
+                    "label": "Promo title"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink",
+                    "label": "Text",
+                    "placeholder": "Some text"
+                  }
+                },
+                "image": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Promo image (mobile and desktop)",
+                    "placeholder": "Link to the image",
+                    "select": "web"
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Header image alt text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "icon": "view_list",
+              "display": "list"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Donations Landing Page",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

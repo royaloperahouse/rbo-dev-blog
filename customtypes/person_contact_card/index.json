@@ -1,0 +1,63 @@
+{
+  "id": "person_contact_card",
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Person name",
+          "placeholder": "John Snow",
+          "useAsTitle": true
+        }
+      },
+      "role_name": {
+        "type": "Text",
+        "config": {
+          "label": "Role name (optional)",
+          "placeholder": "Communications Manager",
+          "useAsTitle": true
+        }
+      },
+      "name_suffix": {
+        "type": "Text",
+        "config": {
+          "label": "Name suffix",
+          "placeholder": "CBE"
+        }
+      },
+      "email_address": {
+        "type": "Text",
+        "config": {
+          "label": "Email address",
+          "placeholder": "john.show@roh.org.uk",
+          "useAsTitle": true
+        }
+      },
+      "phone_1": {
+        "type": "Text",
+        "config": {
+          "label": "Phone 1 (optional)",
+          "placeholder": "+44 (0) 7531 129 4777"
+        }
+      },
+      "phone_2": {
+        "type": "Text",
+        "config": {
+          "label": "Phone 2 (optional)",
+          "placeholder": "+44 (0) 7531 129 4778"
+        }
+      },
+      "postal_address": {
+        "type": "Text",
+        "config": {
+          "label": "Postal address (optional)",
+          "placeholder": "Royal Opera House, Bow Street, London, WC2E 9DD"
+        }
+      }
+    }
+  },
+  "label": "Contact card",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

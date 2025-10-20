@@ -1,0 +1,19 @@
+{
+  "id": "test_prismic_issue",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "title",
+          "placeholder": "test title"
+        }
+      }
+    }
+  },
+  "label": "test_prismic_issue",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

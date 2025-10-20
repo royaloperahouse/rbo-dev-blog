@@ -1,0 +1,255 @@
+{
+  "id": "production",
+  "json": {
+    "Main": {
+      "production_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "Production Title",
+          "placeholder": "Production Title"
+        }
+      },
+      "production_id": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--events_integration",
+          "label": "Production ID",
+          "placeholder": "Select Production"
+        }
+      },
+      "diese_production_id": {
+        "type": "Number",
+        "config": {
+          "label": "Diese production Id"
+        }
+      },
+      "production_synopsis_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 960,
+            "height": 960
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 450,
+              "height": 450
+            }
+          ],
+          "label": "Production Synopsis Image"
+        }
+      },
+      "production_synopsis_desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "Production Synopsis Desktop Image",
+          "placeholder": "Link to production synopsis desktop image",
+          "select": "web"
+        }
+      },
+      "production_synopsis_mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "Production Synopsis Mobile Image",
+          "placeholder": "Link to production synopsis mobile image",
+          "select": "web"
+        }
+      },
+      "production_synopsis_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Production Synopsis Image Alt Text",
+          "placeholder": "Alt text for production synopsis image"
+        }
+      },
+      "production_synopsis": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Production Story",
+          "placeholder": "Production story (synopsis)"
+        }
+      },
+      "production_album_id": {
+        "type": "Text",
+        "config": {
+          "label": "Flickr Album ID",
+          "placeholder": "Flickr album ID"
+        }
+      },
+      "production_language": {
+        "type": "Text",
+        "config": {
+          "label": "Production Language",
+          "placeholder": "Enter production language"
+        }
+      }
+    },
+    "Cast": {
+      "cast": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "cast_member_name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": "Jane Smith"
+              }
+            },
+            "cast_member_role": {
+              "type": "Text",
+              "config": {
+                "label": "Role",
+                "placeholder": "Prince Siegfried"
+              }
+            },
+            "cast_link_to_people_page": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "No",
+                "placeholder_true": "Yes",
+                "default_value": true,
+                "label": "Link to people page?"
+              }
+            },
+            "cast_is_hidden_on_event_details": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "No",
+                "placeholder_true": "Yes",
+                "default_value": false,
+                "label": "Hide on Event Details page (an option to display in cast lists only)"
+              }
+            }
+          },
+          "label": "Cast"
+        }
+      }
+    },
+    "Creatives": {
+      "creatives": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "creative_name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": "John Smith"
+              }
+            },
+            "creative_role": {
+              "type": "Text",
+              "config": {
+                "label": "Role",
+                "placeholder": "Lighting designer"
+              }
+            },
+            "creative_link_to_people_page": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "No",
+                "placeholder_true": "Yes",
+                "default_value": true,
+                "label": "Link to people page?"
+              }
+            },
+            "creative_is_hidden_on_event_details": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "No",
+                "placeholder_true": "Yes",
+                "default_value": false,
+                "label": "Hide on Event Details page (an option to display in cast lists only)"
+              }
+            }
+          },
+          "label": "Creatives"
+        }
+      }
+    },
+    "Cast Lists": {
+      "cast_list_credits_title": {
+        "type": "Text",
+        "config": {
+          "label": "Credits section title (CREDITS by default)",
+          "placeholder": "Enter the title for credits section or leave empty to use the default value"
+        }
+      },
+      "cast_list_cast_title": {
+        "type": "Text",
+        "config": {
+          "label": "Cast section title (CAST by default)",
+          "placeholder": "Enter the title for cast section or leave empty to use the default value"
+        }
+      },
+      "cast_list_production_credits_title": {
+        "type": "Text",
+        "config": {
+          "label": "Production credits section title (PRODUCTION CREDITS by default)",
+          "placeholder": "Enter the title for production credits section or leave empty to use the default value"
+        }
+      },
+      "cast_list_production_credits_extra_details": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Extra details production credits to be displayed in the digital cast list. Hidden if empty",
+          "placeholder": "Students of The Royal Ballet School appear by kind permission of the Artistic Director, Christopher Powney...",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "cast_list_synopsis_title": {
+        "type": "Text",
+        "config": {
+          "label": "Synopsis section title (SYNOPSIS by default)",
+          "placeholder": "Enter the title for synopsis section or leave empty to use the default value"
+        }
+      },
+      "cast_list_synopsis_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Synopsis to be displayed in the digital cast list. Leave empty to use the default one",
+          "placeholder": "Rich text",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "cast_list_cast_additional_details": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Cast additional info to be displayed optionally on cast lists",
+          "placeholder": "Dancers MARIKO SASAKI, LUKAS BJØRNEBOE BRÆNDSRØD, LETICIA DIAS, DAICHI IKARASHI...",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      }
+    }
+  },
+  "label": "Production",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

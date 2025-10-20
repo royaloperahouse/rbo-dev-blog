@@ -1,0 +1,46 @@
+{
+  "id": "automated_email_template",
+  "json": {
+    "Main": {
+      "recipient": {
+        "type": "Text",
+        "config": {
+          "label": "recipient",
+          "placeholder": "Enter the recipient of the email"
+        }
+      },
+      "subject": {
+        "type": "Text",
+        "config": {
+          "label": "Subject",
+          "placeholder": "Enter the subject of the email"
+        }
+      },
+      "greeting_line": {
+        "type": "Text",
+        "config": {
+          "label": "Greeting line",
+          "placeholder": "e.g. \"Dear Customer Service,\""
+        }
+      },
+      "body": {
+        "type": "Text",
+        "config": {
+          "label": "Body",
+          "placeholder": "E.g. \"Please contact me with options to upgrade my membership\""
+        }
+      },
+      "sign_off_line": {
+        "type": "Text",
+        "config": {
+          "label": "Sign off line",
+          "placeholder": "E.g. \"Kind regards\""
+        }
+      }
+    }
+  },
+  "label": "Automated email template",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

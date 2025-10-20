@@ -1,0 +1,27 @@
+{
+  "id": "dummy_page",
+  "json": {
+    "Main": {
+      "parent": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["dummy_page", "index_page", "default_template"],
+          "label": "Parent",
+          "placeholder": "Parent page"
+        }
+      },
+      "slug": {
+        "type": "Text",
+        "config": {
+          "label": "slug",
+          "placeholder": "royal-opera-house"
+        }
+      }
+    }
+  },
+  "label": "Dummy Page",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

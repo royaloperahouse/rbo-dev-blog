@@ -1,0 +1,73 @@
+{
+  "id": "tv_app_upsell",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "easily watch on your tv"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Enjoy your favourite Royal Opera House productions and extra content on your TV"
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA text",
+          "placeholder": "How to watch"
+        }
+      },
+      "cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "CTA link",
+          "placeholder": "/stream/help"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1000,
+            "height": 1000
+          },
+          "thumbnails": [],
+          "label": "Image"
+        }
+      },
+      "badges": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "badge_image": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Image"
+              }
+            },
+            "link": {
+              "type": "Text",
+              "config": {
+                "label": "link"
+              }
+            }
+          },
+          "label": "Badges"
+        }
+      }
+    }
+  },
+  "label": "TV App upsell",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

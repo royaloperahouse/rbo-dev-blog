@@ -1,0 +1,156 @@
+{
+  "id": "streams_returns_page",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug",
+          "placeholder": "nutcracker-returns"
+        }
+      },
+      "page_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title text",
+          "placeholder": "Cancellations: Options for ticket holders",
+          "useAsTitle": true
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta title",
+          "placeholder": "Cancellations: Options for ticket holders"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta description",
+          "placeholder": "Returns for streams"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Standfirst",
+          "placeholder": "It is with regret that we have had to cancel a number of performances in our 2019/20 Season. If you have bought a ticket to a cancelled event, please review your options below."
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,embed",
+          "label": "Body",
+          "placeholder": "Text, Social Media Embeds, Anchor Links"
+        }
+      },
+      "thumbnail_image": {
+        "type": "Link",
+        "config": {
+          "label": "Thumbnail image (desktop and mobile)",
+          "placeholder": "https://static.roh.org.uk/redesign/returns-image-desktop.jpg",
+          "select": "web"
+        }
+      },
+      "thumbnail_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Thumbnail image alt text",
+          "placeholder": "Refunds for Nutcracker."
+        }
+      },
+      "thumbnail_image_info_section": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Thumbnail image information section (for beneath thumbnail)",
+          "placeholder": "We will acknowledge receipt of your form by email..."
+        }
+      },
+      "form_sub_title": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Form sub-title",
+          "placeholder": "Nutcracker refund options"
+        }
+      },
+      "form_options_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Form options description (for beneath form title)",
+          "placeholder": "This form can only be completed once. Please do not attempt to complete it multiple times. "
+        }
+      },
+      "donate_radiobutton_text": {
+        "type": "Text",
+        "config": {
+          "label": "Donate radiobutton text",
+          "placeholder": "I would like to donate the value of my stream access to the Royal Opera House"
+        }
+      },
+      "refund_radiobutton_text": {
+        "type": "Text",
+        "config": {
+          "label": "Refund radiobutton text",
+          "placeholder": "I would like a refund"
+        }
+      },
+      "please_note": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Form Please note section",
+          "placeholder": "Messages sent from this form will be checked ..."
+        }
+      },
+      "gift_aid_image_path": {
+        "type": "Link",
+        "config": {
+          "label": "GiftAid logo (same for mobile and desktop)",
+          "placeholder": "https://static.roh.org.uk/logos/Gift_Aid_UK_Logo.svg",
+          "select": "web"
+        }
+      },
+      "gift_aid_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Gift Aid logo alt text",
+          "placeholder": "Gift Aid logo"
+        }
+      },
+      "gift_aid_standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,em,hyperlink",
+          "label": "Gift Aid standfirst",
+          "placeholder": "If you are a UK taxpayer, please add ..."
+        }
+      },
+      "gift_aid_introcopy": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Gift Aid intro",
+          "placeholder": "Gift Aid helps our community of artists and craftspeople, educators and technicians, create inspiring performances and projects for people all over the UK and beyond."
+        }
+      },
+      "gift_aid_infocopy": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Gift Aid info",
+          "placeholder": "I want to Gift Aid all qualifying donations made to the Royal Opera House Covent Garden Foundation now, in the future and in the past four years..."
+        }
+      }
+    }
+  },
+  "label": "Streams Returns Page",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

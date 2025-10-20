@@ -1,0 +1,44 @@
+{
+  "id": "certificate_images_list",
+  "json": {
+    "Main": {
+      "images": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": 580,
+                  "height": 435
+                },
+                "thumbnails": [],
+                "label": "Image"
+              }
+            },
+            "tag": {
+              "type": "Text",
+              "config": {
+                "label": "Tag",
+                "placeholder": "Tag for the image"
+              }
+            },
+            "active": {
+              "type": "Boolean",
+              "config": {
+                "default_value": true,
+                "label": "Active"
+              }
+            }
+          },
+          "label": "Images"
+        }
+      }
+    }
+  },
+  "label": "Certificate Images List",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

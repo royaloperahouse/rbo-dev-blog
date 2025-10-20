@@ -1,0 +1,501 @@
+{
+  "id": "eat_and_drink_page",
+  "json": {
+    "Main page": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Eat & drink"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "At the Royal Opera House you can stop for a coffee, meet friends for drinks, enjoy a delicious lunch, dinner or afternoon tea."
+        }
+      },
+      "header_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header text",
+          "placeholder": "Eat & drink",
+          "useAsTitle": true
+        }
+      },
+      "header_color": {
+        "type": "Color",
+        "config": {
+          "label": "Header color"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image desktop path",
+          "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-header-desktop.jpg",
+          "select": "web"
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image mobile path",
+          "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-header-mobile.jpg",
+          "select": "web"
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "Delicious food and drink served in the Royal Opera House restaurants."
+        }
+      },
+      "header_design_variant": {
+        "type": "Select",
+        "config": {
+          "options": ["Core", "Impact"],
+          "default_value": "Core",
+          "label": "Page header design variants"
+        }
+      },
+      "header_impact_background_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 720
+          },
+          "thumbnails": [],
+          "label": "Impact header background image"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Standfirst",
+          "placeholder": "Enjoy superb food and drinks, during the day or in the evening.",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      },
+      "header_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header CTA text",
+          "placeholder": "CTA text"
+        }
+      },
+      "header_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "Header CTA link",
+          "placeholder": "CTA link"
+        }
+      },
+      "header_rolex_sponsorship": {
+        "type": "Boolean",
+        "config": {
+          "default_value": true,
+          "label": "Display Rolex"
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "Email",
+          "placeholder": "restaurants@roh.org.uk"
+        }
+      },
+      "phone_number": {
+        "type": "Text",
+        "config": {
+          "label": "Phone number",
+          "placeholder": "+44 (0)20 7212 9254"
+        }
+      },
+      "catering_venue_standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Catering venue standfirst",
+          "placeholder": "You can eat and drink in one of our many unique spaces.",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      }
+    },
+    "Catering venues": {
+      "venues_body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "catering_venues": {
+              "type": "Slice",
+              "fieldset": "Catering venue",
+              "description": "E.g. opera house café",
+              "icon": "restaurant",
+              "display": "list",
+              "non-repeat": {
+                "venue_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Royal Opera House Café"
+                  }
+                },
+                "location_image_desktop_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Location image desktop path",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-location-desktop.jpeg",
+                    "select": null
+                  }
+                },
+                "location_image_mobile_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Location image mobile path",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-location-mobile.jpeg",
+                    "select": null
+                  }
+                },
+                "location_image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Location image alt text",
+                    "placeholder": "Map to the Opera House"
+                  }
+                },
+                "location_address": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink",
+                    "label": "Location address",
+                    "placeholder": "Royal Opera House, Bow Street",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                },
+                "location_link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Location link",
+                    "placeholder": "https://www.google.com/maps/roh",
+                    "select": null
+                  }
+                },
+                "venue_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,hyperlink",
+                    "label": "Venue description",
+                    "placeholder": "Stylish, friendly and bustling."
+                  }
+                },
+                "venue_location_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,hyperlink",
+                    "label": "Venue location description",
+                    "placeholder": "You can find the café on the ground level of the main foyer."
+                  }
+                },
+                "venue_opening_times": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading6,strong,em,hyperlink",
+                    "label": "Opening times",
+                    "placeholder": "Our café is open every day."
+                  }
+                },
+                "menu": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Menu",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-cafe-sample-menu.jpg",
+                    "select": null
+                  }
+                },
+                "new_menu": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["menu"],
+                    "label": "menu"
+                  }
+                },
+                "anchor": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Anchor",
+                    "placeholder": "cafe"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Book with ticket"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA link",
+                    "placeholder": "/account/events/upcoming"
+                  }
+                },
+                "cta_include_icon_": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["No", "Yes"],
+                    "label": "CTA include icon?"
+                  }
+                },
+                "secondary_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA text",
+                    "placeholder": "Book without ticket"
+                  }
+                },
+                "secondary_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary CTA link",
+                    "placeholder": "/account/events/upcoming"
+                  }
+                },
+                "secondary_cta_include_icon_": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["No", "Yes"],
+                    "label": "Secondary CTA include icon?"
+                  }
+                },
+                "first_extra_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "First extra CTA text",
+                    "placeholder": "Lunch menu"
+                  }
+                },
+                "first_extra_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "First extra CTA link",
+                    "placeholder": "/eat-and-drink/menu/1"
+                  }
+                },
+                "second_extra_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Second extra CTA text",
+                    "placeholder": "Dinner menu"
+                  }
+                },
+                "second_extra_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Second extra CTA link",
+                    "placeholder": "/eat-and-drink/menu/2"
+                  }
+                },
+                "third_extra_cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Third extra CTA text",
+                    "placeholder": "Menu"
+                  }
+                },
+                "third_extra_cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Third extra CTA link",
+                    "placeholder": "/eat-and-drink/menu/3"
+                  }
+                },
+                "venue_image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 1024,
+                      "height": 768
+                    },
+                    "thumbnails": [
+                      {
+                        "name": "mobile_image",
+                        "width": 460,
+                        "height": 345
+                      }
+                    ],
+                    "label": "Venue image"
+                  }
+                },
+                "image_desktop_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image desktop path",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-piazza-restaurant-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "image_mobile_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image mobile path",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-piazza-restaurant-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text",
+                    "placeholder": "Tables laid out for dining"
+                  }
+                },
+                "book_a_table_connection_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Book A Table connection ID",
+                    "placeholder": ""
+                  }
+                },
+                "book_a_table_session_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Book A Table session ID"
+                  }
+                },
+                "book_a_table_covers": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Book A Table covers"
+                  }
+                },
+                "res_diary_widget_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "ResDiary widget url (ticketholders)",
+                    "placeholder": "URL for ResDiary widget. Please remove the '?includeJquery=false' at the end of the URL if present."
+                  }
+                }
+              },
+              "repeat": {
+                "venue_tag": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Open to all",
+                      "Ticket holders only",
+                      "No need to book",
+                      "Booking required",
+                      "Open around performances",
+                      "Open again spring 2020",
+                      "Casual dining",
+                      "Drinks and small plates",
+                      "Formal dining"
+                    ],
+                    "label": "Tag"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Catering offers": {
+      "offers_body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "catering_offer": {
+              "type": "Slice",
+              "fieldset": "Catering offer",
+              "description": "Catering offer",
+              "icon": "monetization_on",
+              "display": "list",
+              "non-repeat": {
+                "offer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "useAsTitle": true,
+                    "placeholder": "Already got your ticket? Book a table"
+                  }
+                },
+                "offer_description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink",
+                    "label": "Description",
+                    "placeholder": "Complete your experience – book a table in one of our restaurants.",
+                    "labels": ["block-quote", "quote-attribution"]
+                  }
+                },
+                "link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "/account/events/upcoming"
+                  }
+                },
+                "anchor": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Anchor",
+                    "placeholder": "table-promo"
+                  }
+                },
+                "image_desktop_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image desktop path",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-table-promo-desktop.jpg",
+                    "select": null
+                  }
+                },
+                "image_mobile_path": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Image mobile path",
+                    "placeholder": "https://static.roh.org.uk/redesign/eat-and-drink-table-promo-mobile.jpg",
+                    "select": null
+                  }
+                },
+                "image_alt_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Image alt text",
+                    "placeholder": "A sample of the delicious food on offer in the Royal Opera House restaurants."
+                  }
+                },
+                "book_a_table_connection_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Book A Table connection ID"
+                  }
+                },
+                "book_a_table_session_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Book A Table session ID"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Eat & drink page",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

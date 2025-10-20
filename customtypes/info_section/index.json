@@ -1,0 +1,58 @@
+{
+  "id": "info_section",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title"
+        }
+      },
+      "title_size": {
+        "type": "Select",
+        "config": {
+          "options": ["Heading 5", "Heading 6", "Heading 4"],
+          "label": "Title Size",
+          "default_value": "Heading 5"
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Logo"
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Body"
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA Text"
+        }
+      },
+      "cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "CTA Link"
+        }
+      }
+    }
+  },
+  "label": "Info Section",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "SharedSlice",
+  "id": "credit_a_creative_work",
+  "name": "CreditACreativeWork",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "original_role": {
+          "type": "Text",
+          "config": {
+            "label": "Original Role",
+            "placeholder": "Role to add information to"
+          }
+        },
+        "creative_work_information": {
+          "type": "Text",
+          "config": {
+            "label": "Creative Work Information",
+            "placeholder": "e.g. copyright, arrangement, publishing"
+          }
+        }
+      },
+      "items": {
+        "titles_of_work": {
+          "type": "Text",
+          "config": {
+            "label": "Titles of Work",
+            "placeholder": "E.g. Symphony no. 4"
+          }
+        }
+      }
+    }
+  ],
+  "description": "CreditACreativeWork"
+}

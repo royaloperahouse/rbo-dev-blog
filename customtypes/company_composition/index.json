@@ -1,0 +1,50 @@
+{
+  "id": "company_composition",
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": "An identifier solely used within Prismic",
+          "useAsTitle": true
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "The Royal Ballet"
+        }
+      },
+      "people_section": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "person_card": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["person_card"],
+                "label": "Person Card"
+              }
+            },
+            "job_title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph,strong,em,hyperlink",
+                "label": "Job Title (leave it empty to use the default one)",
+                "placeholder": "Director"
+              }
+            }
+          },
+          "label": "People"
+        }
+      }
+    }
+  },
+  "label": "Company composition",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

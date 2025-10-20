@@ -1,0 +1,137 @@
+{
+  "id": "promo_header",
+  "json": {
+    "Main": {
+      "theme": {
+        "type": "Select",
+        "config": {
+          "options": ["Red", "Black", "White"],
+          "default_value": "Red",
+          "label": "Theme"
+        }
+      },
+      "show_sponsor_logo": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide",
+          "placeholder_true": "Show",
+          "default_value": true,
+          "label": "Sponsor logo"
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "One extraordinary world"
+        }
+      },
+      "title_semantic_level": {
+        "type": "Select",
+        "config": {
+          "options": ["h1", "h2", "h3"],
+          "default_value": "h1",
+          "label": "Title semantic level"
+        }
+      },
+      "badge": {
+        "type": "Select",
+        "config": {
+          "options": ["Stream", "Cinema"],
+          "label": "Badge",
+          "placeholder": "Select the badge"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1800,
+            "height": 340
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 750,
+              "height": 320
+            }
+          ],
+          "label": "Image"
+        }
+      },
+      "primary_button_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary button text",
+          "placeholder": "More info"
+        }
+      },
+      "primary_button_link": {
+        "type": "Text",
+        "config": {
+          "label": "Primary button link",
+          "placeholder": "/about"
+        }
+      },
+      "primary_button_icon": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Watch",
+            "BookTickets",
+            "ChooseDates",
+            "LiveStream",
+            "Trailer",
+            "FindAScreening",
+            "Cinema"
+          ],
+          "label": "Primary button icon",
+          "placeholder": "Select the icon"
+        }
+      },
+      "secondary_button_text": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary button text",
+          "placeholder": "More info"
+        }
+      },
+      "secondary_button_link": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary button link",
+          "placeholder": "/about"
+        }
+      },
+      "secondary_button_icon": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Watch",
+            "BookTickets",
+            "ChooseDates",
+            "LiveStream",
+            "Trailer",
+            "FindAScreening",
+            "Cinema"
+          ],
+          "label": "Secondary button icon",
+          "placeholder": "Select the icon"
+        }
+      },
+      "secondary_button_as_text_link": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "false",
+          "placeholder_true": "true",
+          "default_value": false,
+          "label": "Use Text Link for the Secondary Button"
+        }
+      }
+    }
+  },
+  "label": "Promo Header",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

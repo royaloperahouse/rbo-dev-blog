@@ -1,0 +1,93 @@
+{
+  "id": "eventtray",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Tray unique ID"
+        }
+      },
+      "traytitle": {
+        "type": "Text",
+        "config": {
+          "label": "Tray title"
+        }
+      },
+      "productionid01": {
+        "type": "Number",
+        "config": {
+          "label": "productionId01",
+          "placeholder": "0"
+        }
+      },
+      "productionid02": {
+        "type": "Number",
+        "config": {
+          "label": "productionId02",
+          "placeholder": "0"
+        }
+      },
+      "productionid03": {
+        "type": "Number",
+        "config": {
+          "label": "productionId03",
+          "placeholder": "0"
+        }
+      },
+      "productionid04": {
+        "type": "Number",
+        "config": {
+          "label": "productionId04",
+          "placeholder": "0"
+        }
+      },
+      "productionid05": {
+        "type": "Number",
+        "config": {
+          "label": "productionId05",
+          "placeholder": "0"
+        }
+      },
+      "productionid06": {
+        "type": "Number",
+        "config": {
+          "label": "productionId06",
+          "placeholder": "0"
+        }
+      },
+      "productionid07": {
+        "type": "Number",
+        "config": {
+          "label": "productionId07",
+          "placeholder": "0"
+        }
+      },
+      "productionid08": {
+        "type": "Number",
+        "config": {
+          "label": "productionId08",
+          "placeholder": "0"
+        }
+      },
+      "productionid09": {
+        "type": "Number",
+        "config": {
+          "label": "productionId09",
+          "placeholder": "0"
+        }
+      },
+      "productionid10": {
+        "type": "Number",
+        "config": {
+          "label": "productionId10",
+          "placeholder": "0"
+        }
+      }
+    }
+  },
+  "label": "EventTray",
+  "repeatable": true,
+  "status": false,
+  "format": "custom"
+}

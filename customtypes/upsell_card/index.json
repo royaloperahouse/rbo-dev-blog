@@ -1,0 +1,110 @@
+{
+  "id": "upsell_card",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "title",
+          "placeholder": "friend"
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "subtitle",
+          "placeholder": "ages 16-30"
+        }
+      },
+      "price": {
+        "type": "Text",
+        "config": {
+          "label": "price",
+          "placeholder": "£115"
+        }
+      },
+      "promo_price": {
+        "type": "Text",
+        "config": {
+          "label": "promo price",
+          "placeholder": "£99"
+        }
+      },
+      "flag": {
+        "type": "Text",
+        "config": {
+          "label": "flag",
+          "placeholder": "Best value"
+        }
+      },
+      "offer_texts": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "offer_text_title": {
+              "type": "Text",
+              "config": {
+                "label": "offer text title",
+                "placeholder": "Prioirty Booking"
+              }
+            },
+            "offer_text_description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "strong,em",
+                "label": "offer text description"
+              }
+            }
+          },
+          "label": "offer texts"
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA text"
+        }
+      },
+      "cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Primary CTA link",
+          "select": null
+        }
+      },
+      "theme": {
+        "type": "Select",
+        "config": {
+          "options": ["core", "stream", "cinema"],
+          "default_value": "core",
+          "label": "Primary CTA theme"
+        }
+      },
+      "secondary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary CTA text"
+        }
+      },
+      "secondary_cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Secondary CTA link",
+          "select": null
+        }
+      },
+      "secondary_cta_theme": {
+        "type": "Select",
+        "config": {
+          "options": ["core", "stream", "cinema"],
+          "default_value": "core",
+          "label": "Secondary CTA theme"
+        }
+      }
+    }
+  },
+  "label": "Upsell Card",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

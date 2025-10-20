@@ -1,0 +1,10 @@
+{
+  "id": "upsell",
+  "json": {
+    "Main": {}
+  },
+  "label": "upsell",
+  "repeatable": true,
+  "status": false,
+  "format": "custom"
+}

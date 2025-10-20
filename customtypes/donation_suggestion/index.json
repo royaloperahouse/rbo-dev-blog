@@ -1,0 +1,35 @@
+{
+  "id": "donation_suggestion",
+  "json": {
+    "Main": {
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Image"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Description",
+          "placeholder": "Description of what your donation could fund"
+        }
+      },
+      "amount": {
+        "type": "Number",
+        "config": {
+          "label": "Amount",
+          "placeholder": "Donation amount in GBP"
+        }
+      }
+    }
+  },
+  "label": "Donation Suggestion",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

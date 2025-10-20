@@ -1,0 +1,204 @@
+{
+  "id": "info_component",
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": "An identifier solely used within Prismic",
+          "useAsTitle": true
+        }
+      },
+      "main_title": {
+        "type": "Text",
+        "config": {
+          "label": "Main title",
+          "placeholder": "Safety"
+        }
+      },
+      "secondary_title": {
+        "type": "Text",
+        "config": {
+          "label": "Secondary title",
+          "placeholder": "Covid 19 safety measures"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Standfirst",
+          "placeholder": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      },
+      "body_sections": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "rich_text": {
+              "type": "Slice",
+              "fieldset": "Rich text section",
+              "description": "Rich text section",
+              "non-repeat": {
+                "text_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Body",
+                    "placeholder": "Rich Text"
+                  }
+                }
+              },
+              "icon": "title",
+              "display": "list"
+            },
+            "icons_section": {
+              "type": "Slice",
+              "fieldset": "Icons with text section",
+              "description": "Repeatable zone with icons and text",
+              "non-repeat": {},
+              "repeat": {
+                "icon": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "account",
+                      "alert",
+                      "alertSquare",
+                      "arrowHead",
+                      "arrowMenu",
+                      "bag",
+                      "basket",
+                      "broadcast",
+                      "calendar",
+                      "calendarArrow",
+                      "camera",
+                      "checkmark",
+                      "clock",
+                      "close",
+                      "email",
+                      "empty",
+                      "expand",
+                      "facebook",
+                      "faceMask",
+                      "filter",
+                      "leftArrow",
+                      "list",
+                      "image",
+                      "info",
+                      "instagram",
+                      "mapMarker",
+                      "minimize",
+                      "play",
+                      "rightArrow",
+                      "search",
+                      "star",
+                      "telephone",
+                      "tickets",
+                      "tripadvisor",
+                      "tiktok",
+                      "turnRight",
+                      "twitter",
+                      "underground",
+                      "youtube"
+                    ],
+                    "label": "Icon from the library"
+                  }
+                },
+                "text_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Text",
+                    "placeholder": "Some text"
+                  }
+                }
+              },
+              "icon": "view_list",
+              "display": "list"
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "Desktop image",
+          "placeholder": "https://static.roh.org.uk/redesign/some-image.jpg",
+          "select": null
+        }
+      },
+      "mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "Mobile image",
+          "placeholder": "https://static.roh.org.uk/redesign/some-image-mobile.jpg",
+          "select": null
+        }
+      },
+      "alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Alt text"
+        }
+      }
+    },
+    "Ctas": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "cta": {
+              "type": "Slice",
+              "fieldset": "CTA",
+              "description": "Call to Action",
+              "icon": "arrow_forward",
+              "repeat": {
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "Join as a friend"
+                  }
+                },
+                "link": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Link",
+                    "placeholder": "https://www.roh.org.uk/memberships/friend",
+                    "select": "web"
+                  }
+                },
+                "include_icon": {
+                  "type": "Select",
+                  "config": {
+                    "default_value": "yes",
+                    "options": ["yes", "no"],
+                    "label": "Include icon?"
+                  }
+                },
+                "button_style": {
+                  "type": "Select",
+                  "config": {
+                    "default_value": "plain",
+                    "options": ["plain"],
+                    "label": "Button style"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Info Component",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

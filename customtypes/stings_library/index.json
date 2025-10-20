@@ -1,0 +1,27 @@
+{
+  "id": "stings_library",
+  "json": {
+    "Main": {
+      "items": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "sting": {
+              "type": "Link",
+              "config": {
+                "select": "media",
+                "label": "sting",
+                "placeholder": "Sting video document"
+              }
+            }
+          },
+          "label": "items"
+        }
+      }
+    }
+  },
+  "label": "Stings Library",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

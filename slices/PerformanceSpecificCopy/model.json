@@ -1,0 +1,47 @@
+{
+  "type": "SharedSlice",
+  "id": "performance_specific_copy",
+  "name": "PerformanceSpecificCopy",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": "e.g. Welcome"
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "Custom text e.g. performance announcement",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink",
+            "labels": [
+              "quote",
+              "attribution"
+            ]
+          }
+        }
+      },
+      "items": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": "If no activities are specified, the copy will apply to all activities in the production"
+          }
+        }
+      }
+    }
+  ],
+  "description": "PerformanceSpecificCopy"
+}

@@ -1,0 +1,26 @@
+{
+  "type": "SharedSlice",
+  "id": "additional_info_production",
+  "name": "AdditionalProductionCreditsInfo",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "additional_information": {
+          "type": "Text",
+          "config": {
+            "label": "Additional Production Credits info",
+            "placeholder": "e.g. Jette Parker artists"
+          }
+        }
+      },
+      "items": {}
+    }
+  ],
+  "description": "AdditionalInfoProduction"
+}

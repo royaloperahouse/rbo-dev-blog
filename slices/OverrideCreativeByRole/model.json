@@ -1,0 +1,72 @@
+{
+  "type": "SharedSlice",
+  "id": "override_creative_by_role",
+  "name": "OverrideCreativeByRole",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "original_role": {
+          "type": "Text",
+          "config": {
+            "label": "Original Role",
+            "placeholder": ""
+          }
+        },
+        "role_override": {
+          "type": "Text",
+          "config": {
+            "label": "Role Override",
+            "placeholder": ""
+          }
+        },
+        "role_description": {
+          "type": "Text",
+          "config": {
+            "label": "Role Description",
+            "placeholder": ""
+          }
+        },
+        "creative_override": {
+          "type": "Text",
+          "config": {
+            "label": "Name Override",
+            "placeholder": "e.g. Carlos Acosta after Marius Petipa"
+          }
+        },
+        "featured": {
+          "type": "Boolean",
+          "config": {
+            "label": "Featured on Event Listings",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "hide_role_label": {
+          "type": "Boolean",
+          "config": {
+            "label": "Hide Role Label",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "link": {
+          "type": "Text",
+          "config": {
+            "label": "Link",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ],
+  "description": "OverrideCreativeByRole"
+}

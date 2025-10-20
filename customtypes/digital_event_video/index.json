@@ -1,0 +1,206 @@
+{
+  "id": "digital_event_video",
+  "json": {
+    "Main": {
+      "video_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "Video title",
+          "placeholder": "Title to be displayed"
+        }
+      },
+      "use_dev_title_in_a_player": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "False",
+          "placeholder_true": "True",
+          "default_value": false,
+          "label": "Use DEV title in a player"
+        }
+      },
+      "video": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--vcms_videos_integration",
+          "label": "VCMS Video",
+          "placeholder": "Video from VCMS"
+        }
+      },
+      "fee": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--tessitura_fees_integration",
+          "label": "Fee",
+          "placeholder": "Fee from Tessitura to be linked"
+        }
+      },
+      "ppv_availability_window": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "72 hours (3 days)",
+            "24 hours (1 day)",
+            "48 hours (2 days)",
+            "120 hours (5 days)",
+            "168 hours (1 week)",
+            "336 hours (2 weeks)",
+            "672 hours (4 weeks)"
+          ],
+          "default_value": "72 hours (3 days)",
+          "label": "PPV Availability Window"
+        }
+      }
+    },
+    "Previews": {
+      "preview_video": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--vcms_videos_integration",
+          "label": "Preview video",
+          "placeholder": "Video from VCMS to be displayed as a preview"
+        }
+      },
+      "preview_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1440,
+            "height": 810
+          },
+          "thumbnails": [
+            {
+              "name": "tray",
+              "width": 456,
+              "height": 350
+            },
+            {
+              "name": "tv_app_extras_thumbnail",
+              "width": 749,
+              "height": 424
+            }
+          ],
+          "label": "Preview image"
+        }
+      }
+    },
+    "Countdown timer and duration settings": {
+      "before_start_copy": {
+        "type": "Text",
+        "config": {
+          "label": "Before Start Copy",
+          "placeholder": "Default: \"Live stream starts in:\""
+        }
+      },
+      "during_stream_copy": {
+        "type": "Text",
+        "config": {
+          "label": "During Stream Copy",
+          "placeholder": "Default: \"Live streaming now.\""
+        }
+      },
+      "after_finish_copy": {
+        "type": "Text",
+        "config": {
+          "label": "After Finish Copy",
+          "placeholder": "Default: \"Live stream has ended. Watch on demand now.\""
+        }
+      },
+      "start_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Start Date&Time (for livestreams only)",
+          "placeholder": "Date and time when the stream starts"
+        }
+      },
+      "end_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "End Date&Time (for livestreams only)",
+          "placeholder": "Date and time when the stream ends"
+        }
+      },
+      "livestream_duration": {
+        "type": "Number",
+        "config": {
+          "label": "Livestream duration in minutes (approx, for livestreams only to render the progress bar. Please leave empty for VOD content, so that the progress bar does not show",
+          "placeholder": "120"
+        }
+      }
+    },
+    "ROH extras details": {
+      "short_description": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em",
+          "label": "Short description",
+          "placeholder": "Short description"
+        }
+      },
+      "participant_details": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em",
+          "label": "Participant details",
+          "placeholder": "With Anna Netrebko, With Jonas Kaufmann..."
+        }
+      },
+      "video_card_label": {
+        "type": "Select",
+        "config": {
+          "options": ["Coming soon"],
+          "label": "Video card label"
+        }
+      },
+      "extra_video_type": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Clip",
+            "Behind the scenes",
+            "Insights",
+            "Interview",
+            "Preview",
+            "Promo",
+            "Rehearsal",
+            "Performance",
+            "Insight event",
+            "Classic"
+          ],
+          "label": "Extra Video Type"
+        }
+      },
+      "extra_video_tags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": ["Ballet and dance", "Opera and music"],
+                "label": "Tag",
+                "placeholder": "Choose a tag"
+              }
+            }
+          },
+          "label": "Extra video tags"
+        }
+      }
+    },
+    "Content settings": {
+      "child_pin": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Disabled",
+          "placeholder_true": "Enabled",
+          "default_value": false,
+          "label": "Child safety PIN"
+        }
+      }
+    }
+  },
+  "label": "Digital Event Video",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

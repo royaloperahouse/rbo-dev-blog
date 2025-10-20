@@ -1,0 +1,78 @@
+{
+  "id": "donates_page",
+  "json": {
+    "Main": {
+      "header_text": {
+        "type": "Text",
+        "config": {
+          "label": "Title text",
+          "placeholder": "Donate now",
+          "useAsTitle": true
+        }
+      },
+      "header_color": {
+        "type": "Color",
+        "config": {
+          "label": "Title text color"
+        }
+      },
+      "header_image_desktop_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image desktop",
+          "placeholder": "https://s3-eu-west-1.amazonaws.com/static.roh.org.uk/redesign/charity-checkout-desktop.jpg",
+          "select": null
+        }
+      },
+      "header_image_mobile_path": {
+        "type": "Link",
+        "config": {
+          "label": "Header image mobile",
+          "placeholder": "https://s3-eu-west-1.amazonaws.com/static.roh.org.uk/redesign/charity-checkout-mobile.jpg",
+          "select": null
+        }
+      },
+      "header_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Header image alt text",
+          "placeholder": "Principal dancer Marianela Nuñez and artists of The Royal Ballet in Giselle © ROH 2016. Photographer Tristram Kenton"
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta title",
+          "placeholder": "Donate now"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Page meta description",
+          "placeholder": "Help to create exceptional ballet and opera by donating to the Royal Opera House today"
+        }
+      },
+      "standfirst": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "label": "Standfirst copy section"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,embed",
+          "label": "Body copy section",
+          "placeholder": "Text, Social Media Embeds, Anchor Links",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      }
+    }
+  },
+  "label": "Donations page",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

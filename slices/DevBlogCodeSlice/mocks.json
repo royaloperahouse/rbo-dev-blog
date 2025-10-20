@@ -1,0 +1,25 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"code": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "console.log('Hello World')"
+						}
+					}
+				]
+			},
+			"language": {
+				"__TYPE__": "FieldContent",
+				"value": "javascript",
+				"type": "Select"
+			}
+		},
+		"items": []
+	}
+]

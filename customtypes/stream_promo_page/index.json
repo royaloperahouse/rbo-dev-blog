@@ -1,0 +1,263 @@
+{
+  "id": "stream_promo_page",
+  "json": {
+    "Welcome": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug",
+          "placeholder": "Example: sky"
+        }
+      },
+      "compact_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Compact header"
+        }
+      },
+      "input_description": {
+        "type": "Text",
+        "config": {
+          "label": "Input description",
+          "placeholder": "Please enter your promotional code"
+        }
+      },
+      "promo_code_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "Promo code CTA label",
+          "placeholder": "Apply promotional code"
+        }
+      },
+      "incorrect_promo_code_error_text": {
+        "type": "Text",
+        "config": {
+          "label": "Incorrect promo code error text",
+          "placeholder": "The promotional code is incorrect"
+        }
+      }
+    },
+    "Promo Code": {
+      "promo_code_message": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Message",
+          "placeholder": "Rich Text"
+        }
+      }
+    },
+    "Subscription": {
+      "subscription_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Welcome"
+        }
+      },
+      "subscription_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Your subscription includes:"
+        }
+      },
+      "subscription_bullets": {
+        "type": "Group",
+        "fieldset": "Bullets",
+        "config": {
+          "fields": {
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Bullet Description",
+                "placeholder": "— Description"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Already Subscribed": {
+      "already_subscribed_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Watch now"
+        }
+      },
+      "already_subscribed_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Already subscribed?"
+        }
+      },
+      "already_subscribed_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      },
+      "already_subscribed_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label",
+          "placeholder": "Watch now"
+        }
+      },
+      "already_subscribed_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "CTA url",
+          "placeholder": "/stream"
+        }
+      }
+    },
+    "Ways To Watch": {
+      "ways_to_watch_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Ways to watch tab title",
+          "placeholder": "Ways to watch"
+        }
+      }
+    },
+    "More Information": {
+      "more_information_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "More information"
+        }
+      },
+      "more_information_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "More information"
+        }
+      },
+      "more_information_accordion": {
+        "type": "Group",
+        "fieldset": "Accordion",
+        "config": {
+          "fields": {
+            "section_title": {
+              "type": "Text",
+              "config": {
+                "label": "Section Title",
+                "placeholder": "What your subscription includes"
+              }
+            },
+            "section_body": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                "label": "Section Body",
+                "placeholder": "Rich Text"
+              }
+            }
+          }
+        }
+      },
+      "more_information_link_title": {
+        "type": "Text",
+        "config": {
+          "label": "Link title",
+          "placeholder": "Find out more"
+        }
+      },
+      "more_information_link_url": {
+        "type": "Text",
+        "config": {
+          "label": "Link url",
+          "placeholder": "/stream/help"
+        }
+      }
+    },
+    "Find Out More": {
+      "find_out_more_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Find out more"
+        }
+      },
+      "find_out_more_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Find out more"
+        }
+      },
+      "find_out_more_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Rich Text"
+        }
+      },
+      "find_out_more_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label",
+          "placeholder": "Explore"
+        }
+      },
+      "find_out_more_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "CTA url",
+          "placeholder": "/stream"
+        }
+      }
+    },
+    "Success screen": {
+      "success_screen_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Header title",
+          "placeholder": "You now have access to Stream"
+        }
+      },
+      "success_screen_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Welcome"
+        }
+      },
+      "success_screen_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Text"
+        }
+      },
+      "success_screen_cta_label": {
+        "type": "Text",
+        "config": {
+          "label": "CTA label",
+          "placeholder": "Start streaming"
+        }
+      },
+      "success_screen_cta_url": {
+        "type": "Text",
+        "config": {
+          "label": "CTA url",
+          "placeholder": "/stream"
+        }
+      }
+    }
+  },
+  "label": "Stream Promo Page",
+  "repeatable": true,
+  "status": false,
+  "format": "custom"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "roh_stream_watch_next",
+  "json": {
+    "Main": {
+      "prismic_title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading6",
+          "label": "Prismic title",
+          "placeholder": "An internal title only used for Prismic"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading6",
+          "label": "Title",
+          "placeholder": "A title to be displayed on the website"
+        }
+      },
+      "elements": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "element": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["digital_event_details", "digital_event_video"],
+                "label": "Digital event or video",
+                "placeholder": "Please select digital event details or video to be displayed"
+              }
+            }
+          },
+          "label": "Elements"
+        }
+      }
+    }
+  },
+  "label": "Player Watch Next Tray",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

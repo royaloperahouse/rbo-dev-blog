@@ -1,0 +1,66 @@
+{
+  "id": "synopsis_override",
+  "type": "SharedSlice",
+  "name": "SynopsisOverride",
+  "description": "SynopsisOverride",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "synopsis_title": {
+          "type": "Text",
+          "config": {
+            "label": "Synopsis section title",
+            "placeholder": "Leave blank to use default"
+          }
+        },
+        "full_synopsis_button": {
+          "type": "Text",
+          "config": {
+            "label": "'Read full synopsis' button",
+            "placeholder": "Leave blank to use default"
+          }
+        },
+        "hide_synopsis_button": {
+          "type": "Text",
+          "config": {
+            "label": "'Hide synopsis' button",
+            "placeholder": "Leave blank to use default"
+          }
+        },
+        "synopsis_text_full": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Synopsis Full",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,strong,em,embed"
+          }
+        },
+        "synopsis_text_intro": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Synopsis Intro",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading3,strong,em,embed"
+          }
+        }
+      },
+      "items": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": "If no activities are specified, the copy will apply to all activities in the production"
+          }
+        }
+      }
+    }
+  ]
+}

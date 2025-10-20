@@ -1,0 +1,368 @@
+{
+  "id": "cast_sheet",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": "Unique identifier / slug"
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "template": {
+        "type": "Select",
+        "config": {
+          "options": ["Core", "Stream", "Cinema"],
+          "label": "Template",
+          "placeholder": ""
+        }
+      },
+      "linked_event": {
+        "type": "Link",
+        "config": {
+          "label": "Event",
+          "select": "document",
+          "customtypes": ["event_details"],
+          "placeholder": "Event to link to an event document"
+        }
+      },
+      "linked_production": {
+        "type": "Link",
+        "config": {
+          "label": "Production Link",
+          "select": "document",
+          "customtypes": ["production"],
+          "placeholder": "Link to a production document"
+        }
+      },
+      "linked_company_masthead": {
+        "type": "Link",
+        "config": {
+          "label": "Company Masthead",
+          "select": "document",
+          "customtypes": ["company_masthead"]
+        }
+      },
+      "linked_company_composition": {
+        "type": "Link",
+        "config": {
+          "label": "Company Composition",
+          "select": "document",
+          "customtypes": ["company_composition"]
+        }
+      },
+      "company_name": {
+        "type": "Text",
+        "config": {
+          "label": "Company Name",
+          "placeholder": "The Royal Opera / The Royal Ballet"
+        }
+      },
+      "first_performance_number": {
+        "type": "Number",
+        "config": {
+          "label": "First Performance Number",
+          "placeholder": "If blank, count starts at 1"
+        }
+      },
+      "performances_to_skip": {
+        "type": "Group",
+        "config": {
+          "label": "Performances to Skip",
+          "fields": {
+            "activity_id": {
+              "type": "Text",
+              "config": {
+                "label": "Activity id ",
+                "placeholder": "A performance (Activity ID) entered here will be ignored in the performance count."
+              }
+            }
+          }
+        }
+      },
+      "hide_performance_number_copy": {
+        "type": "Boolean",
+        "config": {
+          "label": "Hide Performance Number Copy",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "event_summary": {
+        "type": "Text",
+        "config": {
+          "label": "Event Summary",
+          "placeholder": "e.g. Melodrama in three acts"
+        }
+      },
+      "campaigns": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "campaign": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["campaign"],
+                "label": "Campaign"
+              }
+            }
+          },
+          "label": "Campaigns"
+        }
+      }
+    },
+    "Production": {
+      "production_credits_title": {
+        "type": "Text",
+        "config": {
+          "label": "Production credits title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "synopsis_title": {
+        "type": "Text",
+        "config": {
+          "label": "Synopsis section title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "full_synopsis_button": {
+        "type": "Text",
+        "config": {
+          "label": "'Read full synopsis' button",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "hide_synopsis_button": {
+        "type": "Text",
+        "config": {
+          "label": "'Hide synopsis' button",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "synopsis_text_full": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Synopsis Full",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,embed,heading3"
+        }
+      },
+      "synopsis_text_intro": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Synopsis Intro",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,embed,heading3"
+        }
+      },
+      "sponsor_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Sponsor Section Title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "synopsis_override": {
+              "type": "SharedSlice"
+            },
+            "sponsor": {
+              "type": "SharedSlice"
+            },
+            "performance_specific_copy": {
+              "type": "SharedSlice"
+            },
+            "production_credit": {
+              "type": "SharedSlice"
+            },
+            "additional_info_production": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Music": {
+      "music_credits_title": {
+        "type": "Text",
+        "config": {
+          "label": "Music Credits Title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "declare_musician": {
+              "type": "SharedSlice"
+            },
+            "additional_info_music": {
+              "type": "SharedSlice"
+            },
+            "group_musicians_by_role": {
+              "type": "SharedSlice"
+            },
+            "override_by_role": {
+              "type": "SharedSlice"
+            },
+            "override_by_person": {
+              "type": "SharedSlice"
+            },
+            "custom_musician": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Creatives": {
+      "credits_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Credits section title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "slices3": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "additional_info_creatives": {
+              "type": "SharedSlice"
+            },
+            "group_creatives_by_role": {
+              "type": "SharedSlice"
+            },
+            "override_creative_by_role": {
+              "type": "SharedSlice"
+            },
+            "override_by_creative": {
+              "type": "SharedSlice"
+            },
+            "custom_creative": {
+              "type": "SharedSlice"
+            },
+            "credit_a_creative_work": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Cast": {
+      "cast_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Cast Section Title",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "cast_overrides": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "additional_info_cast": {
+              "type": "SharedSlice"
+            },
+            "group_cast_by_role": {
+              "type": "SharedSlice"
+            },
+            "override_by_role": {
+              "type": "SharedSlice"
+            },
+            "override_by_person": {
+              "type": "SharedSlice"
+            },
+            "custom_role": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Ordering": {
+      "move_conductors_to_credits": {
+        "type": "Boolean",
+        "config": {
+          "label": "Move conductors into credits",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "credits_role_order": {
+        "type": "Group",
+        "config": {
+          "label": "Credits Role Order",
+          "fields": {
+            "role": {
+              "type": "Text",
+              "config": {
+                "label": "Role",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "slices5": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "music_section_marker": {
+              "type": "SharedSlice"
+            },
+            "cast_section_marker": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Screens": {
+      "slices6": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "image_cast_sheet": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Cast Sheet",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

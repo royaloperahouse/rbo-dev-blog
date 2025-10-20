@@ -1,0 +1,10 @@
+{
+  "id": "donations_page_2",
+  "json": {
+    "Main": {}
+  },
+  "label": "donations_page_2",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

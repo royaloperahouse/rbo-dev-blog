@@ -1,0 +1,49 @@
+{
+  "type": "SharedSlice",
+  "id": "override_by_role",
+  "name": "OverrideByRole",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "role_name": {
+          "type": "Text",
+          "config": {
+            "label": "Original Role Name",
+            "placeholder": "Must match original role"
+          }
+        },
+        "role_name_override": {
+          "type": "Text",
+          "config": {
+            "label": "Role Name Override",
+            "placeholder": "New role name"
+          }
+        },
+        "role_description": {
+          "type": "Text",
+          "config": {
+            "label": "Role Description",
+            "placeholder": ""
+          }
+        },
+        "hide_role_label": {
+          "type": "Boolean",
+          "config": {
+            "label": "Hide Role Label",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {}
+    }
+  ],
+  "description": "OverrideByRole"
+}

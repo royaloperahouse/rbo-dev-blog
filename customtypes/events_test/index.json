@@ -1,0 +1,26 @@
+{
+  "id": "events_test",
+  "json": {
+    "Main": {
+      "events": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "event": {
+              "type": "IntegrationFields",
+              "config": {
+                "catalog": "royal-opera-house--events_test",
+                "label": "Event"
+              }
+            }
+          },
+          "label": "Events"
+        }
+      }
+    }
+  },
+  "label": "Events Test",
+  "repeatable": true,
+  "status": false,
+  "format": "custom"
+}

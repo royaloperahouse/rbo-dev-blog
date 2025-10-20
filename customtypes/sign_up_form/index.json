@@ -1,0 +1,92 @@
+{
+  "id": "sign_up_form",
+  "json": {
+    "Main": {
+      "anchor_bar_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Anchor Bar CTA text",
+          "placeholder": "Max 54 characters for anchor bar CTA text"
+        }
+      },
+      "sign_up_title": {
+        "type": "Text",
+        "config": {
+          "label": "Sign up title",
+          "placeholder": "Sign up for email"
+        }
+      },
+      "sign_up_message": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Sign up message",
+          "placeholder": "Be the first to hear about what's on..."
+        }
+      },
+      "subscribe_title": {
+        "type": "Text",
+        "config": {
+          "label": "Subscribe title",
+          "placeholder": "You're missing out"
+        }
+      },
+      "subscribe_message": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Subscribe message",
+          "placeholder": "Email subscribers receive the latest Royal Ballet and Opera news, ticket alerts and hear about ways to support us."
+        }
+      },
+      "submitted_form_title": {
+        "type": "Text",
+        "config": {
+          "label": "Submitted form title",
+          "placeholder": "Thank you"
+        }
+      },
+      "submitted_form_message": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Submitted form message",
+          "placeholder": "You have successfully signed up"
+        }
+      },
+      "cta_privacy_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA privacy text",
+          "placeholder": "View our Privacy Notice"
+        }
+      },
+      "cta_privacy_link": {
+        "type": "Text",
+        "config": {
+          "label": "CTA privacy link",
+          "placeholder": "/link-to-privacy-notice"
+        }
+      },
+      "error_message": {
+        "type": "Text",
+        "config": {
+          "label": "Error message",
+          "placeholder": "Sorry, we are currently unable to sign you up. Please try again shortly."
+        }
+      },
+      "theme": {
+        "type": "Select",
+        "config": {
+          "options": ["Core", "Cinema", "Stream"],
+          "default_value": "Core",
+          "label": "Theme"
+        }
+      }
+    }
+  },
+  "label": "Sign Up Form",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

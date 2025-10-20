@@ -1,0 +1,111 @@
+{
+  "id": "account_page_group",
+  "json": {
+    "My Tickets": {
+      "mytickets_tickets_banner": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Tickets banner",
+          "placeholder": "Text to display in the banner above the list of tickets in the user's account."
+        }
+      }
+    },
+    "Membership": {
+      "membership_non_member_content": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+                "label": "Title",
+                "placeholder": "(e.g. Become a member)"
+              }
+            },
+            "description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Description",
+                "placeholder": "(e.g. Friends get exclusive access to rehearsals and priority booking ahead of the public each Season. Membership is a charitable donation that supports the future of ballet, dance, opera and music.)"
+              }
+            },
+            "primary_cta_text": {
+              "type": "Text",
+              "config": {
+                "label": "Primary CTA text",
+                "placeholder": "(e.g. Become a member)"
+              }
+            },
+            "primary_cta_link": {
+              "type": "Text",
+              "config": {
+                "label": "Primary CTA link",
+                "placeholder": "(e.g. /join-and-support/become-a-member)"
+              }
+            },
+            "secondary_cta_text": {
+              "type": "Text",
+              "config": {
+                "label": "Secondary CTA text",
+                "placeholder": "(e.g. Buy a gift membership)"
+              }
+            },
+            "secondary_cta_link": {
+              "type": "Text",
+              "config": {
+                "label": "Secondary CTA link",
+                "placeholder": "/join-and-support/become-a-member"
+              }
+            }
+          },
+          "label": "Non-Member Content"
+        }
+      },
+      "membership_member_content": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "primary_cta_text": {
+              "type": "Text",
+              "config": {
+                "label": "Primary CTA text",
+                "placeholder": "(e.g. Explore the Friends Area)"
+              }
+            },
+            "primary_cta_link": {
+              "type": "Text",
+              "config": {
+                "label": "Primary CTA link",
+                "placeholder": "(e.g. /friends-area)"
+              }
+            },
+            "secondary_cta_text": {
+              "type": "Text",
+              "config": {
+                "label": "Secondary CTA text",
+                "placeholder": ""
+              }
+            },
+            "secondary_cta_link": {
+              "type": "Text",
+              "config": {
+                "label": "Secondary CTA link",
+                "placeholder": "(e.g. /example)"
+              }
+            }
+          },
+          "label": "Member Content"
+        }
+      }
+    }
+  },
+  "label": "Account Page Group",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

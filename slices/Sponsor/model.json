@@ -1,0 +1,51 @@
+{
+  "type": "SharedSlice",
+  "id": "sponsor",
+  "name": "Sponsor",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "intro": {
+          "type": "Text",
+          "config": {
+            "label": "intro",
+            "placeholder": "E.g. Official Media Partner"
+          }
+        },
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "information": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Sponsor/Supporters information",
+            "placeholder": "Generous philanthropic support from\u2026",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item"
+          }
+        }
+      },
+      "items": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": "If no activities are specified, content will apply to all activities"
+          }
+        }
+      }
+    }
+  ],
+  "description": "Sponsor"
+}

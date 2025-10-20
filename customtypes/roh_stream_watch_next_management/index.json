@@ -1,0 +1,237 @@
+{
+  "id": "roh_stream_watch_next_management",
+  "json": {
+    "Opera": {
+      "opera_group": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "watch_next_links": {
+              "type": "Slice",
+              "fieldset": "Watch Next Links",
+              "description": "A slice to link content with Watch Next documents",
+              "icon": "queue_play_next",
+              "display": "list",
+              "non-repeat": {
+                "internal_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Internal title",
+                    "placeholder": "This is an internal title e.g. Contemporary Opera, Classic Ballet, etc"
+                  }
+                },
+                "watch_next_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["roh_stream_watch_next"],
+                    "label": "Watch Next Link",
+                    "placeholder": "Pick a Watch Next document to attach"
+                  }
+                }
+              },
+              "repeat": {
+                "digital_event_video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_video"],
+                    "label": "Digital Event Video",
+                    "placeholder": "Pick a Digital Event Video to attach the Watch Next to"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Ballet": {
+      "ballet_group": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "watch_next_links": {
+              "type": "Slice",
+              "fieldset": "Watch Next Links",
+              "description": "A slice to link content with Watch Next documents",
+              "icon": "queue_play_next",
+              "display": "list",
+              "non-repeat": {
+                "watch_next_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["roh_stream_watch_next"],
+                    "label": "Watch Next Link",
+                    "placeholder": "Pick a Watch Next document to attach"
+                  }
+                }
+              },
+              "repeat": {
+                "digital_event_video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_video"],
+                    "label": "Digital Event Video",
+                    "placeholder": "Pick a Digital Event Video to attach the Watch Next to"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Insights": {
+      "insights_group": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "watch_next_links": {
+              "type": "Slice",
+              "fieldset": "Watch Next Links",
+              "description": "A slice to link content with Watch Next documents",
+              "icon": "queue_play_next",
+              "display": "list",
+              "non-repeat": {
+                "internal_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Internal title",
+                    "placeholder": "This is an internal title e.g. Contemporary Opera, Classic Ballet, etc"
+                  }
+                },
+                "watch_next_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["roh_stream_watch_next"],
+                    "label": "Watch Next Link",
+                    "placeholder": "Pick a Watch Next document to attach"
+                  }
+                }
+              },
+              "repeat": {
+                "digital_event_video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_video"],
+                    "label": "Digital Event Video",
+                    "placeholder": "Pick a Digital Event Video to attach the Watch Next to"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Trailers": {
+      "trailers_group": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "watch_next_links": {
+              "type": "Slice",
+              "fieldset": "Watch Next Links",
+              "description": "A slice to link content with Watch Next documents",
+              "icon": "queue_play_next",
+              "display": "list",
+              "non-repeat": {
+                "internal_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Internal title",
+                    "placeholder": "This is an internal title e.g. Contemporary Opera, Classic Ballet, etc"
+                  }
+                },
+                "watch_next_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["roh_stream_watch_next"],
+                    "label": "Watch Next Link",
+                    "placeholder": "Pick a Watch Next document to attach"
+                  }
+                }
+              },
+              "repeat": {
+                "digital_event_video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_video"],
+                    "label": "Digital Event Video",
+                    "placeholder": "Pick a Digital Event Video to attach the Watch Next to"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Extras": {
+      "extras_group": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "watch_next_links": {
+              "type": "Slice",
+              "fieldset": "Watch Next Links",
+              "description": "A slice to link content with Watch Next documents",
+              "icon": "queue_play_next",
+              "display": "list",
+              "non-repeat": {
+                "internal_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Internal title",
+                    "placeholder": "This is an internal title e.g. Contemporary Opera, Classic Ballet, etc"
+                  }
+                },
+                "watch_next_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["roh_stream_watch_next"],
+                    "label": "Watch Next Link",
+                    "placeholder": "Pick a Watch Next document to attach"
+                  }
+                }
+              },
+              "repeat": {
+                "digital_event_video": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_video"],
+                    "label": "Digital Event Video",
+                    "placeholder": "Pick a Digital Event Video to attach the Watch Next to"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Player Watch Next Management",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

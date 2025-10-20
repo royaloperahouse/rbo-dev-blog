@@ -1,0 +1,42 @@
+{
+  "id": "sign_up_control",
+  "json": {
+    "Main": {
+      "read_me": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "READ ME"
+        }
+      },
+      "digital_event_details": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["sign_up_form"],
+          "label": "Digital Event Details"
+        }
+      },
+      "event_details": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["sign_up_form"],
+          "label": "Event Details"
+        }
+      },
+      "people_pages": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["sign_up_form"],
+          "label": "People Pages"
+        }
+      }
+    }
+  },
+  "label": "Sign Up Control",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

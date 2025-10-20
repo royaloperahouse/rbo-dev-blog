@@ -1,0 +1,2443 @@
+{
+  "id": "friends_area",
+  "json": {
+    "Main page": {
+      "main_page_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title"
+        }
+      },
+      "main_page_tab_id": {
+        "type": "Text",
+        "config": {
+          "label": "Tab ID"
+        }
+      },
+      "main_page_compact_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Compact Header",
+          "placeholder": "If the Compact Header is chosen it will replace a page heading"
+        }
+      },
+      "main_page_heading_title": {
+        "type": "Text",
+        "config": {
+          "label": "Main page heading title",
+          "placeholder": "If left blank, default text will be used."
+        }
+      },
+      "main_page_heading_description": {
+        "type": "Text",
+        "config": {
+          "label": "Main page heading description",
+          "placeholder": "130 chars. If left blank, defalt text will be used."
+        }
+      },
+      "main_page_show_membership_level": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "don't show membership level",
+          "placeholder_true": "show membership level",
+          "default_value": false,
+          "label": "Main page show membership level"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "priority_booking_date": {
+              "type": "Slice",
+              "fieldset": "Priority Booking Date",
+              "description": "Priority Booking Date panel",
+              "icon": "date_range",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "date_description_pending": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Date description (pending)",
+                    "placeholder": "Text that will be shown above the date"
+                  }
+                },
+                "date_description_active": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Date description (active)",
+                    "placeholder": "Text that will be shown above the date if the date passed"
+                  }
+                },
+                "text_link_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text of the Text Link",
+                    "placeholder": "Add to calendar"
+                  }
+                },
+                "information_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed",
+                    "label": "Information text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Upgrade"
+                  }
+                },
+                "cta_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA url",
+                    "placeholder": "/join-and-support/become-a-member"
+                  }
+                },
+                "email_template": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["automated_email_template"],
+                    "label": "email template",
+                    "placeholder": "When filled, this will override the cta_url. Pressing this button won't take the user to the cta_url, but rather will open their email client with a ready-to-send email."
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "section_title": {
+              "type": "Slice",
+              "fieldset": "Section title",
+              "description": "reusable section title",
+              "icon": "title",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "Browse events"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "need_more_help": {
+              "type": "Slice",
+              "fieldset": "Need more help",
+              "description": "Contact details for more help",
+              "icon": "live_help",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "Need more help?"
+                  }
+                },
+                "more_help_copy": {
+                  "type": "Text",
+                  "config": {
+                    "label": "more help copy",
+                    "placeholder": "For further information contact the membership team:"
+                  }
+                },
+                "email_address": {
+                  "type": "Text",
+                  "config": {
+                    "label": "email address",
+                    "placeholder": "friends@roh.org.uk"
+                  }
+                },
+                "telephone_number": {
+                  "type": "Text",
+                  "config": {
+                    "label": "telephone number",
+                    "placeholder": "+44 (0)02 7212 9268"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "events_rail": {
+              "type": "Slice",
+              "fieldset": "Rail",
+              "description": "Rail",
+              "icon": "network_wifi",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Rail title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Rail description"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large", "Highlight"],
+                    "default_value": "Small",
+                    "label": "Type"
+                  }
+                }
+              },
+              "repeat": {
+                "event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card", "festival"],
+                    "label": "Event"
+                  }
+                },
+                "video_settings": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video_settings"],
+                    "label": "Video settings",
+                    "placeholder": "Link a video if it should be displayed instead of image"
+                  }
+                }
+              }
+            },
+            "free_text": {
+              "type": "Slice",
+              "fieldset": "Free text",
+              "description": "Optional header + unlimited free Rich text",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "strong,em,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "accordion": {
+              "type": "Slice",
+              "fieldset": "Accordion with title",
+              "description": "Accordion with title",
+              "icon": "keyboard_arrow_down",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "More information"
+                  }
+                }
+              },
+              "repeat": {
+                "section_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "section title",
+                    "placeholder": "title of accordion section"
+                  }
+                },
+                "section_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                    "allowTargetBlank": true,
+                    "label": "section body",
+                    "placeholder": "visible once section unfolded."
+                  }
+                }
+              }
+            },
+            "cards_rail": {
+              "type": "Slice",
+              "fieldset": "Cards Rail",
+              "description": "A rail with cards",
+              "icon": "view_column",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Read our magazine and guides"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large"],
+                    "default_value": "Small",
+                    "label": "Type"
+                  }
+                }
+              },
+              "repeat": {
+                "card_image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 720,
+                      "height": 540
+                    },
+                    "thumbnails": [],
+                    "label": "Card image"
+                  }
+                },
+                "card_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Card title",
+                    "placeholder": "Royal opera house magazine"
+                  }
+                },
+                "card_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Card link",
+                    "placeholder": "/join-and-support/philanthropic-engagement"
+                  }
+                }
+              }
+            },
+            "promo_with_title": {
+              "type": "Slice",
+              "fieldset": "Promo with title",
+              "description": "Promo with title chord component",
+              "icon": "chrome_reader_mode",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "linked_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card", "festival"],
+                    "label": "Linked Event",
+                    "placeholder": "Link event to populate Promo. Use fields below to override fields of linked event. Leave this blank and fill the fields below for custom Promo."
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title override",
+                    "placeholder": "Enter text to override linked event's title"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": "Enter text to give Promo a subtitle"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "description override",
+                    "placeholder": "Enter description to override linked event's description."
+                  }
+                },
+                "cta_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA URL override"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Text override"
+                  }
+                },
+                "image_video_toggle": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "use image",
+                    "placeholder_true": "use video",
+                    "default_value": false,
+                    "label": "image video toggle"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 702,
+                      "height": 540
+                    },
+                    "thumbnails": [],
+                    "label": "image override"
+                  }
+                },
+                "video_settings": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video_settings"],
+                    "label": "Video settings",
+                    "placeholder": "Link video to override linked event's image."
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "image on left",
+                    "placeholder_true": "image on right",
+                    "default_value": false,
+                    "label": "image position"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "automated_rail": {
+              "type": "Slice",
+              "fieldset": "Automated Rail",
+              "description": "Automated Rail",
+              "icon": "beach_access",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Rail title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Rail description"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large", "Highlight"],
+                    "default_value": "Small",
+                    "label": "Rail type"
+                  }
+                },
+                "automation_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Talks and insights"],
+                    "default_value": "Talks and insights",
+                    "label": "Automation type"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "link_listing": {
+              "type": "Slice",
+              "fieldset": "Link Listing",
+              "description": "lists links",
+              "icon": "list",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "default: \"useful links\""
+                  }
+                },
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule",
+                    "placeholder": "select User Access Rule document"
+                  }
+                }
+              },
+              "repeat": {
+                "link_icon": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "Link icon"
+                  }
+                },
+                "link_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link title"
+                  }
+                },
+                "link_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link text"
+                  }
+                },
+                "link_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link URL"
+                  }
+                }
+              }
+            },
+            "image_carousel": {
+              "type": "Slice",
+              "fieldset": "Image Carousel",
+              "description": "a carousel of images",
+              "icon": "image",
+              "display": "list",
+              "non-repeat": {
+                "carousel_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Carousel Title",
+                    "placeholder": "'Gallery'"
+                  }
+                },
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule"
+                  }
+                }
+              },
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 649,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "image"
+                  }
+                },
+                "caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "caption"
+                  }
+                }
+              }
+            },
+            "editorial": {
+              "type": "Slice",
+              "fieldset": "Editorial",
+              "description": "Editorial component",
+              "icon": "format_align_left",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                }
+              },
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 800,
+                      "height": 800
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "image on left",
+                    "placeholder_true": "image on right",
+                    "default_value": false,
+                    "label": "Image position"
+                  }
+                }
+              }
+            },
+            "event_filters_bar": {
+              "type": "Slice",
+              "fieldset": "Event Filters Bar",
+              "description": "Use only one per page",
+              "icon": "filter_list",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "if empty, the default label from Default data tab will be used"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "Exclusive to members": {
+      "etm_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Exclusive to members"
+        }
+      },
+      "etm_tab_id": {
+        "type": "Text",
+        "config": {
+          "label": "Tab Id",
+          "placeholder": "exclusive-to-members"
+        }
+      },
+      "etm_compact_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Compact Header",
+          "placeholder": "If the Compact Header is chosen it will replace a page heading"
+        }
+      },
+      "etm_heading_title": {
+        "type": "Text",
+        "config": {
+          "label": "Exclusive To Members heading title",
+          "placeholder": "If left blank, default text will be used."
+        }
+      },
+      "etm_heading_description": {
+        "type": "Text",
+        "config": {
+          "label": "Exclusive To Members description",
+          "placeholder": "130 chars. If left blank, defalt text will be used."
+        }
+      },
+      "etm_show_membership_level": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "don't show membership level",
+          "placeholder_true": "show membership level",
+          "default_value": false,
+          "label": "Exclusive To Members show membership level"
+        }
+      },
+      "etm_body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "priority_booking_date": {
+              "type": "Slice",
+              "fieldset": "Priority Booking Date",
+              "description": "Priority Booking Date panel",
+              "icon": "date_range",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "date_description_pending": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Date description (pending)",
+                    "placeholder": "Text that will be shown above the date"
+                  }
+                },
+                "date_description_active": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Date description (active)",
+                    "placeholder": "Text that will be shown above the date if the date passed"
+                  }
+                },
+                "text_link_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text of the Text Link",
+                    "placeholder": "Add to calendar"
+                  }
+                },
+                "information_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed",
+                    "label": "Information text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Upgrade"
+                  }
+                },
+                "cta_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA url",
+                    "placeholder": "/join-and-support/become-a-member"
+                  }
+                },
+                "email_template": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["automated_email_template"],
+                    "label": "email template",
+                    "placeholder": "When filled, this will override the cta_url. Pressing this button won't take the user to the cta_url, but rather will open their email client with a ready-to-send email."
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "section_title": {
+              "type": "Slice",
+              "fieldset": "Section title",
+              "description": "reusable section title",
+              "icon": "title",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "Browse events"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "need_more_help": {
+              "type": "Slice",
+              "fieldset": "Need more help",
+              "description": "Contact details for more help",
+              "icon": "live_help",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "Need more help?"
+                  }
+                },
+                "more_help_copy": {
+                  "type": "Text",
+                  "config": {
+                    "label": "more help copy",
+                    "placeholder": "For further information contact the membership team:"
+                  }
+                },
+                "email_address": {
+                  "type": "Text",
+                  "config": {
+                    "label": "email address",
+                    "placeholder": "friends@roh.org.uk"
+                  }
+                },
+                "telephone_number": {
+                  "type": "Text",
+                  "config": {
+                    "label": "telephone number",
+                    "placeholder": "+44 (0)02 7212 9268"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "events_rail": {
+              "type": "Slice",
+              "fieldset": "Rail",
+              "description": "Rail",
+              "icon": "network_wifi",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Rail title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Rail description"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large", "Highlight"],
+                    "default_value": "Small",
+                    "label": "Type"
+                  }
+                }
+              },
+              "repeat": {
+                "event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card"],
+                    "label": "Event"
+                  }
+                },
+                "video_settings": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video_settings"],
+                    "label": "Video settings",
+                    "placeholder": "Link a video if it should be displayed instead of image"
+                  }
+                }
+              }
+            },
+            "free_text": {
+              "type": "Slice",
+              "fieldset": "Free text",
+              "description": "Optional header + unlimited free Rich text",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "strong,em,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "accordion": {
+              "type": "Slice",
+              "fieldset": "Accordion with title",
+              "description": "Accordion with title",
+              "icon": "keyboard_arrow_down",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "More information"
+                  }
+                }
+              },
+              "repeat": {
+                "section_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "section title",
+                    "placeholder": "title of accordion section"
+                  }
+                },
+                "section_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                    "allowTargetBlank": true,
+                    "label": "section body",
+                    "placeholder": "visible once section unfolded."
+                  }
+                }
+              }
+            },
+            "cards_rail": {
+              "type": "Slice",
+              "fieldset": "Cards Rail",
+              "description": "A rail with cards",
+              "icon": "view_column",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Read our magazine and guides"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large"],
+                    "default_value": "Small",
+                    "label": "Type"
+                  }
+                }
+              },
+              "repeat": {
+                "card_image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 720,
+                      "height": 540
+                    },
+                    "thumbnails": [],
+                    "label": "Card image"
+                  }
+                },
+                "card_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Card title",
+                    "placeholder": "Royal opera house magazine"
+                  }
+                },
+                "card_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Card link",
+                    "placeholder": "/join-and-support/philanthropic-engagement"
+                  }
+                }
+              }
+            },
+            "promo_with_title": {
+              "type": "Slice",
+              "fieldset": "Promo with title",
+              "description": "Promo with title chord component",
+              "icon": "chrome_reader_mode",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "linked_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card", "festival"],
+                    "label": "Linked Event",
+                    "placeholder": "Link event to populate Promo. Use fields below to override fields of linked event. Leave this blank and fill the fields below for custom Promo."
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title override",
+                    "placeholder": "Enter text to override linked event's title"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": "Enter text to give Promo a subtitle"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "description override",
+                    "placeholder": "Enter description to override linked event's description."
+                  }
+                },
+                "cta_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA URL override"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Text override"
+                  }
+                },
+                "image_video_toggle": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "use image",
+                    "placeholder_true": "use video",
+                    "default_value": false,
+                    "label": "image video toggle"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 702,
+                      "height": 540
+                    },
+                    "thumbnails": [],
+                    "label": "image override"
+                  }
+                },
+                "video_settings": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video_settings"],
+                    "label": "Video settings",
+                    "placeholder": "Link video to override linked event's image."
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "image on left",
+                    "placeholder_true": "image on right",
+                    "default_value": false,
+                    "label": "image position"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "automated_rail": {
+              "type": "Slice",
+              "fieldset": "Automated Rail",
+              "description": "Automated Rail",
+              "icon": "beach_access",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Rail title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Rail description"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large", "Highlight"],
+                    "default_value": "Small",
+                    "label": "Rail type"
+                  }
+                },
+                "automation_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Talks and insights"],
+                    "default_value": "Talks and insights",
+                    "label": "Automation type"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "link_listing": {
+              "type": "Slice",
+              "fieldset": "Link Listing",
+              "description": "lists links",
+              "icon": "list",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "default: \"useful links\""
+                  }
+                },
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule",
+                    "placeholder": "select User Access Rule document"
+                  }
+                }
+              },
+              "repeat": {
+                "link_icon": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "Link icon"
+                  }
+                },
+                "link_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link title"
+                  }
+                },
+                "link_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link text"
+                  }
+                },
+                "link_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link URL"
+                  }
+                }
+              }
+            },
+            "image_carousel": {
+              "type": "Slice",
+              "fieldset": "Image Carousel",
+              "description": "a carousel of images",
+              "icon": "image",
+              "display": "list",
+              "non-repeat": {
+                "carousel_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Carousel Title",
+                    "placeholder": "'Gallery'"
+                  }
+                },
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule"
+                  }
+                }
+              },
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 649,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "image"
+                  }
+                },
+                "caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "caption"
+                  }
+                }
+              }
+            },
+            "editorial": {
+              "type": "Slice",
+              "fieldset": "Editorial",
+              "description": "Editorial component",
+              "icon": "format_align_left",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                }
+              },
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 800,
+                      "height": 800
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "image on left",
+                    "placeholder_true": "image on right",
+                    "default_value": false,
+                    "label": "Image position"
+                  }
+                }
+              }
+            },
+            "event_filters_bar": {
+              "type": "Slice",
+              "fieldset": "Event Filters Bar",
+              "description": "Use only one per page",
+              "icon": "filter_list",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "if empty, the default label from Default data tab will be used"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "Benefits to us": {
+      "btu_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Tab title",
+          "placeholder": "Benefits to us"
+        }
+      },
+      "btu_tab_id": {
+        "type": "Text",
+        "config": {
+          "label": "Tab ID",
+          "placeholder": "benefits-to-us"
+        }
+      },
+      "btu_compact_header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Compact Header",
+          "placeholder": "If the Compact Header is chosen it will replace a page heading"
+        }
+      },
+      "btu_heading_title": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits To Us heading title",
+          "placeholder": "If left blank, default text will be used."
+        }
+      },
+      "btu_heading_description": {
+        "type": "Text",
+        "config": {
+          "label": "Benefits To Us description",
+          "placeholder": "If left blank, defalt text will be used."
+        }
+      },
+      "btu_show_membership_level": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "don't show membership level",
+          "placeholder_true": "show membership level",
+          "default_value": false,
+          "label": "Benefits To Us show membership level"
+        }
+      },
+      "btu_body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "priority_booking_date": {
+              "type": "Slice",
+              "fieldset": "Priority Booking Date",
+              "description": "Priority Booking Date panel",
+              "icon": "date_range",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "date_description_pending": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Date description (pending)",
+                    "placeholder": "Text that will be shown above the date"
+                  }
+                },
+                "date_description_active": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Date description (active)",
+                    "placeholder": "Text that will be shown above the date if the date passed"
+                  }
+                },
+                "text_link_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text of the Text Link",
+                    "placeholder": "Add to calendar"
+                  }
+                },
+                "information_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,embed",
+                    "label": "Information text"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA text",
+                    "placeholder": "Upgrade"
+                  }
+                },
+                "cta_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA url",
+                    "placeholder": "/join-and-support/become-a-member"
+                  }
+                },
+                "email_template": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["automated_email_template"],
+                    "label": "email template",
+                    "placeholder": "When filled, this will override the cta_url. Pressing this button won't take the user to the cta_url, but rather will open their email client with a ready-to-send email."
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "section_title": {
+              "type": "Slice",
+              "fieldset": "Section title",
+              "description": "reusable section title",
+              "icon": "title",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "Browse events"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "need_more_help": {
+              "type": "Slice",
+              "fieldset": "Need more help",
+              "description": "Contact details for more help",
+              "icon": "live_help",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "Need more help?"
+                  }
+                },
+                "more_help_copy": {
+                  "type": "Text",
+                  "config": {
+                    "label": "more help copy",
+                    "placeholder": "For further information contact the membership team:"
+                  }
+                },
+                "email_address": {
+                  "type": "Text",
+                  "config": {
+                    "label": "email address",
+                    "placeholder": "friends@roh.org.uk"
+                  }
+                },
+                "telephone_number": {
+                  "type": "Text",
+                  "config": {
+                    "label": "telephone number",
+                    "placeholder": "+44 (0)02 7212 9268"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "events_rail": {
+              "type": "Slice",
+              "fieldset": "Rail",
+              "description": "Rail",
+              "icon": "network_wifi",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Rail title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Rail description"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large", "Highlight"],
+                    "default_value": "Small",
+                    "label": "Type"
+                  }
+                }
+              },
+              "repeat": {
+                "event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card"],
+                    "label": "Event"
+                  }
+                },
+                "video_settings": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video_settings"],
+                    "label": "Video settings",
+                    "placeholder": "Link a video if it should be displayed instead of image"
+                  }
+                }
+              }
+            },
+            "free_text": {
+              "type": "Slice",
+              "fieldset": "Free text",
+              "description": "Optional header + unlimited free Rich text",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "strong,em,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "accordion": {
+              "type": "Slice",
+              "fieldset": "Accordion with title",
+              "description": "Accordion with title",
+              "icon": "keyboard_arrow_down",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "More information"
+                  }
+                }
+              },
+              "repeat": {
+                "section_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "section title",
+                    "placeholder": "title of accordion section"
+                  }
+                },
+                "section_body": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                    "allowTargetBlank": true,
+                    "label": "section body",
+                    "placeholder": "visible once section unfolded."
+                  }
+                }
+              }
+            },
+            "cards_rail": {
+              "type": "Slice",
+              "fieldset": "Cards Rail",
+              "description": "A rail with cards",
+              "icon": "view_column",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Read our magazine and guides"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large"],
+                    "default_value": "Small",
+                    "label": "Type"
+                  }
+                }
+              },
+              "repeat": {
+                "card_image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 720,
+                      "height": 540
+                    },
+                    "thumbnails": [],
+                    "label": "Card image"
+                  }
+                },
+                "card_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Card title",
+                    "placeholder": "Royal opera house magazine"
+                  }
+                },
+                "card_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Card link",
+                    "placeholder": "/join-and-support/philanthropic-engagement"
+                  }
+                }
+              }
+            },
+            "promo_with_title": {
+              "type": "Slice",
+              "fieldset": "Promo with title",
+              "description": "Promo with title chord component",
+              "icon": "chrome_reader_mode",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "linked_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["event_details", "event_card", "festival"],
+                    "label": "Linked Event",
+                    "placeholder": "Link event to populate Promo. Use fields below to override fields of linked event. Leave this blank and fill the fields below for custom Promo."
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title override",
+                    "placeholder": "Enter text to override linked event's title"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": "Enter text to give Promo a subtitle"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "description override",
+                    "placeholder": "Enter description to override linked event's description."
+                  }
+                },
+                "cta_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA URL override"
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "CTA Text override"
+                  }
+                },
+                "image_video_toggle": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "use image",
+                    "placeholder_true": "use video",
+                    "default_value": false,
+                    "label": "image video toggle"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 702,
+                      "height": 540
+                    },
+                    "thumbnails": [],
+                    "label": "image override"
+                  }
+                },
+                "video_settings": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["video_settings"],
+                    "label": "Video settings",
+                    "placeholder": "Link video to override linked event's image."
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "image on left",
+                    "placeholder_true": "image on right",
+                    "default_value": false,
+                    "label": "image position"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "automated_rail": {
+              "type": "Slice",
+              "fieldset": "Automated Rail",
+              "description": "Automated Rail",
+              "icon": "beach_access",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Rail title"
+                  }
+                },
+                "description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "Rail description"
+                  }
+                },
+                "rail_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Small", "Large", "Highlight"],
+                    "default_value": "Small",
+                    "label": "Rail type"
+                  }
+                },
+                "automation_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Talks and insights"],
+                    "default_value": "Talks and insights",
+                    "label": "Automation type"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "link_listing": {
+              "type": "Slice",
+              "fieldset": "Link Listing",
+              "description": "lists links",
+              "icon": "list",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "default: \"useful links\""
+                  }
+                },
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule",
+                    "placeholder": "select User Access Rule document"
+                  }
+                }
+              },
+              "repeat": {
+                "link_icon": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 500,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "Link icon"
+                  }
+                },
+                "link_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link title"
+                  }
+                },
+                "link_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link text"
+                  }
+                },
+                "link_url": {
+                  "type": "Text",
+                  "config": {
+                    "label": "link URL"
+                  }
+                }
+              }
+            },
+            "image_carousel": {
+              "type": "Slice",
+              "fieldset": "Image Carousel",
+              "description": "a carousel of images",
+              "icon": "image",
+              "display": "list",
+              "non-repeat": {
+                "carousel_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Carousel Title",
+                    "placeholder": "'Gallery'"
+                  }
+                },
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule"
+                  }
+                }
+              },
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 649,
+                      "height": 500
+                    },
+                    "thumbnails": [],
+                    "label": "image"
+                  }
+                },
+                "caption": {
+                  "type": "Text",
+                  "config": {
+                    "label": "caption"
+                  }
+                }
+              }
+            },
+            "editorial": {
+              "type": "Slice",
+              "fieldset": "Editorial",
+              "description": "Editorial component",
+              "icon": "format_align_left",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "user access rule"
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                }
+              },
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {
+                      "width": 800,
+                      "height": 800
+                    },
+                    "thumbnails": [],
+                    "label": "Image"
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subtitle"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                },
+                "image_position": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "image on left",
+                    "placeholder_true": "image on right",
+                    "default_value": false,
+                    "label": "Image position"
+                  }
+                }
+              }
+            },
+            "event_filters_bar": {
+              "type": "Slice",
+              "fieldset": "Event Filters Bar",
+              "description": "Use only one per page",
+              "icon": "filter_list",
+              "display": "list",
+              "non-repeat": {
+                "user_access_rule": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["user_access_rule"],
+                    "label": "User Access Rule",
+                    "placeholder": "Select User Access Rule document"
+                  }
+                },
+                "label": {
+                  "type": "Text",
+                  "config": {
+                    "label": "label",
+                    "placeholder": "if empty, the default label from Default data tab will be used"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "Membership information": {
+      "membership_expiration_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Membership expiration text",
+          "placeholder": "Shown to members whose membership is about to expire"
+        }
+      },
+      "access_membership_expiration_text": {
+        "type": "Text",
+        "config": {
+          "label": "Access membership expiration text"
+        }
+      },
+      "access_membership_expiration_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Access membership expiration CTA text"
+        }
+      },
+      "access_membership_email_template": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["automated_email_template"],
+          "label": "Access membership email template",
+          "placeholder": "Email template for Access Memberships instead of URL"
+        }
+      },
+      "priority_booking_dates": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "membership_level": {
+              "type": "Select",
+              "config": {
+                "options": [
+                  "GEN",
+                  "YROH",
+                  "FR",
+                  "FY",
+                  "FRJ",
+                  "FS",
+                  "FP1",
+                  "FP2"
+                ],
+                "default_value": "GEN",
+                "label": "Membership level"
+              }
+            },
+            "priority_booking_date": {
+              "type": "Timestamp",
+              "config": {
+                "label": "Priority booking date",
+                "placeholder": "Select the date for the selected membership level"
+              }
+            },
+            "rehearsal_booking_date": {
+              "type": "Timestamp",
+              "config": {
+                "label": "Rehearsal booking date",
+                "placeholder": "Select the date for the selected membership level"
+              }
+            }
+          },
+          "label": "Priority Booking Dates"
+        }
+      },
+      "priority_booking_dates_disclosure_title": {
+        "type": "Text",
+        "config": {
+          "label": "Prirority Booking Dates Disclosure Title",
+          "placeholder": "e.g. \"View all priority booking dates\""
+        }
+      },
+      "membership_benefits_disclosure_title": {
+        "type": "Text",
+        "config": {
+          "label": "Membership benefits disclosure title",
+          "placeholder": "e.g. \"Your membership benefits\""
+        }
+      },
+      "rehearsal_booking_dates_disclosure_title": {
+        "type": "Text",
+        "config": {
+          "label": "Rehearsal booking dates disclosure title",
+          "placeholder": "E.g. \"View rehearsal booking dates\""
+        }
+      },
+      "membership_information_body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "disclosure": {
+              "type": "Slice",
+              "fieldset": "Disclosure",
+              "description": "Element with title and free text",
+              "icon": "add_to_photos",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Ticket limits"
+                  }
+                },
+                "disclosure_toggle": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hide",
+                    "placeholder_true": "Show",
+                    "default_value": true,
+                    "label": "Disclosure toggle"
+                  }
+                }
+              },
+              "repeat": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+                    "label": "Text"
+                  }
+                },
+                "membership_level": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "GEN",
+                      "YROH",
+                      "FR",
+                      "FY",
+                      "FRJ",
+                      "FS",
+                      "FP1",
+                      "FP2"
+                    ],
+                    "default_value": "GEN",
+                    "label": "Membership level"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Default data": {
+      "default_heading_title": {
+        "type": "Text",
+        "config": {
+          "label": "Page Heading Title Default",
+          "placeholder": "Default title: Welcome to the members zone'"
+        }
+      },
+      "default_heading_description": {
+        "type": "Text",
+        "config": {
+          "label": "Page Heading Description Default",
+          "placeholder": "Default description: Find out more about the benefits of being a member"
+        }
+      },
+      "default_useful_links_title": {
+        "type": "Text",
+        "config": {
+          "label": "Useful links title default"
+        }
+      },
+      "default_image_carousel_title": {
+        "type": "Text",
+        "config": {
+          "label": "Image Carousel title default",
+          "placeholder": "e.g. 'Gallery'"
+        }
+      },
+      "default_event_filters_bar_label": {
+        "type": "Text",
+        "config": {
+          "label": "Event Filters Bar label default",
+          "placeholder": "e.g. \"Filter\""
+        }
+      },
+      "fallback_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 649,
+            "height": 500
+          },
+          "thumbnails": [],
+          "label": "Fallback image"
+        }
+      }
+    },
+    "Meta": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description"
+        }
+      },
+      "patrons_redirect": {
+        "type": "Text",
+        "config": {
+          "label": "Patrons redirect",
+          "placeholder": "Patrons will be redirected to this endpoint. Format: \"/join-and-support/patrons\""
+        }
+      },
+      "no_membership_redirect": {
+        "type": "Text",
+        "config": {
+          "label": "No Membership Redirect",
+          "placeholder": "Logged-in users without a valid membership (e.g. general audience and Staff) will be redirected to this url. Format: '/friends-area-upgrade'"
+        }
+      },
+      "sign_in_redirect": {
+        "type": "Text",
+        "config": {
+          "label": "Sign in redirect",
+          "placeholder": "Users who are not signed in will be redirected to this endpoint. Format: \"/friends-area-login\""
+        }
+      },
+      "pending_redirect": {
+        "type": "Text",
+        "config": {
+          "label": "pending redirect",
+          "placeholder": "Users who have a pending membership will be redirected to this endpoint. Format: \"/friends-area-loading\""
+        }
+      }
+    }
+  },
+  "label": "Friends Area",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

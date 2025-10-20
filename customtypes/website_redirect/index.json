@@ -1,0 +1,85 @@
+{
+  "id": "website_redirect",
+  "json": {
+    "Main": {
+      "readme": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "README"
+        }
+      },
+      "redirects": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "from": {
+              "type": "Text",
+              "config": {
+                "label": "From"
+              }
+            },
+            "to": {
+              "type": "Text",
+              "config": {
+                "label": "To"
+              }
+            },
+            "is_production_ready": {
+              "type": "Boolean",
+              "config": {
+                "placeholder_false": "Staging Environments",
+                "placeholder_true": "ALL Environments",
+                "default_value": false,
+                "label": "Environments"
+              }
+            }
+          },
+          "label": "Redirects"
+        }
+      }
+    },
+    "IPs": {
+      "ips": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name"
+              }
+            },
+            "ip": {
+              "type": "Text",
+              "config": {
+                "label": "IP"
+              }
+            }
+          },
+          "label": "Ips"
+        }
+      }
+    },
+    "Pages": {
+      "paths": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "path": {
+              "type": "Text",
+              "config": {
+                "label": "path"
+              }
+            }
+          },
+          "label": "Paths"
+        }
+      }
+    }
+  },
+  "label": "Fastly Requests OLD",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

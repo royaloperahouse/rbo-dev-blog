@@ -1,0 +1,60 @@
+{
+  "type": "SharedSlice",
+  "id": "special_role",
+  "name": "SpecialRole",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format",
+      "primary": {
+        "slug": {
+          "type": "Text",
+          "config": {
+            "label": "Slug",
+            "placeholder": ""
+          }
+        },
+        "role_label": {
+          "type": "Text",
+          "config": {
+            "label": "Role Label",
+            "placeholder": ""
+          }
+        },
+        "name_override": {
+          "type": "Text",
+          "config": {
+            "label": "Name Override",
+            "placeholder": ""
+          }
+        },
+        "role_behaviour": {
+          "type": "Select",
+          "config": {
+            "label": "Role Behaviour",
+            "placeholder": "",
+            "options": [
+              "conductor",
+              "choreographer",
+              "other"
+            ]
+          }
+        }
+      },
+      "items": {
+        "activity_id": {
+          "type": "Text",
+          "config": {
+            "label": "Activity ID",
+            "placeholder": "If no activities are specified, the special role will apply to all activities in the production"
+          }
+        }
+      }
+    }
+  ],
+  "description": "SpecialRole"
+}

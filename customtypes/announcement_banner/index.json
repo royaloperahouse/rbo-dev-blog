@@ -1,0 +1,67 @@
+{
+  "id": "announcement_banner",
+  "json": {
+    "Main": {
+      "display_banner": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "Display banner main site"
+        }
+      },
+      "display_banner_checkout": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "Display banner checkout"
+        }
+      },
+      "display_banner_account": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "TEST: Display banner account"
+        }
+      },
+      "icon": {
+        "type": "Select",
+        "config": {
+          "options": ["Info", "Clock", "Location", "Reminder", "Star"],
+          "default_value": "Info",
+          "label": "Icon from the library"
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Website alert"
+        }
+      },
+      "time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Time"
+        }
+      },
+      "announcement_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Announcement text"
+        }
+      }
+    }
+  },
+  "label": "Announcement banner",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,86 @@
+{
+  "id": "feature_flags",
+  "json": {
+    "Main": {
+      "readme": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "README (instructions)"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": null,
+          "choices": {
+            "feature_flag": {
+              "type": "Slice",
+              "fieldset": "Feature Flag",
+              "description": "A new feature flag for any ROH app to consume",
+              "icon": "flag",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "flag_id": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Flag ID",
+                    "placeholder": "The Flag ID (e.g. checkout-chordification)"
+                  }
+                },
+                "flag_description": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Flag Description",
+                    "placeholder": "Some information regarding the flag (what it's used for, etc...)"
+                  }
+                },
+                "emails": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Rule - ROH emails",
+                    "placeholder": "Comma separated emails (e.g. a@b.com,c@d.com)"
+                  }
+                },
+                "ips": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Rule - IPs (SHA-256 hashes)",
+                    "placeholder": "Comma separated SHA-256 hashed IPs (e.g. abc,def)"
+                  }
+                },
+                "custom_values": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Rule - Custom Values",
+                    "placeholder": "Any data (e.g. performance ids, dates, MOS's), separated by commas"
+                  }
+                },
+                "global_toggle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Global toggle",
+                    "placeholder": "I want to enable this feature"
+                  }
+                },
+                "rule_toggle": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": true,
+                    "label": "Rule toggle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Feature Flags",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

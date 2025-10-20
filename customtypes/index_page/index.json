@@ -1,0 +1,194 @@
+{
+  "id": "index_page",
+  "json": {
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Title",
+          "placeholder": "Title",
+          "useAsTitle": true
+        }
+      },
+      "parent": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["dummy_page", "index_page", "default_template"],
+          "label": "Parent",
+          "placeholder": "Parent page"
+        }
+      },
+      "slug": {
+        "type": "Text",
+        "config": {
+          "label": "slug",
+          "placeholder": "royal-opera-house"
+        }
+      },
+      "lead_promo": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "strong,em",
+                "label": "Promo title"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "select": null
+              }
+            },
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "label": "Text",
+                "placeholder": "Maximum 30 words",
+                "labels": [
+                  "block-quote",
+                  "quote-attribution",
+                  "collapsible-box-body",
+                  "collapsible-box-title"
+                ]
+              }
+            },
+            "media": {
+              "type": "Embed",
+              "config": {
+                "label": "Lead media",
+                "placeholder": "Optional lead Flickr or Youtube embed"
+              }
+            }
+          },
+          "label": "Lead promo",
+          "repeat": false
+        }
+      },
+      "intro": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "label": "Intro",
+          "placeholder": "Optional intro: Text, Social Media Embeds, Anchor Links",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "promos_heading": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em",
+          "label": "Promos heading",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "promos": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "strong,em",
+                "label": "Promo title"
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "select": null
+              }
+            },
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "label": "Text",
+                "placeholder": "Maximum 30 words",
+                "labels": [
+                  "block-quote",
+                  "quote-attribution",
+                  "collapsible-box-body",
+                  "collapsible-box-title"
+                ]
+              }
+            },
+            "media": {
+              "type": "Embed",
+              "config": {
+                "label": "Lead media",
+                "placeholder": "Optional lead Flickr or Youtube embed"
+              }
+            }
+          },
+          "label": "Promos"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "label": "Body",
+          "placeholder": "Optional body: Text, Social Media Embeds, Anchor Links",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "info_promo": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "strong,em",
+                "label": "Info promo title"
+              }
+            },
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "label": "Text",
+                "placeholder": "Maximum 30 words",
+                "labels": [
+                  "block-quote",
+                  "quote-attribution",
+                  "collapsible-box-body",
+                  "collapsible-box-title"
+                ]
+              }
+            }
+          },
+          "label": "Optional info promo",
+          "repeat": false
+        }
+      }
+    }
+  },
+  "label": "Index Page",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

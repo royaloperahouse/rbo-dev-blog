@@ -1,0 +1,1270 @@
+{
+  "id": "stream_home_page",
+  "json": {
+    "Main": {
+      "header": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["compact_header"],
+          "label": "Header",
+          "placeholder": "Link to a valid Header component"
+        }
+      },
+      "header_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 2048,
+            "height": 1150
+          },
+          "thumbnails": [],
+          "label": "Header Image"
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "OPERA AND BALLET — ON DEMAND COMING SOON...",
+          "useAsTitle": true
+        }
+      },
+      "sub_title": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Subtitle",
+          "placeholder": "Subtitle to be displayed on Stream Home Page"
+        }
+      },
+      "banner_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Banner copy",
+          "placeholder": "Banner copy to be displayed on Stream Home Page"
+        }
+      },
+      "above_button_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Above button text",
+          "placeholder": "Apply to be part of our test by filling out this form."
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA text",
+          "placeholder": "Apply to join"
+        }
+      },
+      "cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "CTA link",
+          "placeholder": "/tickets-and-events/ballet-and-dance"
+        }
+      },
+      "show_sponsor_logo": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide logo",
+          "placeholder_true": "Show logo",
+          "default_value": false,
+          "label": "Show sponsor logo"
+        }
+      }
+    },
+    "Help": {
+      "help_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Stream help"
+        }
+      },
+      "help_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Text",
+          "placeholder": "You can read more about the streaming service, how to use and other troubleshooting advice on our Help page."
+        }
+      },
+      "help_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA text",
+          "placeholder": "Read more"
+        }
+      },
+      "help_cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "CTA link",
+          "placeholder": "/stream/help"
+        }
+      }
+    },
+    "Proposition Page": {
+      "proposition_page_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            },
+            "proposition_page_sticky_bar": {
+              "type": "Slice",
+              "fieldset": "Unsubscribed sticky bar",
+              "description": "Unsubscribed sticky bar",
+              "icon": "attach_file",
+              "display": "list",
+              "non-repeat": {
+                "sticky_bar_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Sticky bar title",
+                    "placeholder": "Subscribe to redeem your offer"
+                  }
+                },
+                "sticky_bar_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Sticky bar link",
+                    "placeholder": "/stream/offer"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "proposition_page_information_block": {
+              "type": "Slice",
+              "fieldset": "Subscribe Today Block",
+              "description": "Subscribe Today Block",
+              "icon": "add_circle_outline",
+              "display": "list",
+              "non-repeat": {
+                "block_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Block Title",
+                    "placeholder": "Subscribe today  to start streaming"
+                  }
+                },
+                "block_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Block text",
+                    "placeholder": "Join today to start your 14-days free trial. Cancel anytime."
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Block button",
+                    "placeholder": "Subscribe"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subscribtion page link",
+                    "placeholder": "/stream/offer"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "event_promo": {
+              "type": "Slice",
+              "fieldset": "Digital Event Promo",
+              "description": "Event Promo component",
+              "icon": "featured_play_list",
+              "display": "list",
+              "non-repeat": {
+                "digital_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_details"],
+                    "label": "Digital Event",
+                    "placeholder": "Select Digital Event Details"
+                  }
+                },
+                "timer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer title",
+                    "placeholder": "Live stream starts in:"
+                  }
+                },
+                "timer_end_date_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer end date text",
+                    "placeholder": "Live streaming now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            },
+            "sign_up": {
+              "type": "Slice",
+              "fieldset": "Sign Up",
+              "description": "Sign up for marketing",
+              "icon": "account_box",
+              "display": "list",
+              "non-repeat": {
+                "sign_up_component": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["sign_up_form"],
+                    "label": "Sign up component"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      },
+      "proposition_page_pre_footer_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Explore all": {
+      "explore_all_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            },
+            "event_promo": {
+              "type": "Slice",
+              "fieldset": "Digital Event Promo",
+              "description": "Event Promo component",
+              "icon": "featured_play_list",
+              "display": "list",
+              "non-repeat": {
+                "digital_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_details"],
+                    "label": "Digital Event",
+                    "placeholder": "Select Digital Event Details"
+                  }
+                },
+                "timer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer title",
+                    "placeholder": "Live stream starts in:"
+                  }
+                },
+                "timer_end_date_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer end date text",
+                    "placeholder": "Live streaming now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            },
+            "sign_up": {
+              "type": "Slice",
+              "fieldset": "Sign Up",
+              "description": "Sign up for marketing",
+              "icon": "account_box",
+              "display": "list",
+              "non-repeat": {
+                "sign_up_component": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["sign_up_form"],
+                    "label": "Sign up component"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      },
+      "explore_all_pre_footer_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Opera and Music": {
+      "opera_and_music_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Opera and Music",
+          "useAsTitle": true
+        }
+      },
+      "opera_and_music_section_standfirst": {
+        "type": "Text",
+        "config": {
+          "label": "Standfirst",
+          "placeholder": "Optional standfirst"
+        }
+      },
+      "opera_and_music_section_grid_title": {
+        "type": "Text",
+        "config": {
+          "label": "Grid title",
+          "placeholder": "All",
+          "useAsTitle": true
+        }
+      },
+      "opera_and_music_tab_on_unsubscribed_view": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "False",
+          "placeholder_true": "True",
+          "default_value": false,
+          "label": "Show the tab for unsubscribed user"
+        }
+      },
+      "opera_and_music_top_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed above the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            },
+            "event_promo": {
+              "type": "Slice",
+              "fieldset": "Digital Event Promo",
+              "description": "Event Promo component",
+              "icon": "featured_play_list",
+              "display": "list",
+              "non-repeat": {
+                "digital_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_details"],
+                    "label": "Digital Event",
+                    "placeholder": "Select Digital Event Details"
+                  }
+                },
+                "timer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer title",
+                    "placeholder": "Live stream starts in:"
+                  }
+                },
+                "timer_end_date_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer end date text",
+                    "placeholder": "Live streaming now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "opera_and_music_bottom_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed beneath the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            },
+            "event_promo": {
+              "type": "Slice",
+              "fieldset": "Digital Event Promo",
+              "description": "Event Promo component",
+              "icon": "featured_play_list",
+              "display": "list",
+              "non-repeat": {
+                "digital_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_details"],
+                    "label": "Digital Event",
+                    "placeholder": "Select Digital Event Details"
+                  }
+                },
+                "timer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer title",
+                    "placeholder": "Live stream starts in:"
+                  }
+                },
+                "timer_end_date_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer end date text",
+                    "placeholder": "Live streaming now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "opera_and_music_pre_footer_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Ballet and dance": {
+      "ballet_and_dance_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Ballet and Dance",
+          "useAsTitle": true
+        }
+      },
+      "ballet_and_dance_section_standfirst": {
+        "type": "Text",
+        "config": {
+          "label": "Standfirst",
+          "placeholder": "Optional standfirst"
+        }
+      },
+      "ballet_and_dance_section_grid_title": {
+        "type": "Text",
+        "config": {
+          "label": "Grid title",
+          "placeholder": "All",
+          "useAsTitle": true
+        }
+      },
+      "ballet_and_dance_tab_on_unsubscribed_view": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "False",
+          "placeholder_true": "True",
+          "default_value": false,
+          "label": "Show the tab for unsubscribed user"
+        }
+      },
+      "ballet_and_dance_top_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed above the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            },
+            "event_promo": {
+              "type": "Slice",
+              "fieldset": "Digital Event Promo",
+              "description": "Event Promo component",
+              "icon": "featured_play_list",
+              "display": "list",
+              "non-repeat": {
+                "digital_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_details"],
+                    "label": "Digital Event",
+                    "placeholder": "Select Digital Event Details"
+                  }
+                },
+                "timer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer title",
+                    "placeholder": "Live stream starts in:"
+                  }
+                },
+                "timer_end_date_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer end date text",
+                    "placeholder": "Live streaming now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ballet_and_dance_bottom_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "Digital events and videos tray",
+              "description": "Digital events and videos tray to be displayed beneath the main grid",
+              "icon": "ondemand_video",
+              "display": "list",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "Tray title"
+                  }
+                },
+                "tray_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": ["Highlight", "Large", "Small"],
+                    "default_value": "Highlight",
+                    "label": "Tray type"
+                  }
+                },
+                "show_tray": {
+                  "type": "Boolean",
+                  "config": {
+                    "placeholder_false": "Hidden",
+                    "placeholder_true": "Visible",
+                    "default_value": true,
+                    "label": "Is the tray visible"
+                  }
+                }
+              },
+              "repeat": {
+                "element": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "digital_event_details",
+                      "digital_event_video"
+                    ],
+                    "label": "Digital event or video",
+                    "placeholder": "Please select digital event details or video to be displayed"
+                  }
+                }
+              }
+            },
+            "event_promo": {
+              "type": "Slice",
+              "fieldset": "Digital Event Promo",
+              "description": "Event Promo component",
+              "icon": "featured_play_list",
+              "display": "list",
+              "non-repeat": {
+                "digital_event": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["digital_event_details"],
+                    "label": "Digital Event",
+                    "placeholder": "Select Digital Event Details"
+                  }
+                },
+                "timer_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer title",
+                    "placeholder": "Live stream starts in:"
+                  }
+                },
+                "timer_end_date_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Timer end date text",
+                    "placeholder": "Live streaming now"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ballet_and_dance_pre_footer_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Meta": {
+      "meta_title_unsubscribed_view": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title (unsubscribed view)"
+        }
+      },
+      "meta_description_unsubscribed_view": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description (unsubscribed view)"
+        }
+      },
+      "meta_title_subscribed_view": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title (subscribed view)"
+        }
+      },
+      "meta_description_subscribed_view": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description (subscribed view)"
+        }
+      }
+    },
+    "My stream": {
+      "my_stream_n_l_i_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Not logged in title (core header)",
+          "placeholder": "Hello"
+        }
+      },
+      "my_stream_n_l_i_header_standfirst": {
+        "type": "Text",
+        "config": {
+          "label": "Not logged in standfirst (core header)",
+          "placeholder": "Sign in to access My Stream content. This includes purchases, lorem ipsum..."
+        }
+      },
+      "my_stream_n_l_i_header_cta_wording": {
+        "type": "Text",
+        "config": {
+          "label": "Not logged in CTA wording (core header)",
+          "placeholder": "Sign in"
+        }
+      },
+      "my_stream_n_l_i_body_title": {
+        "type": "Text",
+        "config": {
+          "label": "Not logged in Body Title",
+          "placeholder": "My Stream"
+        }
+      },
+      "my_stream_n_l_i_body_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Not Logged in Body rich text copy",
+          "placeholder": "Rich text"
+        }
+      },
+      "my_stream_l_i_header_title": {
+        "type": "Text",
+        "config": {
+          "label": "Logged in title ‘Welcome back’ (core header)",
+          "placeholder": "Welcome back,"
+        }
+      },
+      "my_stream_l_i_header_standfirst": {
+        "type": "Text",
+        "config": {
+          "label": "Logged in standfirst (core header)",
+          "placeholder": "Optional standfirst goes here"
+        }
+      },
+      "my_stream_l_i_body_title": {
+        "type": "Text",
+        "config": {
+          "label": "Logged in Body Title",
+          "placeholder": "My stream"
+        }
+      },
+      "my_stream_l_i_body_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Logged in Body rich text copy",
+          "placeholder": "Rich text"
+        }
+      },
+      "my_stream_subscribed_body_title": {
+        "type": "Text",
+        "config": {
+          "label": "Subscribed Body Title",
+          "placeholder": "My Stream"
+        }
+      },
+      "my_stream_subscribed_body_text": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Subscribed Body rich text copy"
+        }
+      },
+      "my_stream_pre_footer_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            },
+            "proposition_page_information_block": {
+              "type": "Slice",
+              "fieldset": "Subscribe Today Block",
+              "description": "Subscribe Today Block",
+              "icon": "add_circle_outline",
+              "display": "list",
+              "non-repeat": {
+                "block_title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Block Title",
+                    "placeholder": "Subscribe today  to start streaming"
+                  }
+                },
+                "block_text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,strong,em",
+                    "label": "Block text",
+                    "placeholder": "Join today to start your 14-days free trial. Cancel anytime."
+                  }
+                },
+                "cta_text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Block button",
+                    "placeholder": "Subscribe"
+                  }
+                },
+                "cta_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subscribtion page link",
+                    "placeholder": "/stream/offer"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    },
+    "A-Z": {
+      "alphabetical_list_title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "performances, A-Z"
+        }
+      },
+      "alphabetical_list_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+          "label": "Description",
+          "placeholder": "Explore a range of opera and ballet performances from classics to contemporary works. Available to watch now."
+        }
+      },
+      "alphabetical_list_tab_on_unsubscribed_view": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "False",
+          "placeholder_true": "True",
+          "default_value": false,
+          "label": "Show the tab for unsubscribed user"
+        }
+      },
+      "alphabetical_list_elements": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "info_section_slice": {
+              "type": "Slice",
+              "fieldset": "Info Section Slice",
+              "description": "Sponsor information and evergreen SEO content",
+              "icon": "star",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "info_section": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": ["info_section"],
+                    "label": "Info Section"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "Stream Home Page ",
+  "repeatable": false,
+  "status": true,
+  "format": "custom"
+}

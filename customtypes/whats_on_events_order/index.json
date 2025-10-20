@@ -1,0 +1,28 @@
+{
+  "id": "whats_on_events_order",
+  "json": {
+    "Main": {
+      "events": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "events_tray": {
+              "type": "Slice",
+              "fieldset": "What's on",
+              "description": "What's on page events priority list",
+              "icon": "star_border",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "label": "What's on page events priority",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

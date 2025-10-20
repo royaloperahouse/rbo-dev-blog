@@ -1,0 +1,89 @@
+{
+  "id": "test-images-library",
+  "json": {
+    "Main": {
+      "tickets_and_events_header": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1140,
+            "height": 650
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 768,
+              "height": 500
+            },
+            {
+              "name": "calendar_thumbnail",
+              "width": 75,
+              "height": 75
+            }
+          ],
+          "label": "Tickets and Events Header"
+        }
+      },
+      "dates_and_prices_header": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1035,
+            "height": 440
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 320,
+              "height": 240
+            }
+          ],
+          "label": "Dates and Prices header"
+        }
+      },
+      "tray_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 867,
+            "height": 595
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 640,
+              "height": 480
+            }
+          ],
+          "label": "Tray image"
+        }
+      },
+      "result_image_for_tickets_and_events": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1094,
+            "height": 676
+          },
+          "thumbnails": [
+            {
+              "name": "mobile",
+              "width": 320,
+              "height": 240
+            },
+            {
+              "name": "thumbnail",
+              "width": 320,
+              "height": 320
+            }
+          ],
+          "label": "Result image for Tickets and Events"
+        }
+      }
+    }
+  },
+  "label": "Test image library",
+  "repeatable": false,
+  "status": false,
+  "format": "custom"
+}

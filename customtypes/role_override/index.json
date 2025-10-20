@@ -1,0 +1,32 @@
+{
+  "id": "role_override",
+  "json": {
+    "Main": {
+      "role_id": {
+        "type": "Text",
+        "config": {
+          "label": "Role ID",
+          "placeholder": "Tessitura ID to reference the role"
+        }
+      },
+      "role_name": {
+        "type": "Text",
+        "config": {
+          "label": "Role name"
+        }
+      },
+      "role_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "strong,em",
+          "label": "Description",
+          "placeholder": "Optional description field"
+        }
+      }
+    }
+  },
+  "label": "Role Override",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

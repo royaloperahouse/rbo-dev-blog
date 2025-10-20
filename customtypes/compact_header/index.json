@@ -1,0 +1,139 @@
+{
+  "id": "compact_header",
+  "json": {
+    "Main": {
+      "theme": {
+        "type": "Select",
+        "config": {
+          "options": ["Core", "Cinema", "Stream"],
+          "default_value": "Core",
+          "label": "Theme"
+        }
+      },
+      "invert_theme": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Invert theme colours"
+        }
+      },
+      "show_sponsor": {
+        "type": "Boolean",
+        "config": {
+          "default_value": true,
+          "label": "Show sponsor"
+        }
+      },
+      "show_copy": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "don't show copy",
+          "placeholder_true": "show copy",
+          "default_value": true,
+          "label": "Show Copy"
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": "Main Headline Title (Always H1)"
+        }
+      },
+      "cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "CTA",
+          "placeholder": "Click me"
+        }
+      },
+      "cta_link": {
+        "type": "Text",
+        "config": {
+          "label": "CTA Link"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1440,
+            "height": 540
+          },
+          "thumbnails": [
+            {
+              "name": "Mobile",
+              "width": 700,
+              "height": 700
+            }
+          ],
+          "label": "Image"
+        }
+      },
+      "desktop_video": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Desktop Video (1440x540 - 8:3)",
+          "placeholder": "Video will start muted and paused"
+        }
+      },
+      "mobile_video": {
+        "type": "Link",
+        "config": {
+          "select": "media",
+          "label": "Mobile Video (375 x 375 - 1:1)",
+          "placeholder": "Video will start muted and paused"
+        }
+      },
+      "alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Alt Text",
+          "placeholder": "Alt text covers both video and image"
+        }
+      },
+      "branding_style": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "BlockText",
+            "BodyText",
+            "StreamLogo",
+            "CinemaLogo",
+            "TextLink"
+          ],
+          "default_value": "BlockText",
+          "label": "Branding style",
+          "placeholder": "What appears in the secondary content field"
+        }
+      },
+      "branding_text": {
+        "type": "StructuredText",
+        "config": {
+          "single": "strong,em",
+          "label": "Branding text",
+          "placeholder": "Eg. Royal Opera House"
+        }
+      },
+      "branding_link": {
+        "type": "Text",
+        "config": {
+          "label": "branding text link"
+        }
+      },
+      "sponsor_logo": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Sponsor logo"
+        }
+      }
+    }
+  },
+  "label": "Compact Header",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}

@@ -1,0 +1,1224 @@
+{
+  "id": "event_details",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Slug",
+          "placeholder": "Example: swan-lake (Do not include -details or -dates in the slug)"
+        }
+      },
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title",
+          "placeholder": "Event"
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description",
+          "placeholder": "event details"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading4",
+          "label": "Title",
+          "placeholder": "Title",
+          "useAsTitle": true
+        }
+      },
+      "is_cancelled": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "Cancelled"
+        }
+      },
+      "is_hidden_from_tickets_and_events": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "Hide from Tickets and Events?"
+        }
+      },
+      "event_id": {
+        "type": "IntegrationFields",
+        "config": {
+          "catalog": "royal-opera-house--events_integration",
+          "label": "Event Id",
+          "placeholder": "Select an Event"
+        }
+      },
+      "custom_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Text for the CTA on the Event Details page",
+          "placeholder": "Watch now"
+        }
+      },
+      "custom_cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Link for the CTA on the Event Details page",
+          "placeholder": "https://www.examplewebsite.com/roh-stream",
+          "select": null
+        }
+      },
+      "event_card_primary_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Primary CTA Text for the event card on the Tickets & Events page",
+          "placeholder": "Primary CTA Copy"
+        }
+      },
+      "event_card_primary_cta_link": {
+        "type": "Link",
+        "config": {
+          "label": "Primary CTA Link for the event card on the Tickets & Events page",
+          "placeholder": "Primary CTA Link",
+          "select": "web"
+        }
+      },
+      "carousel_description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Carousel Description",
+          "placeholder": "Description for carousel - 185 character limit"
+        }
+      },
+      "short_description": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em",
+          "label": "Short Event Details Description",
+          "placeholder": "Short description"
+        }
+      },
+      "help_information_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Information / Help Text",
+          "placeholder": "Information / Help Text"
+        }
+      },
+      "help_information_link": {
+        "type": "Link",
+        "config": {
+          "label": "Information / Help Link",
+          "placeholder": "https://www.roh.org.uk/vimeo",
+          "allowTargetBlank": true,
+          "select": null
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Description",
+          "placeholder": "Description",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "synopsis_title": {
+        "type": "Text",
+        "config": {
+          "label": "Story Section Title",
+          "placeholder": "(Optional - defaults to Story)"
+        }
+      },
+      "ticket_price_details": {
+        "type": "Text",
+        "config": {
+          "label": "Ticket Price Details",
+          "placeholder": "£6-£260"
+        }
+      },
+      "guidance": {
+        "type": "Text",
+        "config": {
+          "label": "guidance",
+          "placeholder": "Guidance for event"
+        }
+      },
+      "guidance_details": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em",
+          "label": "Guidance Details",
+          "placeholder": "Further guidance details for event",
+          "labels": ["block-quote", "quote-attribution"]
+        }
+      },
+      "running_time_summary": {
+        "type": "Text",
+        "config": {
+          "label": "Running Time Summary",
+          "placeholder": "Running time summary"
+        }
+      },
+      "segmented_running_time": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "name": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Name",
+                "placeholder": "Name of segment",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "duration": {
+              "type": "Number",
+              "config": {
+                "label": "Duration",
+                "placeholder": "Duration in minutes"
+              }
+            }
+          },
+          "label": "Segmented Running Time"
+        }
+      },
+      "youtube_trailer_cta_text": {
+        "type": "Text",
+        "config": {
+          "label": "Trailer CTA text",
+          "placeholder": "Watch trailer"
+        }
+      },
+      "youtube_trailer_link": {
+        "type": "Link",
+        "config": {
+          "label": "Trailer CTA YouTube link",
+          "placeholder": "https://youtube.com/embed/CoUgIVtqCGI",
+          "select": "web"
+        }
+      },
+      "hashtag": {
+        "type": "Text",
+        "config": {
+          "label": "Hashtag",
+          "placeholder": "Hashtag of event"
+        }
+      },
+      "productions": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "production": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["production"],
+                "label": "Production",
+                "placeholder": "Select production"
+              }
+            }
+          },
+          "label": "Productions"
+        }
+      },
+      "accessibility": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["venue_accessibility_information"],
+          "label": "Accessibility",
+          "placeholder": "Accessibility informaiton"
+        }
+      },
+      "accessibility_desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "Accessibility Desktop Image",
+          "placeholder": "Link to accessibility desktop image",
+          "select": "web"
+        }
+      },
+      "accessibility_mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "Accessibility Mobile Image",
+          "placeholder": "Link to accessibility mobile image",
+          "select": "web"
+        }
+      },
+      "accessibility_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Accessibility Image Alt text",
+          "placeholder": "Alt text for the accessibility image"
+        }
+      },
+      "seat_map_price_preview_link_visibility": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "Hide",
+          "placeholder_true": "Display",
+          "default_value": false,
+          "label": "Seat Map Price Preview Link Visibility"
+        }
+      },
+      "seat_map_link": {
+        "type": "Link",
+        "config": {
+          "label": "Seat Map Link",
+          "placeholder": "Enter link to a seat map",
+          "select": "web"
+        }
+      },
+      "start_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Start Time",
+          "placeholder": "Select a start date and time"
+        }
+      },
+      "end_time": {
+        "type": "Timestamp",
+        "config": {
+          "label": "End Time",
+          "placeholder": "Select an end date and time"
+        }
+      },
+      "related_events": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "related_event": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["event_details"],
+                "label": "Related Event",
+                "placeholder": "Select related event"
+              }
+            }
+          },
+          "label": "Related Events"
+        }
+      }
+    },
+    "Images": {
+      "tickets_and_events_header_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 960
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 460,
+              "height": 345
+            }
+          ],
+          "label": "Tickets and Events header image"
+        }
+      },
+      "header_desktop_image_for_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Tickets and Events header - desktop image",
+          "placeholder": "Link to header desktop image for Tickets and Events",
+          "select": "web"
+        }
+      },
+      "header_mobile_image_for_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Tickets and Events header - mobile image",
+          "placeholder": "Link to header mobile image for Tickets and Events",
+          "select": "web"
+        }
+      },
+      "header_image_alt_text_for_tickets_and_events": {
+        "type": "Text",
+        "config": {
+          "label": "Tickets and Events header - alt text",
+          "placeholder": "Alt text for header image for Tickets and Events"
+        }
+      },
+      "header_desktop_image_for_dates_and_prices": {
+        "type": "Link",
+        "config": {
+          "label": "Dates and Prices header - desktop image",
+          "placeholder": "Link to header desktop image for Dates and Prices",
+          "select": "web"
+        }
+      },
+      "header_mobile_image_for_dates_and_prices": {
+        "type": "Link",
+        "config": {
+          "label": "Dates and Prices header - mobile image",
+          "placeholder": "Link to header mobile image for Dates And Prices",
+          "select": "web"
+        }
+      },
+      "header_image_dates_and_prices_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Dates and Prices header - alt text",
+          "placeholder": "Alt text for header image Dates and Prices"
+        }
+      },
+      "calendar_thumbnail_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 140,
+            "height": 105
+          },
+          "thumbnails": [],
+          "label": "Calendar thumbnail image"
+        }
+      },
+      "thumbnail_image_for_calendar": {
+        "type": "Link",
+        "config": {
+          "label": "Calendar thumbnail image",
+          "placeholder": "Link to thumbnail image for Calendar",
+          "select": "web"
+        }
+      },
+      "thumbnail_image_alt_text_for_calendar": {
+        "type": "Text",
+        "config": {
+          "label": "Calendar thumbnail alt text",
+          "placeholder": "Alt text for calendar image"
+        }
+      },
+      "tray_image_for_homepage": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 960
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 460,
+              "height": 345
+            }
+          ],
+          "label": "Tray Image for Homepage"
+        }
+      },
+      "tray_desktop_image_for_homepage": {
+        "type": "Link",
+        "config": {
+          "label": "Tray Desktop Image for Homepage",
+          "placeholder": "Link to tray desktop image for Homepage",
+          "select": "web"
+        }
+      },
+      "tray_mobile_image_for_homepage": {
+        "type": "Link",
+        "config": {
+          "label": "Tray Mobile Image for Homepage",
+          "placeholder": "Link to tray mobile image for Homepage",
+          "select": "web"
+        }
+      },
+      "tray_image_alt_text_for_homepage": {
+        "type": "Text",
+        "config": {
+          "label": "Tray Image Alt Text for Homepage",
+          "placeholder": "Alt text for tray image for Homepage"
+        }
+      },
+      "result_image_for_tickets_and_events": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 960,
+            "height": 720
+          },
+          "thumbnails": [
+            {
+              "name": "mobile_image",
+              "width": 460,
+              "height": 345
+            }
+          ],
+          "label": "Result Image for Tickets and Events"
+        }
+      },
+      "result_desktop_image_for_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Result Desktop Image for Tickets and Events",
+          "placeholder": "Link to result desktop image for Tickets and Events",
+          "select": "web"
+        }
+      },
+      "result_mobile_image_for_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Result Mobile Image for Tickets and Events",
+          "placeholder": "Link to result mobile image for Tickets and Events",
+          "select": "web"
+        }
+      },
+      "result_thumbnail_image_for_tickets_and_events": {
+        "type": "Link",
+        "config": {
+          "label": "Result Thumbnail Image for Tickets and Events",
+          "placeholder": "Link to result thumbnail image for Tickets and Events",
+          "select": "web"
+        }
+      },
+      "result_image_alt_text_for_tickets_and_events": {
+        "type": "Text",
+        "config": {
+          "label": "Result Image Alt Text for Tickets and Events",
+          "placeholder": "Alt text for result image for Tickets and Events"
+        }
+      }
+    },
+    "Sponsors/CoProductions": {
+      "co-production_information": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "co-producer": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph,strong,em,hyperlink",
+                "label": "Co-producer",
+                "placeholder": "Co-producer Title",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "co-producer_intro": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Co-producer Intro",
+                "placeholder": "Co-producer Intro",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "co-producer_logo": {
+              "type": "Link",
+              "config": {
+                "label": "Co-producer Logo",
+                "placeholder": "Link to co-producer logo",
+                "select": "web"
+              }
+            },
+            "co-producer_logo_link": {
+              "type": "Link",
+              "config": {
+                "label": "Co-producer Logo Link",
+                "placeholder": "Link to co-producer",
+                "select": "web"
+              }
+            },
+            "co-producer_description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Co-Producer description",
+                "placeholder": "Co-Producer description",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            }
+          },
+          "label": "Co-Production Information"
+        }
+      },
+      "sponsors": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "sponsor_title": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph,strong,em,hyperlink",
+                "label": "Sponsor Title",
+                "placeholder": "Sponsor Title"
+              }
+            },
+            "sponsor_intro": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Sponsor Intro",
+                "placeholder": "Sponsor Intro",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "new_sponsor_logo": {
+              "type": "Image",
+              "config": {
+                "constraint": {
+                  "width": null
+                },
+                "thumbnails": [],
+                "label": "Sponsor Logo (image from library)"
+              }
+            },
+            "sponsor_logo": {
+              "type": "Link",
+              "config": {
+                "label": "Sponsor Logo",
+                "placeholder": "Link to sponsor logo",
+                "select": "web"
+              }
+            },
+            "sponsor_logo_link": {
+              "type": "Link",
+              "config": {
+                "label": "Sponsor Logo Link",
+                "placeholder": "Link to sponsor",
+                "select": "web"
+              }
+            },
+            "sponsor_description": {
+              "type": "StructuredText",
+              "config": {
+                "multi": "paragraph,strong,em,hyperlink",
+                "allowTargetBlank": true,
+                "label": "Sponsor Description",
+                "placeholder": "Sponsor Description",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            }
+          },
+          "label": "Sponsors"
+        }
+      }
+    },
+    "Reviews": {
+      "reviews_desktop_image": {
+        "type": "Link",
+        "config": {
+          "label": "Reviews Desktop Image",
+          "placeholder": "Link to reviews desktop image",
+          "select": "web"
+        }
+      },
+      "reviews_mobile_image": {
+        "type": "Link",
+        "config": {
+          "label": "Reviews Mobile Image",
+          "placeholder": "Link to reviews mobile image",
+          "select": "web"
+        }
+      },
+      "reviews_image_alt_text": {
+        "type": "Text",
+        "config": {
+          "label": "Reviews Image Alt text",
+          "placeholder": "Alt text for the reviews image"
+        }
+      },
+      "reviews": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "publication": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Publication",
+                "placeholder": "Review publication",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "review_authors": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Review Authors",
+                "placeholder": "Review Authors",
+                "labels": ["block-quote", "quote-attribution"]
+              }
+            },
+            "review_link": {
+              "type": "Link",
+              "config": {
+                "label": "Review Link",
+                "placeholder": "Link to review",
+                "select": "web"
+              }
+            },
+            "stars": {
+              "type": "Number",
+              "config": {
+                "label": "Stars",
+                "placeholder": "Star rating"
+              }
+            }
+          },
+          "label": "Reviews"
+        }
+      }
+    },
+    "Cinema": {
+      "cinema_title": {
+        "type": "Text",
+        "config": {
+          "label": "Cinema Title",
+          "placeholder": "Cinema Title for the screening page"
+        }
+      },
+      "cinema_guidance_text": {
+        "type": "Select",
+        "config": {
+          "options": ["12A", "15", "18", "U", "PG"],
+          "default_value": "12A",
+          "label": "Cinema Guidance Text",
+          "placeholder": "Select Cinema Guidance"
+        }
+      },
+      "cinema_guidance_logo": {
+        "type": "Link",
+        "config": {
+          "label": "Cinema Guidance Logo",
+          "placeholder": "Enter link to a cinema guidance logo",
+          "select": "web"
+        }
+      },
+      "cinema_header_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 962
+          },
+          "thumbnails": [
+            {
+              "name": "chord_mobile_image",
+              "width": 375,
+              "height": 288
+            },
+            {
+              "name": "large_image",
+              "width": 1140,
+              "height": 650
+            },
+            {
+              "name": "mobile_image",
+              "width": 768,
+              "height": 500
+            }
+          ],
+          "label": "Cinema header image"
+        }
+      },
+      "cinema_result_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 962
+          },
+          "thumbnails": [
+            {
+              "name": "chord_mobile_image",
+              "width": 375,
+              "height": 288
+            },
+            {
+              "name": "chord_thumbnail_image",
+              "width": 320,
+              "height": 320
+            },
+            {
+              "name": "large_image",
+              "width": 1093,
+              "height": 676
+            },
+            {
+              "name": "mobile_image",
+              "width": 320,
+              "height": 240
+            },
+            {
+              "name": "thumbnail_image",
+              "width": 320,
+              "height": 320
+            }
+          ],
+          "label": "Result Image for Cinema"
+        }
+      },
+      "cinema_cast_sheets": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "cast_sheet_title": {
+              "type": "Text",
+              "config": {
+                "label": "Cast Sheet Title",
+                "placeholder": "Cast Sheet Title for the screening page"
+              }
+            },
+            "cast_sheet_link": {
+              "type": "Link",
+              "config": {
+                "label": "Cast Sheet Link",
+                "placeholder": "Link to Cast Sheet",
+                "select": "web"
+              }
+            }
+          },
+          "label": "Cinema Cast Sheets"
+        }
+      },
+      "cinema_trailer_link": {
+        "type": "Link",
+        "config": {
+          "label": "Cinema YouTube Trailer Link",
+          "placeholder": "Link to Cinema YouTube trailer",
+          "select": "web"
+        }
+      },
+      "cinema_screening_time": {
+        "type": "Text",
+        "config": {
+          "label": "Cinema Screening Time",
+          "placeholder": "Cinema Screening Time for the screening page"
+        }
+      },
+      "cinema_broadcast_expiration_date": {
+        "type": "Timestamp",
+        "config": {
+          "label": "Cinema broadcast expiration date",
+          "placeholder": "Select an expiration date and time"
+        }
+      },
+      "cinema_slices": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "choices": {
+            "showing_dates": {
+              "type": "Slice",
+              "fieldset": "Showing Dates",
+              "description": "Showing Dates",
+              "icon": "date_range",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "hide": {
+                  "type": "Boolean",
+                  "config": {
+                    "default_value": false,
+                    "label": "Make hidden on UI"
+                  }
+                },
+                "screening_type": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Encore",
+                      "Anniversary Screening",
+                      "Special Screening",
+                      "Recorded",
+                      "Live"
+                    ],
+                    "label": "Screening Type",
+                    "placeholder": "Select type of screening"
+                  }
+                },
+                "screening_time": {
+                  "type": "Timestamp",
+                  "config": {
+                    "label": "Screening time",
+                    "placeholder": "Select time"
+                  }
+                }
+              }
+            }
+          },
+          "labels": null
+        }
+      }
+    },
+    "Tags": {
+      "tags": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "tag": {
+              "type": "Select",
+              "config": {
+                "options": [
+                  "Ballet and dance",
+                  "Cinema broadcasts",
+                  "Family events",
+                  "Opera and music",
+                  "Outdoor performance",
+                  "Outdoor screening",
+                  "Tours",
+                  "Workshops and activities"
+                ],
+                "label": "Tag",
+                "placeholder": "Choose a tag"
+              }
+            }
+          },
+          "label": "Tags"
+        }
+      },
+      "location": {
+        "type": "Select",
+        "config": {
+          "options": [
+            "Main Stage",
+            "Linbury Theatre",
+            "Clore Studio",
+            "Crush Room",
+            "Paul Hamlyn Hall",
+            "Linbury Foyer",
+            "Thurrock",
+            "St Clement Danes",
+            "High House Production Park",
+            "Royal Opera House",
+            "Online only",
+            "Television broadcast",
+            "Radio broadcast"
+          ],
+          "label": "Location",
+          "placeholder": "Choose a location (this will override location from Tessitura)"
+        }
+      }
+    },
+    "Donate": {
+      "donation_information": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["donation_information"],
+          "label": "Donation information"
+        }
+      }
+    },
+    "Info": {
+      "info_component": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["info_component"],
+          "label": "Info Component",
+          "placeholder": "Select Info Component"
+        }
+      }
+    },
+    "Cast Lists": {
+      "is_cast_list_activated": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "Activate cast lists"
+        }
+      },
+      "diese_production_id": {
+        "type": "Number",
+        "config": {
+          "label": "Primary Diese Programme ID"
+        }
+      },
+      "additional_diese_programme_ids": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "programme_id": {
+              "type": "Number",
+              "config": {
+                "label": "Programme ID"
+              }
+            }
+          },
+          "label": "Additional Diese Programme IDs"
+        }
+      },
+      "use_diese_cast": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Use Diese Cast and Creatives"
+        }
+      },
+      "use_nextjs_cast_sheet": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Use New Cast Sheet"
+        }
+      },
+      "freeze_cast_generation": {
+        "type": "Boolean",
+        "config": {
+          "default_value": false,
+          "label": "Freeze Cast Generation"
+        }
+      },
+      "show_cast_sheet": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "activity_id": {
+              "type": "Text",
+              "config": {
+                "label": "Activity ID",
+                "placeholder": "If no Activities are specified, then all cast sheets will be available."
+              }
+            }
+          },
+          "label": "Show Cast Sheet"
+        }
+      },
+      "event_summary": {
+        "type": "Text",
+        "config": {
+          "label": "Event summary - old",
+          "placeholder": "Event summary"
+        }
+      },
+      "welcome_message_title": {
+        "type": "Text",
+        "config": {
+          "label": "Welcome message title - old",
+          "placeholder": "WELCOME"
+        }
+      },
+      "welcome_message_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Welcome message text - old",
+          "placeholder": "Following recently presented works by Crystal Pite...",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "primary_company_composition": {
+        "type": "Link",
+        "config": {
+          "label": "Primary Company Composition - old",
+          "select": "document",
+          "customtypes": ["company_composition"],
+          "placeholder": "Select the document for Primary Company Composition"
+        }
+      },
+      "secondary_company_composition": {
+        "type": "Link",
+        "config": {
+          "label": "Secondary Company Composition - old",
+          "select": "document",
+          "customtypes": ["company_composition"],
+          "placeholder": "Select the document for Secondary Company Composition"
+        }
+      },
+      "event_support_details": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Support/Sponsors information - old",
+          "placeholder": "Generous support from...",
+          "allowTargetBlank": true,
+          "multi": "paragraph,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item",
+          "labels": [
+            "block-quote",
+            "quote-attribution",
+            "collapsible-box-body",
+            "collapsible-box-title"
+          ]
+        }
+      },
+      "campaigns": {
+        "type": "Group",
+        "config": {
+          "label": "Campaigns - old",
+          "repeat": true,
+          "fields": {
+            "campaign": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["campaign"],
+                "label": "Campaign",
+                "placeholder": "Pick a campaign"
+              }
+            }
+          }
+        }
+      },
+      "mixed_meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "Meta title (mixed)",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "mixed_meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta description (mixed)",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "mixed_company_masthead": {
+        "type": "Link",
+        "config": {
+          "label": "Company Masthead (mixed)",
+          "select": "document",
+          "customtypes": ["company_masthead"]
+        }
+      },
+      "mixed_company_compositions": {
+        "type": "Group",
+        "config": {
+          "label": "Company Compositions (mixed)",
+          "repeat": true,
+          "fields": {
+            "company_composition": {
+              "type": "Link",
+              "config": {
+                "label": "Company Composition",
+                "select": "document",
+                "customtypes": ["company_composition"]
+              }
+            }
+          }
+        }
+      },
+      "mixed_event_summary": {
+        "type": "Text",
+        "config": {
+          "label": "Event Summary (mixed)",
+          "placeholder": "e.g. Ballet in three acts"
+        }
+      },
+      "mixed_company_name": {
+        "type": "Text",
+        "config": {
+          "label": "Company Name (mixed)",
+          "placeholder": "The Royal Opera / The Royal Ballet"
+        }
+      },
+      "mixed_first_performance_number": {
+        "type": "Number",
+        "config": {
+          "label": "First Performance Number (mixed)",
+          "placeholder": "If blank, count starts at 1"
+        }
+      },
+      "mixed_performances_to_skip": {
+        "type": "Group",
+        "config": {
+          "label": "Performances to Skip (mixed)",
+          "repeat": true,
+          "fields": {
+            "activity_id": {
+              "type": "Text",
+              "config": {
+                "label": "Activity ID",
+                "placeholder": "A performance (Activity ID) entered here will be ignored in the performance count"
+              }
+            }
+          }
+        }
+      },
+      "mixed_campaigns": {
+        "type": "Group",
+        "config": {
+          "label": "Campaigns (mixed)",
+          "repeat": true,
+          "fields": {
+            "campaign": {
+              "type": "Link",
+              "config": {
+                "label": "Campaign",
+                "select": "document"
+              }
+            }
+          }
+        }
+      },
+      "mixed_sponsor_section_title": {
+        "type": "Text",
+        "config": {
+          "label": "Sponsor Section Title (mixed)",
+          "placeholder": "Leave blank to use default"
+        }
+      },
+      "slices8": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "sponsor": {
+              "type": "SharedSlice"
+            },
+            "performance_specific_copy": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Dates and Prices": {
+      "truncate_manually": {
+        "type": "Boolean",
+        "config": {
+          "placeholder_false": "No",
+          "placeholder_true": "Yes",
+          "default_value": false,
+          "label": "Truncate manually"
+        }
+      },
+      "roles_to_display": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "role_name": {
+              "type": "Text",
+              "config": {
+                "label": "Role name",
+                "placeholder": "Dante"
+              }
+            }
+          },
+          "label": "Roles to display"
+        }
+      }
+    }
+  },
+  "label": "Event Details",
+  "repeatable": true,
+  "status": true,
+  "format": "custom"
+}
