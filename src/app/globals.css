@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: var(--font-fira-code), monospace;
 }
+
+.title-block::before,
+.title-block::after {
+  content: "==================================================================================================";
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: var(--font-fira-code), monospace;
+  line-height: 1;
+  font-variant-ligatures: none;
+}
