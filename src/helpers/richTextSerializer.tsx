@@ -66,7 +66,7 @@ const richTextSerializer: JSXMapSerializer = {
   ),
   
   list: ({children}) => (
-    <ul className='list-disc pl-4'>
+    <ul className="list-custom-dash pl-4">
       {children}
     </ul>
   ),

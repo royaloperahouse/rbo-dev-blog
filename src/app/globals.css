@@ -36,3 +36,18 @@ body {
   line-height: 1;
   font-variant-ligatures: none;
 }
+
+.list-custom-dash {
+  list-style: none;
+  padding-left: 1.25rem;
+}
+
+.list-custom-dash li {
+  position: relative;
+}
+
+.list-custom-dash li::before {
+  content: "- ";
+  position: absolute;
+  left: -1.25rem;
+}
