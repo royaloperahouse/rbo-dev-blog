@@ -5,46 +5,46 @@ import { PrismicNextImage } from '@prismicio/next'
 const richTextSerializer: JSXMapSerializer = {
   paragraph: ({children}) => {
     return (
-      <p className=''>
+      <p className='text-base'>
         {children}
       </p>
     )
   },
   
   heading1: ({children}) => (
-    <h1 className='text-4xl font-bold'>
+    <h2 className='text-xl font-bold'>
       {children}
-    </h1>
+    </h2>
   ),
   
   heading2: ({children}) => (
-    <h2 className='text-3xl font-semibold'>
+    <h2 className='text-xl font-bold'>
       {children}
     </h2>
   ),
   
   heading3: ({children}) => (
-    <h3 className='text-2xl font-semibold'>
+    <h3 className='text-xl'>
       {children}
     </h3>
   ),
   
   heading4: ({children}) => (
-    <h4 className='text-xl font-semibold'>
+    <h4 className='text-base font-bold'>
       {children}
     </h4>
   ),
   
   heading5: ({children}) => (
-    <h5 className='text-lg font-semibold'>
+    <h4 className='text-base font-bold'>
       {children}
-    </h5>
+    </h4>
   ),
   
   heading6: ({children}) => (
-    <h6 className='text-base font-semibold'>
+    <h4 className='text-base font-bold'>
       {children}
-    </h6>
+    </h4>
   ),
   
   preformatted: ({children}) => (
