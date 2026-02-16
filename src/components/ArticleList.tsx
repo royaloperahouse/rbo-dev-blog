@@ -30,7 +30,7 @@ const ArticleList = ({posts}: ArticleListProps) => {
 
   return (
     <nav>
-      <ul className='flex flex-col gap-4 list-none text-2xl truncate'>
+      <ul className='flex flex-col gap-4 list-none text-base truncate'>
         {sortedPosts.map((post, index) => {
           const postDate = new Date(post.first_publication_date).toLocaleDateString('en-GB')
           const postTitle = isFilled.keyText(post.data.title) ? post.data.title : 'Untitled'
@@ -38,7 +38,7 @@ const ArticleList = ({posts}: ArticleListProps) => {
           return (
             <li key={`post-${index}`}>
               <PrismicNextLink key={post.uid} document={post}>
-                {`${postDate} -- ${postTitle}`}
+                {`> ${postDate} -- ${postTitle}`}
               </PrismicNextLink>
             </li>
           )
