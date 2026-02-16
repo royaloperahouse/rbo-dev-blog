@@ -99,7 +99,7 @@ const richTextSerializer: JSXMapSerializer = {
   ),
   
   image: ({node}) => (
-    <div className='self-center'>
+    <div className='self-center p-5 border-10 border-double'>
       <PrismicNextImage
         className='max-w-full h-auto rounded'
         field={node}
