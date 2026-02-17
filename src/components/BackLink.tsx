@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { unselectedFilterStyle } from './Sidebar'
 
 const BackLink = () => {
   const pathname = usePathname()
@@ -14,7 +15,7 @@ const BackLink = () => {
   return (
     <div className='min-h-10'>
       <nav className='pt-5'>
-        <Link className='' href='/'>
+        <Link className={unselectedFilterStyle} href='/'>
           {'<< Home'}
         </Link>
       </nav>

@@ -8,6 +8,9 @@ interface SidebarProps {
   posts: DevBlogArticleDocument[]
 }
 
+const selectedFilterStyle = 'bg-[var(--foreground)] text-[var(--background)]'
+export const unselectedFilterStyle = 'text-[var(--foreground-dim)] hover:text-[var(--foreground)]'
+
 const Sidebar = ({posts}: SidebarProps) => {
   const {
     sortOrder,
@@ -23,8 +26,6 @@ const Sidebar = ({posts}: SidebarProps) => {
   const allTags = Array.from(new Set(posts.flatMap((post) => post.tags)))
   const allAuthors = Array.from(new Set(posts.flatMap((post) => post.data.author ?? [])))
   const buttonStyle = 'transition-colors duration-200'
-  const selectedFilterStyle = 'border-green-400 text-green-400'
-  const unselectedFilterStyle = 'border-gray-300 hover:border-green-300 hover:text-green-400'
 
   return (
     <div className='flex flex-col gap-4 mx-8'>
@@ -72,7 +73,7 @@ const Sidebar = ({posts}: SidebarProps) => {
               }`}
               onClick={() => toggleFilterTag(tag)}
             >
-             [#{tag}]
+             #{tag}
             </button>
           </li>
          )))}
