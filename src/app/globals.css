@@ -14,16 +14,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --foreground-dim: #edededbf;
+    --background: #080f0e;
+    --foreground: #8cd89a;
+    --foreground-dim: #8cd89a8e;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-fira-code), monospace;
+  font-family: var(--tomorrow), monospace;
 }
 
 .title-block::before,
@@ -33,7 +33,7 @@ body {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  font-family: var(--font-fira-code), monospace;
+  font-family: var(--tomorrow), monospace;
   line-height: 1;
   font-variant-ligatures: none;
 }
@@ -58,7 +58,7 @@ body {
   display: block;
   overflow: hidden;
   white-space: nowrap;
-  font-family: var(--font-fira-code), monospace;
+  font-family: var(--tomorrow), monospace;
   line-height: 1;
   font-variant-ligatures: none;
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { PrismicPreview } from '@prismicio/next'
-import { Fira_Code } from 'next/font/google'
+import { Tomorrow } from 'next/font/google'
 import { repositoryName } from '@/prismicio'
 
 export const metadata: Metadata = {
@@ -9,9 +9,10 @@ export const metadata: Metadata = {
   description: 'RBO Developer Blog',
 }
 
-const firaCode = Fira_Code({
+const tomorrow = Tomorrow({
   subsets: ['latin'],
-  variable: '--font-fira-code'
+  weight: '400',
+  variable: '--font-tomorrow'
 })
 
 const RootLayout = ({
@@ -20,7 +21,7 @@ const RootLayout = ({
   children: React.ReactNode
 }) => (
   <html>
-    <body className={firaCode.variable}>
+    <body className={tomorrow.className}>
       <div>
         {children}
       </div>
