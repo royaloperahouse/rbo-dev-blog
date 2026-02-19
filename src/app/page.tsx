@@ -7,6 +7,8 @@ import {
   RichTextSlice,
   Sidebar
 } from '@/components'
+import { RboAsciiLogo } from '@/components/LogoASCII'
+import { literalsArray  } from '@/assets/ascii-literals'
 
 const Home = async () => {
   const client = createClient()
@@ -15,7 +17,8 @@ const Home = async () => {
 
   return (
     <ContextProvider>
-      <div className='flex flex-col gap-6 disable-ligatures'>
+      <div className='flex flex-col gap-3 disable-ligatures'>
+          <RboAsciiLogo literals={literalsArray} /> 
         <div className='mx-[25%]'>
           <Header title={page.data.title} subtitle={page.data.subtitle}/>
         </div>
