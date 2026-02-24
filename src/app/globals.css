@@ -23,7 +23,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-fira-code), monospace;
+  font-family: var(--source-code-pro), monospace;
 }
 
 .title-block::before,
@@ -33,7 +33,7 @@ body {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  font-family: var(--font-fira-code), monospace;
+  font-family: var(--source-code-pro), monospace;
   line-height: 1;
   font-variant-ligatures: none;
 }
@@ -58,7 +58,7 @@ body {
   display: block;
   overflow: hidden;
   white-space: nowrap;
-  font-family: var(--font-fira-code), monospace;
+  font-family: var(--source-code-pro), monospace;
   line-height: 1;
   font-variant-ligatures: none;
 }

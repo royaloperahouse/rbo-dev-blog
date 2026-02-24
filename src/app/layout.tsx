@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { PrismicPreview } from '@prismicio/next'
-import { Fira_Code } from 'next/font/google'
+import { Fira_Code, Source_Code_Pro } from 'next/font/google'
 import { repositoryName } from '@/prismicio'
 
 export const metadata: Metadata = {
@@ -14,13 +14,18 @@ const firaCode = Fira_Code({
   variable: '--font-fira-code'
 })
 
+const sourceCodePro = Source_Code_Pro({
+  subsets: ['latin'],
+  variable: '--source-code-pro'
+})
+
 const RootLayout = ({
   children
 }: {
   children: React.ReactNode
 }) => (
   <html>
-    <body className={firaCode.variable}>
+    <body className={sourceCodePro.variable}>
       <div>
         {children}
       </div>
