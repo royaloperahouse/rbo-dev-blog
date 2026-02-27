@@ -48,7 +48,7 @@ const Author = ({author}: HeaderProps) => (
 const PublicationDate = ({date, type}: {type: 'created' | 'updated', date?: Date}) => (
   !!date
     ? (
-      <p className='text-gray-600 dark:text-gray-400'>
+      <p className='text-gray-600 dark:text-[var(--foreground-dim)]'>
         <span>
           {`${type === 'created' ? '> Published: ' : '> Updated: '}`}
         </span>
