@@ -8,7 +8,7 @@ const BackLink = () => {
   const isHome = pathname === '/'
 
   if (isHome) {
-    return <div className='min-h-10'/>
+    return <></>
   }
 
   return (
