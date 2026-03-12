@@ -1,7 +1,7 @@
 import { isFilled, KeyTextField, RichTextField } from '@prismicio/client'
 import { PrismicRichText } from '@prismicio/react'
 import BackLink from './BackLink'
-import { fullDate } from '@/helpers/dateFormat'
+import { shortDateOnly } from '@/helpers/dateFormat'
 
 interface HeaderProps {
   title?: KeyTextField
@@ -11,34 +11,35 @@ interface HeaderProps {
   lastPublished?: Date
 }
 
-const Title = ({title}: HeaderProps) => (
-  !!title && isFilled.keyText(title)
-    ? (
-      <h1 className='text-6xl'>
-        {title}
-      </h1>
-    )
-    : null
-)
+const TitleBlock = ({title, subtitle}: HeaderProps) => {
+  const hasTitle = !!title && isFilled.keyText(title)
+  const hasSubtitle = !!subtitle && isFilled.richText(subtitle)
 
-const Subtitle = ({subtitle}: HeaderProps) => (
-  !!subtitle && isFilled.richText(subtitle)
-    ? (
-      <div className='text-2xl'>
-        <PrismicRichText field={subtitle}/>
+  if (!hasTitle && !hasSubtitle) return null
+
+  return (
+    <div className='title-block'>
+      <div className='py-5'>
+      {hasTitle ? (
+        <h1 className='text-xl font-bold '>
+          {title}
+        </h1>
+      ) : null}
+      {hasSubtitle ? (
+        <div className='text-xl'>
+          <PrismicRichText field={subtitle}/>
+        </div>
+      ) : null}
       </div>
-    )
-    : null
-)
+    </div>
+  )
+}
 
 const Author = ({author}: HeaderProps) => (
   !!author && isFilled.keyText(author)
     ? (
-      <p className='text-xl'>
-        {'by '}
-        <span className='italic'>
-          {author}
-        </span>
+      <p>
+        {'> By '} {author}
       </p>
     )
     : null
@@ -47,23 +48,24 @@ const Author = ({author}: HeaderProps) => (
 const PublicationDate = ({date, type}: {type: 'created' | 'updated', date?: Date}) => (
   !!date
     ? (
-      <p className='text-l text-gray-600 dark:text-gray-400'>
+      <p className='text-gray-600 dark:text-[var(--foreground-dim)]'>
         <span>
-          {`${type === 'created' ? 'First Published: ' : 'Updated: '}`}
+          {`${type === 'created' ? '> Published: ' : '> Updated: '}`}
         </span>
         <span>
-          {fullDate.format(date)}
+          {shortDateOnly.format(date)}
         </span>
       </p>
     )
     : null
 )
 
-const PublicationDates = ({firstPublished, lastPublished}: HeaderProps) => {
+const FrontMatter = ({firstPublished, lastPublished, author}: HeaderProps) => {
   if (!firstPublished && !lastPublished) return null
 
   return (
-    <div>
+    <div className='text-base'>
+      <Author author={author} />
       <PublicationDate type={'created'} date={firstPublished}/>
       <PublicationDate type={'updated'} date={lastPublished}/>
     </div>
@@ -76,10 +78,8 @@ const Header = ({title, subtitle, author, firstPublished, lastPublished}: Header
   return (
     <header className='flex flex-col gap-6 mb-8'>
       <BackLink/>
-      <Title title={title}/>
-      <Subtitle subtitle={subtitle}/>
-      <Author author={author}/>
-      <PublicationDates firstPublished={firstPublished} lastPublished={lastPublished}/>
+      <TitleBlock title={title} subtitle={subtitle}/>
+      <FrontMatter firstPublished={firstPublished} lastPublished={lastPublished} author={author}/>
     </header>
   )
 }

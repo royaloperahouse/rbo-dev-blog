@@ -8,13 +8,13 @@ const BackLink = () => {
   const isHome = pathname === '/'
 
   if (isHome) {
-    return <div className='min-h-10'/>
+    return <></>
   }
 
   return (
     <div className='min-h-10'>
       <nav className='pt-5'>
-        <Link className='' href='/'>
+        <Link href='/'>
           {'<< Home'}
         </Link>
       </nav>

@@ -5,44 +5,44 @@ import { PrismicNextImage } from '@prismicio/next'
 const richTextSerializer: JSXMapSerializer = {
   paragraph: ({children}) => {
     return (
-      <p className=''>
+      <p className='text-base'>
         {children}
       </p>
     )
   },
   
   heading1: ({children}) => (
-    <h1 className='text-4xl font-bold'>
+    <h1 className='text-xl font-bold'>
       {children}
     </h1>
   ),
   
   heading2: ({children}) => (
-    <h2 className='text-3xl font-semibold'>
+    <h2 className='text-xl font-bold'>
       {children}
     </h2>
   ),
   
   heading3: ({children}) => (
-    <h3 className='text-2xl font-semibold'>
+    <h3 className='text-xl'>
       {children}
     </h3>
   ),
   
   heading4: ({children}) => (
-    <h4 className='text-xl font-semibold'>
+    <h4 className='text-base font-bold'>
       {children}
     </h4>
   ),
   
   heading5: ({children}) => (
-    <h5 className='text-lg font-semibold'>
+    <h5 className='text-base font-bold'>
       {children}
     </h5>
   ),
   
   heading6: ({children}) => (
-    <h6 className='text-base font-semibold'>
+    <h6 className='text-base font-bold'>
       {children}
     </h6>
   ),
@@ -66,7 +66,7 @@ const richTextSerializer: JSXMapSerializer = {
   ),
   
   list: ({children}) => (
-    <ul className='list-disc pl-4'>
+    <ul className="list-custom-dash pl-4">
       {children}
     </ul>
   ),
@@ -99,7 +99,7 @@ const richTextSerializer: JSXMapSerializer = {
   ),
   
   image: ({node}) => (
-    <div className='self-center'>
+    <div className='self-center p-5 border-10 border-double'>
       <PrismicNextImage
         className='max-w-full h-auto rounded'
         field={node}

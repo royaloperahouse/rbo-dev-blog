@@ -8,6 +8,9 @@ interface SidebarProps {
   posts: DevBlogArticleDocument[]
 }
 
+const selectedFilterStyle = 'bg-[var(--foreground)] text-[var(--background)]'
+export const unselectedFilterStyle = 'text-[var(--foreground-dim)] hover:text-[var(--foreground)]'
+
 const Sidebar = ({posts}: SidebarProps) => {
   const {
     sortOrder,
@@ -22,16 +25,14 @@ const Sidebar = ({posts}: SidebarProps) => {
 
   const allTags = Array.from(new Set(posts.flatMap((post) => post.tags)))
   const allAuthors = Array.from(new Set(posts.flatMap((post) => post.data.author ?? [])))
-  const buttonStyle = 'px-3 py-1 rounded transition-colors duration-200 border-2'
-  const selectedFilterStyle = 'border-green-400 text-green-400'
-  const unselectedFilterStyle = 'border-gray-300 hover:border-green-300 hover:text-green-400'
+  const buttonStyle = 'transition-colors duration-200'
 
   return (
     <div className='flex flex-col gap-4 mx-8'>
-      <h4 className='text-xl'>
-        Sort by date
+      <h4 className='text-base font-bold'>
+        *** Sort by date *** 
       </h4>
-      <ul className='flex flex-wrap gap-1 truncate text-s'>
+      <ul className='flex flex-wrap gap-5 truncate text-base'>
         <li>
           <button
             className={`${buttonStyle} ${
@@ -41,7 +42,7 @@ const Sidebar = ({posts}: SidebarProps) => {
             }`}
             onClick={() => toggleSortOrder()}        
           >
-            newest first
+            [newest first]
           </button>
         </li>
         <li>
@@ -53,15 +54,15 @@ const Sidebar = ({posts}: SidebarProps) => {
             }`}
             onClick={() => toggleSortOrder()}        
           >
-            oldest first
+            [oldest first]
           </button>
         </li>
       </ul>
-      <h4 className='text-xl'>
-        Filter by tags
+      <h4 className='text-base font-bold mt-5'>
+        *** Filter by tags ***
       </h4>
       {allTags.length > 0 && (
-        <ul className='flex flex-wrap gap-1 truncate text-s'>
+        <ul className='flex flex-wrap gap-5 truncate text-base'>
          {allTags.map(((tag, index) => (
           <li key={`tag-${index}`}>
             <button
@@ -72,17 +73,17 @@ const Sidebar = ({posts}: SidebarProps) => {
               }`}
               onClick={() => toggleFilterTag(tag)}
             >
-              {tag}
+             #{tag}
             </button>
           </li>
          )))}
         </ul>
       )}
-      <h4 className='text-xl truncate'>
-        Filter by authors
+      <h4 className='text-base truncate font-bold mt-5'>
+        *** Filter by authors ***
       </h4>
       {allAuthors.length > 0 && (
-        <ul className='flex flex-wrap gap-1 truncate text-s'>
+        <ul className='flex flex-wrap gap-5 truncate text-base'>
          {allAuthors.map(((author, index) => (
           <li key={`author-${index}`}>
             <button
@@ -93,7 +94,7 @@ const Sidebar = ({posts}: SidebarProps) => {
               }`}
               onClick={() => toggleFilterAuthor(author)}
             >
-              {author}
+              [{author}]
             </button>
           </li>
          )))}
