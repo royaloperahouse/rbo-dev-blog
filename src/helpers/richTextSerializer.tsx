@@ -12,9 +12,9 @@ const richTextSerializer: JSXMapSerializer = {
   },
   
   heading1: ({children}) => (
-    <h2 className='text-xl font-bold'>
+    <h1 className='text-xl font-bold'>
       {children}
-    </h2>
+    </h1>
   ),
   
   heading2: ({children}) => (
@@ -36,15 +36,15 @@ const richTextSerializer: JSXMapSerializer = {
   ),
   
   heading5: ({children}) => (
-    <h4 className='text-base font-bold'>
+    <h5 className='text-base font-bold'>
       {children}
-    </h4>
+    </h5>
   ),
   
   heading6: ({children}) => (
-    <h4 className='text-base font-bold'>
+    <h6 className='text-base font-bold'>
       {children}
-    </h4>
+    </h6>
   ),
   
   preformatted: ({children}) => (
